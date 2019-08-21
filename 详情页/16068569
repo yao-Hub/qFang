@@ -1,0 +1,2743 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Cache-Control" content="no-transform" /> 
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link type="text/css" rel="stylesheet" href="/themes/default/styles/frontend/common/v2.4/qfang-basic.css?qv=1491966349796" />
+    <link type="text/css" rel="stylesheet" href="/themes/default/styles/frontend/details/qfang-details.css?qv=1491966349796" />
+    <link type="text/css" rel="stylesheet" href="/themes/default/styles/frontend/details/qfang-im.css?qv=1491966349796" />
+    <link rel="shortcut icon" href="/themes/default/images/favicon.ico" />
+<link rel="alternate" media="only screen and(max-width: 640px)" href="http://m.qfang.com/shenzhen/sale/16068569" >
+<meta name="mobile-agent" content="format=xhtml; url=http://m.qfang.com/shenzhen/sale/16068569">
+
+
+   	<script>
+   	var ctx = "";
+   	var roomCity = "SHENZHEN";
+   	var bizType = "SALE";
+	var rcId = "16068569";
+   	var refererURL = "http://shenzhen.qfang.com/sale?keyword=%E5%AE%8F%E6%B5%A9%E8%8A%B1%E5%9B%AD";
+   	</script>
+<title>宏浩花园福田花园,,房价多少,个人二手房,房屋买卖,个人出售-深圳Q房网</title>
+<meta name="keywords" content="深圳宏浩花园花园,最新房价,个人二手房,个人出售"/>
+<meta name="description" content="深圳Q房网为您提供深圳宏浩花园二手房房源出售信息,深圳市福田优质房源推荐,福田附近,宏浩花园二手房买卖,好房等你来看-深圳q房网" />
+	
+	<link rel="canonical" href="http://shenzhen.qfang.com/sale/16068569">
+	<link href="http://shenzhen.qfang.com/sale/16068569" />
+  <!--[if lte IE 8]>
+    <script src="/themes/default/scripts/plugin/chart/excanvas.js?qv=1491966349796"></script>
+    <style type="text/css">
+      #canvas-holder{width:30%;}
+    </style>
+  <![endif]-->
+    <input type="hidden" id="bedRoomUrl" value="http://yun.qfangimg.com/group1/{size}/M00/23/C9/CvtcM1jo2zqAf0TMAAFykwxCGEE825.jpg">
+	<input type="hidden" id="livingUrl"  value="http://yun.qfangimg.com/group4/{size}/M00/11/3B/CvtcMVjo2DyAePEZAAGIXxfZdpo480.jpg">
+	<input type="hidden" id="layoutUrl"  value="">
+	<input type="hidden" id="bizType" value="SALE">
+	<input type="hidden" id="internalID" value="dz2Mk6NR3EiOTVRSzP3bXGxVRiw=">
+	<input type="hidden" id="roomBizType" value="SALE">
+	<input type="hidden" id="personId"  value="108844263">
+</head>
+
+<body data-type="detail">
+
+   	<!-- headernav -->
+<div class="navigation">
+    <div class="navigation-inner clearfix">
+      <!-- logo -->
+      <div class="navigation-logo fl clearfix">
+        <p class="logo-layer clearfix fl"><a href="/"><i class="icons"></i></a></p>
+        <p class="crt-selected-city clearfix fl" id="citySelected"><span>深圳</span><em>[切换]</em></p>
+        <!-- cities -->
+        <div class="cities-layer" id="citySelectedLayer">
+          <i class="icons cities-layer-arrow"></i>
+          <a class="icons cities-layer-close"><i class="icons"></i></a>
+<!--头部公共文件 begin-->
+
+<!--首页-->
+
+<!--二手房-->
+
+<!--新房-->
+
+<!--学区房-->
+
+<!--租房-->
+
+<!--查房价-->
+<!--地铁查房价-->
+
+<!--写字楼-->
+
+<!--房产问答-->
+
+<!--新资讯-->
+
+<!--特许加盟-->
+
+<!--经纪人-->
+
+<!--特惠团购-->
+
+
+<!--掌上Q房-->
+
+<!--趋势图显示地-->
+
+<!--业主委托-->
+
+
+<!--地铁找房-->
+
+<script type="text/javascript">
+
+(function(){
+	var nowTime = '1492530883667';
+	var time = '1492530883622';
+	var response_time = nowTime-time;
+    var xhr = null;
+    if(window.XMLHttpRequest){
+        xhr = new XMLHttpRequest();
+    } else {
+        xhr = new ActiveXObject('Microsoft.XMLHTTP')
+    }
+    
+    var data = 'referer='+document.referrer.replace(/&/g,'%26')+'&width='+screen.width+'&height='+screen.height+'&response_time='+response_time;
+
+    xhr.open('POST', "/stat", true);
+    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xhr.send(data);
+})();
+
+(function(){
+	function isPC() {
+	    var userAgentInfo = navigator.userAgent;
+	    var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+	    var flag = true;
+	    for (var v = 0; v < Agents.length; v++) {
+	        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+	            flag = false;
+	            break;
+	        }
+	    }
+	    return flag;
+	}
+	
+	function redirectToWap() {
+	    var path = window.location.pathname;
+	    if (!path) {
+	        return;
+	    }
+	    var search = window.location.search;
+	    if (search.indexOf('redirect=false') != -1) {
+	    	return ;
+	    }
+	
+	    path = path.replace('qfang-web/', '');
+	    var wapPath = 'http://m.qfang.com/shenzhen';
+	    if (path == '/') {
+	        wapPath = ''; //首页
+	    } else if (/^\/(sale|rent|garden|office|newhouse)(.*)/gi.test(path)) {
+	        // wap站没有写字楼楼盘
+	        if (path.indexOf('office/garden') != -1) {
+	            return;
+	        }
+	        
+	
+	        // 楼盘详情页
+	        if (/^\/garden\/desc\/\d+/gi.test(path)) {
+	            path = path.replace('desc/', '')
+	        }
+	        // 新房列表页
+	        if (path.indexOf('newhouse/list') != -1) {
+	        	path = path.replace('/list', '')
+	        }
+	        // 写字楼列表页
+	         if (/^\/office\/(rentSubway|saleSubway)/gi.test(path)) {
+	         	path = path.replace('Subway', '');
+	         }
+	        
+	        
+	        if (/^\/garden\/(sale|rent)/gi.test(path)) {
+	            // 楼盘租房二手房页面
+	            var arr = path.split('/');
+	            if (arr.length == 4) {
+	                wapPath = wapPath + '/' + arr[2] + '?gardenId=' + arr[3];
+	            } else if (arr.length == 5) {
+	                wapPath = wapPath + '/' + arr[2] + '/' + arr[4] + '?gardenId=' + arr[3];
+	            }
+	        } else {
+	            var arr = path.split('/');
+	            for (var i = 1; i < arr.length; i++) {
+	                wapPath = wapPath + '/' + arr[i];
+	            }
+	        }
+	    }
+	    location.href = wapPath;
+	};
+	
+	if (!isPC()) {
+	    redirectToWap();
+	}
+
+})();
+    
+
+</script>
+<div class="cities-con">
+  <p class="tit">选择城市</p>
+  <ul class="cities-opts clearfix">
+    <li class="clearfix">
+      <em class="icons">B</em>
+      <p>
+        <a class="highlight" href="http://beijing.qfang.com">北京</a>
+        <a href="http://baoshan.qfang.com">保山</a>
+        
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">N</em>
+      <p>
+        <a class="highlight" href="http://nanjing.qfang.com/sale">南京</a>
+        <a href="http://nanning.qfang.com">南宁</a>
+        <a href="http://nantong.qfang.com">南通</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">C</em>
+      <p>
+        <a href="http://chengdu.qfang.com">成都</a>
+        <a href="http://chongqing.qfang.com">重庆</a>
+        <a href="http://changsha.qfang.com">长沙</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">P</em>
+      <p>
+        <a href="http://pingdingshan.qfang.com">平顶山</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">D</em>
+      <p>
+        <a href="http://dongguan.qfang.com/sale">东莞</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">Q</em>
+      <p>
+        <a class="highlight" href="http://qingdao.qfang.com/sale">青岛 </a>
+      </p>
+    </li>
+    <li class="learfix">
+      <em class="icons">F</em>
+      <p>
+        <a class="highlight" href="http://foshan.qfang.com/sale">佛山</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">S</em>
+      <p>
+        <a class="highlight" href="http://shenzhen.qfang.com/sale">深圳</a>
+        <a class="highlight" href="http://shanghai.qfang.com/sale">上海</a>
+        <a class="highlight" href="http://suzhou.qfang.com/sale">苏州</a>
+        <a href="http://sanya.qfang.com">三亚</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">G</em>
+      <p>
+        <a class="highlight" href="http://guangzhou.qfang.com/sale">广州</a>
+      	<a href="http://ganzhou.qfang.com/">赣州</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">T</em>
+      <p>
+        <a href="http://taiyuan.qfang.com">太原 </a>
+        <a href="http://taicang.qfang.com">太仓 </a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">H</em>
+      <p>
+        <a class="highlight" href="http://hangzhou.qfang.com/sale">杭州</a>
+        <a href="http://huizhou.qfang.com">惠州</a>
+        <a href="http://honghe.qfang.com">红河</a>
+        <a href="http://hefei.qfang.com">合肥</a>
+        <a href="http://huzhou.qfang.com">湖州</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">W</em>
+      <p>
+        <a href="http://wuhan.qfang.com">武汉</a>
+        <a href="http://wuxi.qfang.com">无锡</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">J</em>
+      <p>
+        <a href="http://jiaxing.qfang.com">嘉兴</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">X</em>
+      <p>
+        <a class="highlight" href="http://hk.qfang.com">香港</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">K</em>
+      <p>
+        <a href="http://kunming.qfang.com">昆明</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">Z</em>
+      <p>
+        <a class="highlight" href="http://zhuhai.qfang.com/sale">珠海</a>
+        <a class="highlight" href="http://zhongshan.qfang.com/sale">中山</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">L</em>
+      <p>
+        <a href="http://langfang.qfang.com">廊坊</a>
+      </p>
+    </li>
+  </ul>
+</div>
+        </div>
+        <!-- end cities -->
+      </div>
+      <!-- end logo -->
+      <!-- login -->
+      <div class="navigation-user fr">
+        <i class="icons icon-login fl"></i>
+        <!-- before login -->
+        <div class="navigation-menu navigation-login fl" id="navigationLogin">
+          <div class="top-nav">
+            <ul>
+              <li class="nav-item">
+                <p class="nav-link"><a rel="nofollow" href="http://user.qfang.com?fromCity=SHENZHEN">登录</a></p>
+                <div class="nav-linksub">
+                  <i class="icons arrow"></i>
+                  <p>
+                    <a id="myQfang" href="javascript:;">我的Q房</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span class="navigation-slash fl" id="o2oRegisterSprit">/</span>
+        <p class="navigation-reg fl" id="o2oRegister">
+        	<a rel="nofollow" href="http://user.qfang.com?fromCity=SHENZHEN&isRegister=isRegister">注册</a>
+        </p>
+        <!-- end before login -->
+        <!-- after login -->
+        <p class="navigation-logout fl clearfix dn" id="o2oHasLogin">
+        </p>
+        <!-- end after login -->
+      </div>
+      <!-- end login -->
+      <!-- menu  -->
+      <div class="navigation-menu fr" id="navigationMenu">
+        <div class="top-nav clearfix">
+          <ul>
+            <li class="nav-item">
+              <p class="nav-link"><a href="/">首页</a></p>
+            </li>
+            
+            <li class="nav-item cur">
+              <p class="nav-link"><a href="/sale">二手房</a></p>
+              <div class="nav-linksub">
+                <i class="icons arrow"></i>
+                <p>
+                  <a href="/sale">房源</a>
+                  <a href="/garden">小区</a>
+                  <a href="/sale/n0">学区房</a>
+                  <a href="/tycoon">经纪人</a>
+                  <a href="/map/sale" target="_blank">地图找房</a>
+                </p>
+              </div>
+            </li>
+            
+            <li class="nav-item ">
+              <p class="nav-link"><a href="/newhouse">新房</a></p>
+              <div class="nav-linksub">
+                <i class="icons arrow"></i>
+                <p>
+                  <a href="/newhouse">新房首页</a>
+				  <a href="/groupbuy">优惠活动</a>
+                  <a href="/newhouse/list">深圳新房</a>
+                  <a href="/newhouse/info">楼盘导购</a>
+                  <a rel="nofollow" target="_blank"  target="_blank" href="http://www.qfang.com/special/QKYT/">Q客云投</a>
+                </p>
+              </div>
+            </li>
+            
+            <li class="nav-item ">
+              <p class="nav-link"><a href="/rent">租房</a></p>
+              <div class="nav-linksub">
+                <i class="icons arrow"></i>
+                <p>
+                  <a href="/rent">房源</a>
+                  <a href="/garden">小区</a>
+                  <a href="/tycoonRent">经纪人</a>
+                  <a href="/map/rent" target="_blank">地图找房</a>
+                </p>
+              </div>
+            </li>
+            
+            <li class="nav-item ">
+              <p class="nav-link">
+                <a rel="nofollow"  href="/fangjia/area">查房价</a>
+              </p>
+            </li>
+            
+            <li class="nav-item ">
+              <p class="nav-link"><a href="/office">写字楼</a></p>
+              <div class="nav-linksub">
+                <i class="icons arrow"></i>
+                <p>
+                  <a href="/office">写字楼首页</a>
+                  <a href="/office/rent">写字楼出租</a>
+                  <a href="/office/sale">写字楼出售</a>
+                  <a href="/office/garden/rent">写字楼楼盘</a>
+                  <a href="/office/tycoon/index?from_office=1">写字楼经纪人</a>
+                </p>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <p class="nav-link">
+                <a href="http://hw.qfang.com/">海外</a>
+              </p>
+            </li>
+            <li class="nav-item ">
+              <p class="nav-link">
+                <a rel="nofollow" href="/trust?type=sale">业主委托</a>
+              </p>
+            </li>
+            <li class="nav-item">
+              <p class="nav-link">
+                <a href="javascript:volid(0);">掌上Q房</a>
+              </p>
+              <div class="nav-linksub">
+                <i class="icons arrow"></i>
+                <p class="top-app">
+                  <em class="icons"></em>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end menu  -->
+    </div>
+  </div>
+  	<!-- end headernav -->
+  	
+	<!-- crumbs -->
+	<div class="crumbs-link">
+	    <div class="crumbs-link-inner clearfix">
+	      <a rel="nofollow" href="/">深圳Q房网</a>
+	      <i class="icons"></i>
+	      <a rel="nofollow" href="/sale">深圳二手房</a>
+	      <i class="icons"></i>
+	      <div class="crumbs-drop-menu fl clearfix">
+	        <a class="alink" href="/sale/futian">福田二手房</a>
+	        <em class="icons-listings arrow"></em>
+	        <div class="cities-layer links-layer">
+	          <i class="icons cities-layer-arrow"></i>
+	          <div class="cities-con">
+	            <ul class="cities-opts clearfix">
+		              <li class="clearfix">
+		                <em class="icons">B</em>
+			            <p>
+			                  <a class="" href="/sale/baoan">宝安二手房</a>
+			            </p>
+		              </li>
+		              <li class="clearfix">
+		                <em class="icons">D</em>
+			            <p>
+			                  <a class="" href="/sale/dapengxinqu">大鹏新区二手房</a>
+			            </p>
+		              </li>
+		              <li class="clearfix">
+		                <em class="icons">F</em>
+			            <p>
+			                  <a class="" href="/sale/futian">福田二手房</a>
+			            </p>
+		              </li>
+		              <li class="clearfix">
+		                <em class="icons">G</em>
+			            <p>
+			                  <a class="" href="/sale/guangmingxinqu">光明新区二手房</a>
+			            </p>
+		              </li>
+		              <li class="clearfix">
+		                <em class="icons">L</em>
+			            <p>
+			                  <a class="" href="/sale/luohu">罗湖二手房</a>
+			                  <a class="" href="/sale/longgang">龙岗二手房</a>
+			                  <a class="" href="/sale/longhuaxinqu">龙华新区二手房</a>
+			            </p>
+		              </li>
+		              <li class="clearfix">
+		                <em class="icons">N</em>
+			            <p>
+			                  <a class="" href="/sale/nanshan">南山二手房</a>
+			            </p>
+		              </li>
+		              <li class="clearfix">
+		                <em class="icons">P</em>
+			            <p>
+			                  <a class="" href="/sale/pingshanxinqu">坪山新区二手房</a>
+			            </p>
+		              </li>
+		              <li class="clearfix">
+		                <em class="icons">Y</em>
+			            <p>
+			                  <a class="" href="/sale/yantiana">盐田二手房</a>
+			            </p>
+		              </li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	      <i class="icons"></i>
+	      <div class="crumbs-drop-menu fl clearfix">
+	        <a class="alink" href="/sale/futian-jingtian">景田二手房</a>
+	        
+	        <em class="icons-listings arrow"></em>
+	        <div class="cities-layer links-layer">
+	          <i class="icons cities-layer-arrow"></i>
+	          <div class="cities-con">
+	            <ul class="cities-opts clearfix">
+			          <li class="clearfix">
+			            <em class="icons">B</em>
+			            <p>
+						 <a class="" href="/sale/futian-baoshuiqu">保税区二手房</a>
+						 <a class="" href="/sale/futian-bagualing">八卦岭二手房</a>
+			            </p>
+			          </li>
+			          <li class="clearfix">
+			            <em class="icons">C</em>
+			            <p>
+						 <a class="" href="/sale/futian-changcheng">长城二手房</a>
+						 <a class="" href="/sale/futian-chegongmiao">车公庙二手房</a>
+			            </p>
+			          </li>
+			          <li class="clearfix">
+			            <em class="icons">F</em>
+			            <p>
+						 <a class="" href="/sale/futian-futianzhongxinqu">福田中心区二手房</a>
+			            </p>
+			          </li>
+			          <li class="clearfix">
+			            <em class="icons">H</em>
+			            <p>
+						 <a class="" href="/sale/futian-huaqiangnan">华强南二手房</a>
+						 <a class="" href="/sale/futian-huaqiang">华强二手房</a>
+						 <a class="" href="/sale/futian-huanggang">皇岗二手房</a>
+			            </p>
+			          </li>
+			          <li class="clearfix">
+			            <em class="icons">J</em>
+			            <p>
+						 <a class="" href="/sale/futian-jingtian">景田二手房</a>
+			            </p>
+			          </li>
+			          <li class="clearfix">
+			            <em class="icons">L</em>
+			            <p>
+						 <a class="" href="/sale/futian-lianhua">莲花二手房</a>
+			            </p>
+			          </li>
+			          <li class="clearfix">
+			            <em class="icons">M</em>
+			            <p>
+						 <a class="" href="/sale/futian-meilin">梅林二手房</a>
+			            </p>
+			          </li>
+			          <li class="clearfix">
+			            <em class="icons">S</em>
+			            <p>
+						 <a class="" href="/sale/futian-shangbu">上步二手房</a>
+						 <a class="" href="/sale/futian-shisha">石厦二手房</a>
+						 <a class="" href="/sale/futian-shangxiasha">上下沙二手房</a>
+			            </p>
+			          </li>
+			          <li class="clearfix">
+			            <em class="icons">X</em>
+			            <p>
+						 <a class="" href="/sale/futian-xinzhou">新洲二手房</a>
+						 <a class="" href="/sale/futian-xiangmihu">香蜜湖二手房</a>
+			            </p>
+			          </li>
+			          <li class="clearfix">
+			            <em class="icons">Y</em>
+			            <p>
+						 <a class="" href="/sale/futian-yuanling">园岭二手房</a>
+			            </p>
+			          </li>
+			          <li class="clearfix">
+			            <em class="icons">Z</em>
+			            <p>
+						 <a class="" href="/sale/futian-zhuzilin">竹子林二手房</a>
+			            </p>
+			          </li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	      <i class="icons"></i>
+	      <a href="/garden/desc/55598" class="cur">宏浩花园二手房</a>
+	    </div>
+	  </div>
+	<!-- end crumbs -->
+  
+  
+  
+  
+  
+  
+  <!-- title -->
+  <div class="title-wrapper clearfix">
+    <h1 class="house-title fl">宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便</h1>
+    <p class="btn-tel-order fr"><a class="btn-orange" id="checkHouseBtn" href="javascript:;">预约看房</a></p>
+    <p key="like" class="collect-house-btn fr"><i class="icons"></i><span>收藏房源</span></p>
+    <p key="unlike" class="collect-house-btn fr" style="display:none;"><i class="icons"></i><span>已收藏</span></p>
+    
+  </div>
+  <!-- end title  -->
+  <!-- head info -->
+  <div class="head-info" id="headInfo">
+       <img class="bgi-big" src="http://yun.qfangimg.com/group4/600x600/M00/11/3B/CvtcMVjo2DyAePEZAAGIXxfZdpo480.jpg?blur=20" 
+       onError="this.src='http://yun200.qfangimg.com/group1/600x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg?blur=20'"/>
+    <div class="head-info-inner clearfix">
+      <!-- photoalbum -->
+<div class="photoalbum_box photoalbum-salerent fl" id="photoAlbum">
+        <div class="preview" id="previewCon">
+            	<img src="http://yun.qfangimg.com/group4/690x360/M00/11/3B/CvtcMVjo2DyAePEZAAGIXxfZdpo480.jpg" />
+ 			<i class="auxiliary"></i>
+          <div class="preview_description" id="previewDescription">
+            <span><i id="curNumber">1</i>/<i id="totalNumber">10</i></span>
+            <p id="previewTitle">图片标题 - 1</p>
+          </div>
+          <p id="previewBtnPrev" class="preview_btn preview_btn_prev"></p>
+          <p id="previewBtnNext" class="preview_btn preview_btn_next"></p>
+        </div>
+        <div class="guide_btns" id="guideBtns">
+          <div class="guide_minmap">
+            <ul id="guideMinmapCon">
+            <!-- 封面图 -->
+            <li>
+                 <img width="130" height="98" alt="宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便_Q房网" src="http://yun.qfangimg.com/group4/130x98/M00/11/3B/CvtcMVjo2DyAePEZAAGIXxfZdpo480.jpg" data-src="http://yun.qfangimg.com/group4/690x360/M00/11/3B/CvtcMVjo2DyAePEZAAGIXxfZdpo480.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+                </li>
+         
+            
+
+             
+             
+             <!--室内图 -->
+              
+              	
+              
+             	  <li>
+                   <img width="130" height="98" alt="宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便_Q房网" src="http://yun.qfangimg.com/group3/130x98/M00/10/23/CvtcOFjo2umABCPWAAGqaU9JNmY273.jpg" data-src="http://yun.qfangimg.com/group3/690x360/M00/10/23/CvtcOFjo2umABCPWAAGqaU9JNmY273.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+                   </li> 
+              	
+              
+             	  <li>
+                   <img width="130" height="98" alt="宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便_Q房网" src="http://yun.qfangimg.com/group1/130x98/M00/23/C9/CvtcM1jo2zqAf0TMAAFykwxCGEE825.jpg" data-src="http://yun.qfangimg.com/group1/690x360/M00/23/C9/CvtcM1jo2zqAf0TMAAFykwxCGEE825.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+                   </li> 
+              	
+              
+             	  <li>
+                   <img width="130" height="98" alt="宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便_Q房网" src="http://yun.qfangimg.com/group1/130x98/M00/1A/BB/CvtcNFjo2zeANNIcAAGyU6V54Ls341.jpg" data-src="http://yun.qfangimg.com/group1/690x360/M00/1A/BB/CvtcNFjo2zeANNIcAAGyU6V54Ls341.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+                   </li> 
+              	
+              
+             	  <li>
+                   <img width="130" height="98" alt="宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便_Q房网" src="http://yun.qfangimg.com/group2/130x98/M00/10/73/CvtcKljo2zmAFtbSAAFH5o1qzFQ690.jpg" data-src="http://yun.qfangimg.com/group2/690x360/M00/10/73/CvtcKljo2zmAFtbSAAFH5o1qzFQ690.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+                   </li> 
+              	
+             <!--end 室内图 -->
+             
+             <!--布局图 -->
+              
+              	 
+              
+              	 
+              
+              	 
+              
+              	 
+              
+              	 
+             <!--end 布局图 -->
+          
+             
+			<!--小区图 -->
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/29339ec3-9b68-4253-bbba-c9eaaf480cf2.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/29339ec3-9b68-4253-bbba-c9eaaf480cf2.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/cd98a6c8-fbe7-4ac9-a7a7-44a3540954c1.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/cd98a6c8-fbe7-4ac9-a7a7-44a3540954c1.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/5765db57-9dcf-4e95-9eec-3884f4e107ca.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/5765db57-9dcf-4e95-9eec-3884f4e107ca.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/a7b1ce3c-32b2-4938-8595-4536c6f3460c.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/a7b1ce3c-32b2-4938-8595-4536c6f3460c.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/85ab5db8-d75a-46f8-ae57-25788afeef54.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/85ab5db8-d75a-46f8-ae57-25788afeef54.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/ff790f25-edbc-4c3c-ae19-804a2b01a447.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/ff790f25-edbc-4c3c-ae19-804a2b01a447.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/cbd297d1-996d-4566-bf55-85451de3c552.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/cbd297d1-996d-4566-bf55-85451de3c552.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/aacfc460-4025-4793-b70f-4b5e0ef50e14.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/aacfc460-4025-4793-b70f-4b5e0ef50e14.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/60516b19-eca1-40e0-96d1-33d9e0465c62.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/60516b19-eca1-40e0-96d1-33d9e0465c62.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/b8348f3e-7d9f-4398-ad9d-dfddded6d7b7.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/b8348f3e-7d9f-4398-ad9d-dfddded6d7b7.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/1bf24db1-6b43-43ed-818a-684a39aa9be3.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/1bf24db1-6b43-43ed-818a-684a39aa9be3.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/569de287-92d5-417d-843d-a2650cb3185b.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/569de287-92d5-417d-843d-a2650cb3185b.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/585db8b4-1a42-4682-9770-b5a86d1cf307.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/585db8b4-1a42-4682-9770-b5a86d1cf307.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/538ca061-f537-4483-9273-f1fd19d17ced.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/538ca061-f537-4483-9273-f1fd19d17ced.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/5daafe32-4905-4481-af96-0599fd58dac5.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/5daafe32-4905-4481-af96-0599fd58dac5.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/7df57072-3713-4393-af42-6958347a8756.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/7df57072-3713-4393-af42-6958347a8756.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/12843ee6-d04a-4d87-8011-68623af4c885.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/12843ee6-d04a-4d87-8011-68623af4c885.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/d162d016-881b-427b-bc49-6a3c0c52608c.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/d162d016-881b-427b-bc49-6a3c0c52608c.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/83fbb9aa-097e-49ea-b0e3-f01d9a34e099.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/83fbb9aa-097e-49ea-b0e3-f01d9a34e099.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/a6047736-4b01-4de5-948e-54275a38b8b5.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/a6047736-4b01-4de5-948e-54275a38b8b5.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/53cd6584-4cea-4610-ad07-fb58e9530da1.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/53cd6584-4cea-4610-ad07-fb58e9530da1.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/83a34629-c5a0-49c7-ba93-42c0dc1fe110.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/83a34629-c5a0-49c7-ba93-42c0dc1fe110.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/9b7d26f3-c4e7-421f-9dd3-1fa4b3f191b9.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/9b7d26f3-c4e7-421f-9dd3-1fa4b3f191b9.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/fb4bdfed-93d0-4938-9094-da871b0a11a5.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/fb4bdfed-93d0-4938-9094-da871b0a11a5.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/835840c4-9c36-4f87-8065-001496d66c1d.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/835840c4-9c36-4f87-8065-001496d66c1d.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is2.qfangimg.com/broker/2013/3/27/130x98/9931ca7a-2f45-486d-893f-038f610439a0.jpg" data-src="http://is2.qfangimg.com/broker/2013/3/27/690x360/9931ca7a-2f45-486d-893f-038f610439a0.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/585db8b4-1a42-4682-9770-b5a86d1cf307.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/585db8b4-1a42-4682-9770-b5a86d1cf307.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/569de287-92d5-417d-843d-a2650cb3185b.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/569de287-92d5-417d-843d-a2650cb3185b.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/b8348f3e-7d9f-4398-ad9d-dfddded6d7b7.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/b8348f3e-7d9f-4398-ad9d-dfddded6d7b7.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/1bf24db1-6b43-43ed-818a-684a39aa9be3.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/1bf24db1-6b43-43ed-818a-684a39aa9be3.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/60516b19-eca1-40e0-96d1-33d9e0465c62.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/60516b19-eca1-40e0-96d1-33d9e0465c62.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/aacfc460-4025-4793-b70f-4b5e0ef50e14.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/aacfc460-4025-4793-b70f-4b5e0ef50e14.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/cbd297d1-996d-4566-bf55-85451de3c552.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/cbd297d1-996d-4566-bf55-85451de3c552.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/85ab5db8-d75a-46f8-ae57-25788afeef54.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/85ab5db8-d75a-46f8-ae57-25788afeef54.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/a7b1ce3c-32b2-4938-8595-4536c6f3460c.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/a7b1ce3c-32b2-4938-8595-4536c6f3460c.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/5765db57-9dcf-4e95-9eec-3884f4e107ca.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/5765db57-9dcf-4e95-9eec-3884f4e107ca.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/cd98a6c8-fbe7-4ac9-a7a7-44a3540954c1.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/cd98a6c8-fbe7-4ac9-a7a7-44a3540954c1.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+						<li>
+			 				<img width="130" height="98" alt="宏浩花园_Q房网" src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/130x98/29339ec3-9b68-4253-bbba-c9eaaf480cf2.jpg" data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/690x360/29339ec3-9b68-4253-bbba-c9eaaf480cf2.jpg"  onError="this.src='http://yun200.qfangimg.com/group1/130x98/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+			 			</li>
+            <!--end 小区图 -->
+             
+             
+              <li id="curGuide" class="cur_guide"></li>
+            </ul>
+          </div>
+          <p id="guideBtnPrev" class="guide_btn guide_btn_prev"></p>
+          <p id="guideBtnNext" class="guide_btn guide_btn_next"></p>
+          <p id="guideBtnPrevDisable" class="guide_btn guide_btn_prev_disable"></p>
+          <p id="guideBtnNextDisable" class="guide_btn guide_btn_next_disable"></p>
+        </div>
+ </div>
+      <!-- end photoalbum -->
+      <!-- head info field -->
+      <div class="head-info-field fl clearfix">
+       <input type="hidden" id="totalPrice" value="1350">
+        <p class="head-info-price fl"><span>1350</span>万</p>
+        <div class="prices fl">
+          <p class="clearfix">
+            <span class="average-price fl">72581元/平米</span>
+            <span class="calculator fl"><a class="icons" href="javascript:;" id="compute" date-scroll="#scrollto-4"></a></span>
+          </p>
+          <p class="installment clearfix">
+            <span id="roomDetailSF">首付 </span>
+            <span id="roomDetailYG">月供 </span>
+          </p>
+        </div>
+        <!-- list -->
+        <div class="head-info-list">
+          <ul>
+            <li class="head-info-item clearfix">
+              <span class="field fl">小区名称</span>
+              <p class="corresponding-con"><a href="/garden/desc/55598?insource=sale_detail_basic" target="_blank">宏浩花园</a></p>
+            </li>
+            
+            
+            <li class="head-info-item clearfix">
+              <span class="field fl">看房时间</span>
+              <p class="fl">随时可预约</p>
+              <p class="tel-order fl"><a href="javascript:;" id="makeAppointmentBtn">预约看房</a></p>
+            </li>
+
+            
+            <li class="head-info-item clearfix">
+              <span class="field fl">对口学校</span>
+              <p class="counterpart-schools clearfix" id="schoolList1">
+		                 <a target="_blank" href="/school/detail/1677">深圳市福田区景秀小学</a>
+	    		 </p>
+	       </li>
+
+            
+	        <li class="head-info-item clearfix">
+	          <span class="field fl">所在地址</span>
+	          <div class="r-b-a fl clearfix">
+	          <p>
+	             [<a target="_blank" href="/sale/futian?insource=sale_detail_basic">福田</a>
+	             <a target="_blank" href="/sale/futian-jingtian?insource=sale_detail_basic">景田</a>]
+
+	             <a id="addressAnchor" date-scroll="#scrollto-3" href="javascript:;">
+	             <span>香梅路与莲花路交汇处</span>
+	             </a>
+	          </p>
+	          <i id="addressAnchorMap" date-scroll="#scrollto-3" class="icons"></i>
+			</div>
+	        </li> 
+          </ul>
+        </div>
+        <!-- end list -->
+        <!-- model -->
+        <div class="house-model">
+          <ul class="clearfix">
+            <li>
+              <p>4室1厅</p>
+              <span>				高层
+			/25层
+</span>
+            </li>
+            <li>
+              <p>186平米</p>
+              <span>建筑面积</span>
+            </li>
+            <li>
+              <p> 朝南</p>
+              <span>1998年建</span>
+            </li>
+          </ul>
+        </div>
+        <!-- model -->
+        <!-- borker -->
+ <div class="house-borker clearfix">
+   <p class="broker-photo fl">
+     <a target="_blank" rel="nofollow" href="/shop/view/108844263">
+       <img width="88" height="88" alt="李敏_Q房网" onError="this.src='/themes/default/images/frontend/no-broker-88x117.jpg';" src="
+				http://pt6.qfangimg.com/shenzhen/hr/2015/12/10/165x220/4ec70d15-041a-4ad9-9355-7767603bf9c1.jpg
+		" alt="李敏_Q房网" />
+     </a>
+   </p>
+   <div class="broker-info fl">
+     <p class="name fl">
+     <a target="_blank"  href="/shop/view/108844263" rel="nofollow">李敏</a>
+     </p>
+     
+     <p class="statements fl">
+		Q房网<em class="gap-hfword"></em>
+			特区报二分店
+     </p>
+     <p class="store clearfix">
+     	<span>
+     				该房源动态由我更新，实时了解变化
+		</span>
+     </p>
+     <p class="tel"  key="roomDetailPersonPhone">
+      
+     </p>
+   </div>
+ </div>
+
+<div class="clearfix">
+     	<p class="real-house fl clearfix">
+       		<i class="icons"></i>
+       		<span>真实房源</span>
+       		<span>线上浏览</span>
+       		<span>线下体验</span>
+     	</p>
+      <!-- 临时加的style样式  -->
+     <p class="room-id fl">
+       <span>房源编号：</span>
+       <span>169870491196</span>
+     </p>
+   </div>
+
+
+        <!-- end borker -->
+        
+      </div>
+      <!-- end head info field  -->
+    </div>
+  </div>
+  <!-- end head info -->
+  <!-- anchor -->
+  <div id="anchorNavBox">
+    <div class="anchor-nav clearfix" id="anchorNav">
+      <ul>
+        <li class="cur">
+          <a href="javascript:;" id="anchor-1" date-scroll="#scrollto-1">房源信息介绍</a>
+        </li>
+        <li class="">
+          <a href="javascript:;" id="anchor-2" date-scroll="#scrollto-2">房源图片</a>
+        </li>
+        <li class="">
+          <a href="javascript:;" id="anchor-5" date-scroll="#scrollto-5">对口学校</a>
+        </li>
+        <li>
+          <a href="javascript:;" id="anchor-3" date-scroll="#scrollto-3">周边配套</a>
+        </li>
+        <li>
+          <a href="javascript:;" id="anchor-4" date-scroll="#scrollto-4">房贷查询</a>
+        </li>
+        <li>
+          <a href="javascript:;" id="anchor-6" date-scroll="#scrollto-6">小区信息</a>
+        </li>
+        <li>
+          <a href="javascript:;" id="anchor-7" date-scroll="#scrollto-7">房源推荐</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- end anchor -->
+  <div class="page-wrapper">
+  	<div class="column-wrapper clearfix">
+  		<!-- column-main -->
+  		<div class="column-main fl">
+		    <!-- 房源点评 -->
+		    <div id="scrollto-1" date-scroll="#scrollto-1" class="anchor-trigger">
+		      <div class="anchor-title">房源点评</div>
+		      	 <div class="hs-evaluation hs-evaluation-list" id="hsEvaluation">
+			     <ul>
+			     
+			       <li index=1>
+		            <span class="field">房源标签</span>
+		            <p class="clearfix">
+		            <span class="gray-tag fl">距离2号线(蛇口线)香梅北站约404米</span>
+		            </p>
+		          </li>
+			      <!--无论哪个城市，有新格式的房评则显示，否则直接显示房评-->
+			          <li class="json" index=2 >
+			            <span class="field">推荐理由        </span>
+			            <p class="clearfix">
+			              大社区。交通、生活配套好
+                      
+			            </p>
+			          </li>
+			          <li class="json" index=3 >
+			            <span class="field">户型描述        </span>
+			            <p class="clearfix">
+			              户型方正通透、采光效果及佳
+                      
+			            </p>
+			          </li>
+			          <li class="json" index=4 >
+			            <span class="field">装修情况        </span>
+			            <p class="clearfix">
+			              2014年重新装修 ，精致温馨
+                      
+			            </p>
+			          </li>
+			          <li class="json" index=5 >
+			            <span class="field">售房原因        </span>
+			            <p class="clearfix">
+			              业主换房急用钱 所以出售此房源
+                      
+			            </p>
+			          </li>
+			          <li class="json" index=6 style="display:none;">
+			            <span class="field">交通出行        </span>
+			            <p class="clearfix">
+			              二号线景田地铁站、康欣园公交站台非常近
+                      
+			            </p>
+			          </li>
+			          <li class="json" index=7 style="display:none;">
+			            <span class="field">学区介绍        </span>
+			            <p class="clearfix">
+			              带景秀的中小学省一级的
+                      
+			            </p>
+			          </li>
+			          <li class="json" index=8 style="display:none;">
+			            <span class="field">周边配套        </span>
+			            <p class="clearfix">
+			              去沃尔玛也很近，还有香蜜湖美食街，周边还有华润万家和各大银行，去福田读书馆和连花山公园很近
+                      
+			            </p>
+			          </li>
+			          <li class="json" index=9 style="display:none;">
+			            <span class="field">小区优势        </span>
+			            <p class="clearfix">
+			              位置优越、大社区、配套成熟、居住人群素质高！
+                      
+			            </p>
+			          </li>
+			  
+			   </ul>
+			   </div>
+		      <p class="more-hs-info" id="moreHsInfo"><a href="javascript:;">查看更多房评</a></p>
+		    </div>
+		    <!-- end 房源点评 -->
+  		
+  		
+		    <!-- 房源图片 -->
+		    <div class="anchor-trigger" id="scrollto-2" key="RoomDetailPictureBig">
+<div class="anchor-title">房源图片</div>
+<div class="hs-pics" id="hsPics">
+	<ul class="clearfix">
+		<!-- 封面图 -->
+		<li ><a href="javascript:;"> 
+	    	 <img src="http://yun.qfangimg.com/group4/346x260/M00/11/3B/CvtcMVjo2DyAePEZAAGIXxfZdpo480.jpg" data-src="http://yun.qfangimg.com/group4/800x600/M00/11/3B/CvtcMVjo2DyAePEZAAGIXxfZdpo480.jpg" data-active="1" onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="深圳宏浩花园照片_宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便">
+			</a>
+		</li>
+		<!-- end 封面图 -->
+	
+		<!--室内图 -->
+          		<li ><a href="javascript:;"> 
+		    	 <img  src="http://yun.qfangimg.com/group3/346x260/M00/10/23/CvtcOFjo2umABCPWAAGqaU9JNmY273.jpg" 
+		    	 data-src="http://yun.qfangimg.com/group3/800x600/M00/10/23/CvtcOFjo2umABCPWAAGqaU9JNmY273.jpg" data-active="2" onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="深圳宏浩花园客厅照片_宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便">
+				</a>
+				</li>
+          		<li ><a href="javascript:;"> 
+		    	 <img  src="http://yun.qfangimg.com/group1/346x260/M00/23/C9/CvtcM1jo2zqAf0TMAAFykwxCGEE825.jpg" 
+		    	 data-src="http://yun.qfangimg.com/group1/800x600/M00/23/C9/CvtcM1jo2zqAf0TMAAFykwxCGEE825.jpg" data-active="3" onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="深圳宏浩花园卧室照片_宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便">
+				</a>
+				</li>
+          		<li ><a href="javascript:;"> 
+		    	 <img  src="http://yun.qfangimg.com/group1/346x260/M00/1A/BB/CvtcNFjo2zeANNIcAAGyU6V54Ls341.jpg" 
+		    	 data-src="http://yun.qfangimg.com/group1/800x600/M00/1A/BB/CvtcNFjo2zeANNIcAAGyU6V54Ls341.jpg" data-active="4" onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="深圳宏浩花园厨房照片_宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便">
+				</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+		    	 <img  src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://yun.qfangimg.com/group2/346x260/M00/10/73/CvtcKljo2zmAFtbSAAFH5o1qzFQ690.jpg" 
+		    	 data-src="http://yun.qfangimg.com/group2/800x600/M00/10/73/CvtcKljo2zmAFtbSAAFH5o1qzFQ690.jpg" data-active="5" onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="深圳宏浩花园卫生间照片_宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便">
+				</a>
+				</li>
+		<!-- end 室内图 -->
+	
+		<!-- 布局图 -->
+		<!-- end 布局图 -->
+	
+		<!-- 小区图 -->
+		<!--end 小区图 -->
+	
+		<!-- 小区公共图 -->
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/29339ec3-9b68-4253-bbba-c9eaaf480cf2.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/29339ec3-9b68-4253-bbba-c9eaaf480cf2.jpg" data-active="6" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片6">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/cd98a6c8-fbe7-4ac9-a7a7-44a3540954c1.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/cd98a6c8-fbe7-4ac9-a7a7-44a3540954c1.jpg" data-active="7" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片7">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/5765db57-9dcf-4e95-9eec-3884f4e107ca.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/5765db57-9dcf-4e95-9eec-3884f4e107ca.jpg" data-active="8" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片8">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/a7b1ce3c-32b2-4938-8595-4536c6f3460c.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/a7b1ce3c-32b2-4938-8595-4536c6f3460c.jpg" data-active="9" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片9">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/85ab5db8-d75a-46f8-ae57-25788afeef54.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/85ab5db8-d75a-46f8-ae57-25788afeef54.jpg" data-active="10" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片10">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/ff790f25-edbc-4c3c-ae19-804a2b01a447.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/ff790f25-edbc-4c3c-ae19-804a2b01a447.jpg" data-active="11" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片11">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/cbd297d1-996d-4566-bf55-85451de3c552.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/cbd297d1-996d-4566-bf55-85451de3c552.jpg" data-active="12" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片12">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/aacfc460-4025-4793-b70f-4b5e0ef50e14.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/aacfc460-4025-4793-b70f-4b5e0ef50e14.jpg" data-active="13" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片13">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/60516b19-eca1-40e0-96d1-33d9e0465c62.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/60516b19-eca1-40e0-96d1-33d9e0465c62.jpg" data-active="14" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片14">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/b8348f3e-7d9f-4398-ad9d-dfddded6d7b7.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/b8348f3e-7d9f-4398-ad9d-dfddded6d7b7.jpg" data-active="15" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片15">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/1bf24db1-6b43-43ed-818a-684a39aa9be3.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/1bf24db1-6b43-43ed-818a-684a39aa9be3.jpg" data-active="16" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片16">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/569de287-92d5-417d-843d-a2650cb3185b.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/569de287-92d5-417d-843d-a2650cb3185b.jpg" data-active="17" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片17">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/585db8b4-1a42-4682-9770-b5a86d1cf307.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/585db8b4-1a42-4682-9770-b5a86d1cf307.jpg" data-active="18" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片18">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/538ca061-f537-4483-9273-f1fd19d17ced.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/538ca061-f537-4483-9273-f1fd19d17ced.jpg" data-active="19" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片19">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/5daafe32-4905-4481-af96-0599fd58dac5.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/5daafe32-4905-4481-af96-0599fd58dac5.jpg" data-active="20" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片20">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/7df57072-3713-4393-af42-6958347a8756.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/7df57072-3713-4393-af42-6958347a8756.jpg" data-active="21" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片21">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/12843ee6-d04a-4d87-8011-68623af4c885.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/12843ee6-d04a-4d87-8011-68623af4c885.jpg" data-active="22" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片22">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/d162d016-881b-427b-bc49-6a3c0c52608c.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/d162d016-881b-427b-bc49-6a3c0c52608c.jpg" data-active="23" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片23">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/83fbb9aa-097e-49ea-b0e3-f01d9a34e099.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/83fbb9aa-097e-49ea-b0e3-f01d9a34e099.jpg" data-active="24" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片24">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/a6047736-4b01-4de5-948e-54275a38b8b5.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/a6047736-4b01-4de5-948e-54275a38b8b5.jpg" data-active="25" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片25">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/53cd6584-4cea-4610-ad07-fb58e9530da1.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/53cd6584-4cea-4610-ad07-fb58e9530da1.jpg" data-active="26" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片26">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/83a34629-c5a0-49c7-ba93-42c0dc1fe110.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/83a34629-c5a0-49c7-ba93-42c0dc1fe110.jpg" data-active="27" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片27">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/9b7d26f3-c4e7-421f-9dd3-1fa4b3f191b9.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/9b7d26f3-c4e7-421f-9dd3-1fa4b3f191b9.jpg" data-active="28" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片28">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/fb4bdfed-93d0-4938-9094-da871b0a11a5.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/fb4bdfed-93d0-4938-9094-da871b0a11a5.jpg" data-active="29" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片29">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/835840c4-9c36-4f87-8065-001496d66c1d.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/835840c4-9c36-4f87-8065-001496d66c1d.jpg" data-active="30" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片30">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is2.qfangimg.com/broker/2013/3/27/346x260/9931ca7a-2f45-486d-893f-038f610439a0.jpg" 
+				    	  data-src="http://is2.qfangimg.com/broker/2013/3/27/800x600/9931ca7a-2f45-486d-893f-038f610439a0.jpg" data-active="31" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片31">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/585db8b4-1a42-4682-9770-b5a86d1cf307.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/585db8b4-1a42-4682-9770-b5a86d1cf307.jpg" data-active="32" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片32">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/569de287-92d5-417d-843d-a2650cb3185b.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/569de287-92d5-417d-843d-a2650cb3185b.jpg" data-active="33" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片33">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/b8348f3e-7d9f-4398-ad9d-dfddded6d7b7.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/b8348f3e-7d9f-4398-ad9d-dfddded6d7b7.jpg" data-active="34" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片34">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/1bf24db1-6b43-43ed-818a-684a39aa9be3.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/1bf24db1-6b43-43ed-818a-684a39aa9be3.jpg" data-active="35" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片35">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/60516b19-eca1-40e0-96d1-33d9e0465c62.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/60516b19-eca1-40e0-96d1-33d9e0465c62.jpg" data-active="36" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片36">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/aacfc460-4025-4793-b70f-4b5e0ef50e14.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/aacfc460-4025-4793-b70f-4b5e0ef50e14.jpg" data-active="37" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片37">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/cbd297d1-996d-4566-bf55-85451de3c552.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/cbd297d1-996d-4566-bf55-85451de3c552.jpg" data-active="38" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片38">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/85ab5db8-d75a-46f8-ae57-25788afeef54.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/85ab5db8-d75a-46f8-ae57-25788afeef54.jpg" data-active="39" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片39">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/a7b1ce3c-32b2-4938-8595-4536c6f3460c.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/a7b1ce3c-32b2-4938-8595-4536c6f3460c.jpg" data-active="40" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片40">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/5765db57-9dcf-4e95-9eec-3884f4e107ca.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/5765db57-9dcf-4e95-9eec-3884f4e107ca.jpg" data-active="41" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片41">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/cd98a6c8-fbe7-4ac9-a7a7-44a3540954c1.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/cd98a6c8-fbe7-4ac9-a7a7-44a3540954c1.jpg" data-active="42" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片42">
+					</a>
+				</li>
+          		<li style="display:none;"><a href="javascript:;"> 
+				    	 <img src="/themes/default/images/frontend/common/v2.4/placeholder.gif" data-ref="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/346x260/29339ec3-9b68-4253-bbba-c9eaaf480cf2.jpg" 
+				    	  data-src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/800x600/29339ec3-9b68-4253-bbba-c9eaaf480cf2.jpg" data-active="43" 
+				    	  onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';"  alt="宏浩花园小区照片43">
+					</a>
+				</li>
+		<!--end 小区公共图 -->
+	
+		
+	</ul>
+</div>
+<p class="more-hs-info"><a href="javascript:;" key="see-more">查看更多图片</a></p>
+<p class="more-hs-info"><a href="javascript:;" key="see-less" style="display:none;">收起</a></p>
+		    </div>
+		    <!-- end 房源图片 -->
+		    
+			<!-- 对口学校 --> 
+	<div class="anchor-trigger" id="scrollto-5">
+	      	<div class="anchor-title">对口学校</div>
+      	<div class="counterpart-schools-wrapper">
+	        <div class="counterpart-schools-list" >
+	          <ul class="clearfix">
+	            <li class="counterpart-schools-group fl">
+	              <p class="title"><a target="_blank" href="/school/detail/1677">深圳市福田区景秀小学</a></p>
+	              <div class="clearfix">
+	                <div class="basic-info fl clearfix">
+	                  <ul>
+	                    <li class="clearfix">
+	                      <span class="field fl">所属性质</span>
+	                      <p class="correspondence">公办学校</p>
+	                    </li>
+	                    <li class="clearfix">
+	                      <span class="field fl">学校类别</span>
+	                      <p class="correspondence">小学</p>
+	                    </li>
+	                    <li class="clearfix">
+	                      <span class="field fl">学校地址</span>
+	                      <p class="correspondence" title="景田北一街28">景田北一街28</p>
+	                    </li>
+	                  </ul>
+	                </div>
+	                <div class="classification clearfix fr">
+	                  <p>
+	                    <b><a target="_blank" href="/school/detail/1677?target=scrollto-2">22</a>个</b>
+	                    <span>对口小区</span>
+	                  </p>
+	                  <p class="last">
+	                    <b><a target="_blank" href="/sale?keyword=%E6%B7%B1%E5%9C%B3%E5%B8%82%E7%A6%8F%E7%94%B0%E5%8C%BA%E6%99%AF%E7%A7%80%E5%B0%8F%E5%AD%A6">65</a>套</b>
+	                    <span>二手房房源</span>
+	                  </p>
+	                </div>
+	              </div>
+	            </li>
+	            <li class="counterpart-schools-group fr">
+	              <p class="title"><a target="_blank" href="/school/detail/2111">深圳市福田区景秀中学</a></p>
+	              <div class="clearfix">
+	                <div class="basic-info fl clearfix">
+	                  <ul>
+	                    <li class="clearfix">
+	                      <span class="field fl">所属性质</span>
+	                      <p class="correspondence">公办学校</p>
+	                    </li>
+	                    <li class="clearfix">
+	                      <span class="field fl">学校类别</span>
+	                      <p class="correspondence">中学</p>
+	                    </li>
+	                    <li class="clearfix">
+	                      <span class="field fl">学校地址</span>
+	                      <p class="correspondence" title="景田北一街29">景田北一街29</p>
+	                    </li>
+	                  </ul>
+	                </div>
+	                <div class="classification clearfix fr">
+	                  <p>
+	                    <b><a target="_blank" href="/school/detail/2111?target=scrollto-2">41</a>个</b>
+	                    <span>对口小区</span>
+	                  </p>
+	                  <p class="last">
+	                    <b><a target="_blank" href="/sale?keyword=%E6%B7%B1%E5%9C%B3%E5%B8%82%E7%A6%8F%E7%94%B0%E5%8C%BA%E6%99%AF%E7%A7%80%E4%B8%AD%E5%AD%A6">104</a>套</b>
+	                    <span>二手房房源</span>
+	                  </p>
+	                </div>
+	              </div>
+	            </li>
+	          </ul>
+	        </div>
+      	</div>
+    </div>
+		    <!-- end对口学校 --> 
+		    
+		    
+		    <!-- 周边配套 -->
+		    <script type="text/javascript">var pageStyle="new"</script>	
+<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=9b9e82cd4c00df8d70269546b83f03b5"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/RichMarker/1.2/src/RichMarker_min.js?qv=1491966349796 "></script> 
+
+<script type="text/javascript">
+var base="/themes/default";
+var gardenId="55598";
+var gardenName="宏浩花园";
+var longitude="114.043841";
+var latitude="22.558802";
+var city="深圳"; 
+</script>
+
+
+<div class="anchor-trigger" id="scrollto-3" >
+	<div class="surrounding-map-h"  id="mapWapper">
+		<div class="mini-map" id="miniMap">
+		
+			<div class="anchor-title" id="switchMap">
+		    	<b class="cur" data-type="peripheral-supporting" id="mapPoiTab" >周边配套</b>
+		        <b data-type="panoramic-map" id="panromaTab">全景地图</b>
+		    </div>
+			
+			<div class="map-funcs-tbs-outside js-control clearfix">
+                <p class="map-funcs-tbs" id="mapFuncsTbs">
+		            <a href="javascript:;" class="cur" keyText="地铁站,公交站" types="METRO,BUS">交通</a>
+		            <a href="javascript:;" class="" keyText="幼儿园,小学,中学,高中,大学" types="KINDERGARTEN,PRIMARY_SCHOOL,JUNIOR_SCHOOL,MIDDLE_SCHOOL,UNIVERSITY">学校</a>
+		            <a href="javascript:;" class="" keyText="医院,药店" types="HOSPITAL,PHARMACY">医疗</a>
+		            <a href="javascript:;" class="" keyText="商场,超市,便利店" types="MALL,SUPERMARKET,CONVENIENCE_STORE">商超</a>
+		            <a href="javascript:;" class="" keyText="ATM,银行,餐馆,KTV,咖啡厅,酒店" types="ATM,BANK,RESTAURANT,KTV,CAFE,HOTEL">生活</a>
+		            <a href="javascript:;" class="" keyText="工厂,加油站" types="FACTORY,GAS_STATION">其他</a>
+	          	</p> 
+                <p class="check-the-route fr" id="mapSearchLine"><i class="icons"></i><span>查路线</span></p>
+            </div>
+            
+              
+              
+            <div class="map-surrounding clearfix" id="mapPoiBox">
+		        <!-- map -->
+		        <div class="map-surrounding-box fl" id="msb">
+		          	<div class="map-surrounding-layer" id="mapDiv"></div>
+		         
+			        <div class="map-side-btns" id="map-side-btns">
+		                <p class="full-screen-btn" data-type="full-screen" id="full-screen"><a class="icons"></a></p>
+		                <div class="zoom-btns">
+							<p class="zoom-in-out" type="bigger"><a class="transverse"></a><a class="vertical"></a></p>
+			                <i class="transverse-line"></i>
+			                <p class="zoom-in-out" type="smaller"><a class="transverse"></a></p>
+		                </div>
+		            </div>
+	              
+	                <!-- 加载 -->
+	                <p id="map_search_loading" class="map-surrounding-loading dn">
+	                    <img src="/themes/default/images/frontend/details/loading-map.gif" width="32" height="32">
+	                    <span>正在搜索中...</span>
+	                </p>
+	                <!-- end 加载 -->
+	              
+		        </div>
+		        <!-- /map -->
+            
+            	<div class="map-surrounding-side fl clearfix" id="mss">
+            		<!-- label -->
+					<div class="map-surrounding-label clearfix">
+		                <p class="cur">周边</p>
+		                <p class="">查路线</p>
+		            </div>
+		            <!-- label -->
+		            
+			        <!-- list -->
+			        <div class="map-surrounding-list fr" id="msl"></div>
+			        <!-- /list -->
+		            
+		            
+			        <!-- course -->
+					<div class="map-surrounding-course dn" id="msc">
+	                <!-- 查路线 -->
+	                <div id="map_search_condition" class="course-searching">
+	                  <div class="course-choose clearfix" id="courseChoose">
+	                    <p class="bus cur" data-type="bus"><i></i><span>公交</span></p>
+	                    <p class="driving" data-type="driving"><i></i><span>驾车</span></p>
+	                    <p class="walking" data-type="walking"><i></i><span>步行</span></p>
+	                    <i class="sliding-arrow"></i>
+	                  </div>
+	                  <div class="course-searching-form">
+	                    <i class="toggle-switch" id="toggleSwitch"></i>
+	                    <ul>
+	                      <li class="start">
+	                        <i class="circle"></i>
+	                        <input class="lf-keyword" type="text" autocomplete="off" id="start">
+	                        <p class="lf-label">输入起点</p>
+	                      </li>
+	                      <li class="end">
+	                        <i class="circle"></i>
+	                        <input class="lf-keyword" type="text" autocomplete="off" id="end" value="宏浩花园" defalutText="宏浩花园"
+	                        lng="114.044" lat="22.559">
+	                        <p class="lf-label dn">输入终点</p>
+	                      </li>
+	                    </ul>
+	                  </div>
+	                  <!-- 结果 -->
+	                  <div id="resultsList">
+	                    <!-- bus -->
+	                    <div id="map_search_condition_results_transit" class="course-searching-results dn" data-type="results-bus" ></div>
+	                    <!-- end bus -->
+	                   
+	                   
+	                    <!-- driving -->
+	                    <div id="map_search_condition_results_driving" class="course-searching-results dn" data-type="results-driving" ></div>
+	                    <!-- end driving -->
+	                    
+	                    
+	                    <!-- walking -->
+	                    <div id="map_search_condition_results_walking" class="course-searching-results course-searching-results-walking dn" data-type="results-walking" >
+	                    </div>
+	                    <!-- end walking -->
+	                  </div>
+	                  <!-- end 结果 -->
+	                  
+	                  <!-- 联想词 -->
+	                  <div id="map_search_keyword_results" class="course-history course-autocomplete dn"></div>
+	                  <!-- end 联想词 -->
+	                  
+	                  
+	                  <!-- 历史 -->
+	                  <div id="map_search_keyword_historys" class="course-history dn"></div>
+	                  <!-- end 历史 -->
+	                  
+	                  <!-- 无结果 -->
+	                  <div id="map_search_noresult" class="no-data-wrap no-data-small dn">
+	                    <i class="icons-qdoll icons-qdoll-search"></i>
+	                    <div class="no-data-txt">
+	                      <p class="no-data-titbig">没有查到相关路线</p>
+	                      <p class="no-data-titsml">换个地址试试吧</p>
+	                    </div>
+	                  </div>
+	                  <!-- end 无结果 -->
+	                  
+	                  <!-- 加载 -->
+	                  <p id="map_search_loading" class="map-surrounding-loading dn">
+	                    <img src="/themes/default/images/frontend/details/loading-map.gif" width="32" height="32">
+	                    <span>正在搜索中...</span>
+	                  </p>
+	                  <!-- end 加载 -->
+	                  
+	                  
+	                  <!-- 提示 -->
+	                  <p id="map_search_condition_tips" class="lf-error dn clearfix">
+	                    <i class="icons"></i>
+	                    <span>请选择准确的起点或终点</span>
+	                  </p>
+	                  <!-- end 提示 -->
+	                  
+	                </div>
+	                <!-- end 查路线 -->
+	                <!-- 查看路线 -->
+	                <div class="check-route">
+	                  <!-- bus -->
+	                  <div id="map_search_plans_transit" class="dn" data-type="course-bus"></div>
+	                  <!-- end bus -->
+	                  
+	                  
+	                  <!-- driving -->
+	                  <div id="map_search_plans_driving" class="check-route-driving check-route-walking dn" data-type="course-driving"></div>
+	                  <!-- end driving -->
+	                  
+	                  
+	                  <!-- walking -->
+	                  <div id="map_search_plans_walking" class="check-route-driving check-route-walking dn" data-type="course-walking"></div>
+	                  <!-- end walking -->
+	                  
+	                </div>
+	                <!-- end 查看路线 -->
+	              	</div>
+			        <!-- end course -->
+            	</div>
+            
+            </div>
+              
+		    <div id="panoramaBox" class="panoramic-map-box dn" >
+			    <div id="panorama" class="panoramic-map-box"></div>
+			    <div class="map-side-btns" id="panroma-side-btns">
+			    	<p class="full-screen-btn" data-type="full-screen" id=""><a class="icons"></a></p>
+			    </div>
+		    </div>
+              
+        </div>
+	</div>
+</div>
+
+<!-- 全屏地图 -->
+<div class="dialog-show-wrapper full-screen-map" id="fullScreenMap">
+    <div class="dialog-show-inner">
+      <div class="icons-dialogshow dialog-show-title">
+        <p class="btn-dialogclose"><a href="javascript:;" id="fullScreenMapClose"><i class="icons-dialogshow"></i></a></p>
+      </div>
+      <div class="full-screen-map-wrap" id="fullScreenMapWrap"></div>
+    </div>
+</div>
+<!-- end 全屏地图 -->
+  
+		    <!-- end 周边配套 -->
+		    
+		    
+		    <div key="housingLoan"  class="anchor-trigger" class="anchor-trigger" id="scrollto-4">
+		    </div>
+		    
+		    
+
+		    
+		    
+		    <!-- 小区信息 -->
+		    <div id="scrollto-6" class="anchor-trigger">
+		      <div class="anchor-title">小区信息</div>
+		      <div class="community-info clearfix">
+	            <div class="garden-info">
+	              <div class="clearfix">
+	                <p class="fl">
+			            <a href="/garden/desc/55598?insource=sale_detail_garden" target="_blank">
+			            <img src="http://is.qfangimg.com/community/jingtian/honghaohuayuan/os/263x198/aacfc460-4025-4793-b70f-4b5e0ef50e14.jpg" width="263" height="198" onError="this.src='http://yun200.qfangimg.com/group1/800x600/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg'"/>
+	                  	</a>
+	                </p>
+	                <div class="basic-info fl clearfix">
+	                  <p class="title clearfix">
+	                    <b><a href="/garden/desc/55598?insource=sale_detail_garden" target="_blank">宏浩花园</a></b>
+	                    <em><a href="/garden/sale/55598" target="_blank">4套在售</a></em>
+	                  </p>
+	                  <ul>
+	                    <li class="clearfix">
+	                      <span class="field fl">建筑年代</span>
+	                      <p class="correspondence">1998年建</p>
+	                    </li>
+	                    <li class="clearfix">
+	                      <span class="field fl">容<em class="gap-hfword"></em>积<em class="gap-hfword"></em>率</span>
+	                      <p class="correspondence">2.5</p>
+	                    </li>
+	                    <li class="clearfix">
+	                      <span class="field fl">绿<em class="gap-hfword"></em>化<em class="gap-hfword"></em>率</span>
+	                      <p class="correspondence"> 50%</p>
+	                    </li>
+	                    <li class="clearfix">
+	                      <span class="field fl">物<em class="gap-hfword"></em>业<em class="gap-hfword"></em>费</span>
+	                      <p class="correspondence"> 3元/平米・月</p>
+	                    </li>
+	                    <li class="clearfix">
+	                      <span class="field fl">地<em class="gap-dbword"></em>址</span>
+	                      <p class="correspondence">
+	                        <a class="address" id="address" date-scroll="#scrollto-3" href="javascript:;">
+	                          <span>香梅路与莲花路交汇处 </span>
+	                          <i class="icons"></i>
+	                        </a>
+	                      </p>
+	                    </li>
+	                  </ul>
+	                </div>
+	              </div>
+	            </div>
+		        
+		        <!-- 统计数据 -->
+		        <div  class="statistical-data">
+ <p class="title">统计数据</p>
+          <div class="list clearfix">
+            <ul>
+              <li>
+                <span>本小区在售房源数</span>
+                <p>
+                                	<em><a href="/garden/sale/55598" target="_blank">4</a></em>套
+                </p>
+              </li>
+              <li class="gap-line"></li>
+              <li>
+                <span>本小区在租房源数</span>
+                <p>
+                	<em><a href="/garden/rent/55598" target="_blank">2</a></em>套
+                </p>
+              </li>
+              <li class="gap-line"></li>
+              <li>
+                <span>本小区4月均价</span>
+                <p><em>67,644</em>元/平米</p>
+              </li>
+              <li class="gap-line"></li>
+              <li>
+                <span>比3月下跌</span>
+                <p class="fall"><em>-5.35%</em></p>
+              </li>
+            </ul>
+          </div>
+        <!-- end 统计数据 -->
+        <div class="statistical-chart" id="dataCharts" data=''></div>
+		        </div>
+		        <!-- end 统计数据 -->
+		      </div>
+		    </div>
+		    <!-- end 小区信息 --> 
+		    
+			<!-- 小区历史成交 -->
+		    <div key="roomDetailTransactionList"  class="anchor-trigger">
+		    </div>
+		    <!-- /小区历史成交 -->
+  		</div>
+  		<!-- column-main -->
+  		
+  		
+  		<!-- column-side -->
+		<div class="column-side fl" >
+			<!-- 推荐经纪人 -->
+	        <div class="broker-o2o fixed" id="brokerO2o" key="RoomDetailPersons"></div>
+	        <!-- 推荐经纪人 -->
+	    </div>
+  		<!-- column-side -->
+  	</div>
+  	
+    
+
+    
+    <!-- 附近房源 -->
+    <div id="scrollto-7" class="anchor-trigger"  key="nearRooms" data-type="reference">
+    </div>
+    <!-- end 附近房源 -->
+    
+    <!-- 本小区同类房 -->
+    <div  class="anchor-trigger" key="gardenRooms" style="display:none">
+    </div>
+    <!-- end 本小区同类房 --> 
+   
+    <!-- 新盘推荐 -->
+    <div key="roomDetailnewHouseList" class="anchor-trigger">
+     
+    </div>
+    <!-- end 新盘推荐 -->
+  </div>   
+  
+
+  
+<!-- toolbars -->
+  <div class="toolbars" id="toolbars">
+     <ul>
+           
+      
+     <li class="tool-im" id="im-lanuch">
+        <span class="tool-icon"><a href="javascript:;"><i class="icons-sidetools"></i></a></span>
+        <p class="tool-desp" ><i class="icons-sidetools"></i><span>在线沟通</span></p>
+        <i class="icon-im msg-remind " id="tools-msg-remind" style="display:none;"></i>
+      </li>
+   
+     
+      <li class="tool-sharehs">
+        <span class="tool-icon"><a href="javascript:;"><i class="icons-sidetools"></i></a></span>
+        <p class="tool-desp">
+          <i class="icons-sidetools"></i>
+          <a id="sentToMp" class="mp" href="javascript:;"><b class="icons_saledetails"></b><em>转发至手机</em></a>
+          <a id="sentToWx" class="wx" href="javascript:;"><b class="icons_saledetails"></b><em>转发至微信</em></a>
+        </p>
+      </li>
+      <li class="tool-app">
+        <span class="tool-icon"><a href="javascript:;"><i class="icons-sidetools"></i></a></span>
+        <p class="tool-desp"><em class="icons-sidetools"></em><i class="icons-sidetools"></i><span>下载Q房app</span></p>
+      </li>
+      <li class="tool-backtop">
+        <span class="tool-icon"><a href="javascript:;"><i class="icons-sidetools"></i></a></span>
+        <p class="tool-desp"><i class="icons-sidetools"></i><span>返回顶部</span></p>
+      </li>
+    </ul>
+  </div>
+
+  
+<script>
+</script>
+
+ <!-- end toolbars -->
+<!-- footer -->
+ 
+
+<!-- footer 2016 -->
+  <div class="footer-2016 mt-40">
+    <div class="footer-2016-inner">
+      <!-- nav links -->
+      <div class="footer-top clearfix">
+        <p class="footer-top-nav fl clearfix">
+          <a target="_blank" href="/aboutQfang">关于Q房</a> 
+          <a target="_blank" href="/contactus">联系我们</a> 
+          <a target="_blank" href="/recruit">人才招聘</a>
+          <a target="_blank" href="/agreement">用户协议</a> 
+          <a target="_blank" href="/friendLink">友情链接</a> 
+          <a target="_blank"  href="http://baike.qfang.com/">房产百科</a>
+          <a target="_blank"  href="/ask">房产问答</a> 
+          
+        </p>
+        
+        <p class="footer-top-hotline fr">服务热线：4009-000-999</p>
+        <i class="icons zh-footer fr"></i>
+      </div>
+      <!-- nav links -->
+  
+ 
+      <!-- friendlylinks -->
+      <div class="links-friendly" id="linksFriendly">
+        <div class="links-friendly-inner">
+          <div class="links-friendly-tabs clearfix">
+            <ul id="linksfriendlyTabs">
+            		<li class="cur"><a href="javascript:;">深圳二手房推荐</a> </li>
+            		<li ><a href="javascript:;">深圳二手房小区房价</a> </li>
+            		<li ><a href="javascript:;">深圳二手房频道介绍</a> </li>
+            		<li ><a href="javascript:;">热门城市二手房</a> </li>
+            		<li ><a href="javascript:;">热门城市新房</a> </li>
+            		<li ><a href="javascript:;">深圳写字楼出租</a> </li>
+            </ul>
+          </div>
+          <div class="links-friendly-tabcon">
+          	    	<div class="links-friendly-item clearfix  ">
+            			<p><a href="" title="资讯热点" target="_blank">资讯热点</a></p>
+            			<p><a href="http://m.qfang.com/shenzhen/sale" title="手机深圳二手房网" target="_blank">手机深圳二手房网</a></p>
+            			<p><a href="http://m.qfang.com/shenzhen/sale/" title="深圳二手房" target="_blank">深圳二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房" target="_blank">深圳二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian" title="福田二手房" target="_blank">福田二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/luohu" title="罗湖二手房" target="_blank">罗湖二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan" title="南山二手房" target="_blank">南山二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longgang" title="龙岗二手房" target="_blank">龙岗二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/yantiana" title="盐田二手房" target="_blank">盐田二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longhuaxinqu" title="龙华二手房" target="_blank">龙华二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan" title="宝安二手房" target="_blank">宝安二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/pingshanxinqu" title="坪山二手房" target="_blank">坪山二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longgang-buji" title="布吉二手房" target="_blank">布吉二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan-shajing" title="沙井二手房" target="_blank">沙井二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan-qianhai" title="前海二手房" target="_blank">前海二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan-shekou" title="蛇口二手房" target="_blank">蛇口二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan-xili" title="西丽二手房" target="_blank">西丽二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-meilin" title="梅林二手房" target="_blank">梅林二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/luohu-dongmen" title="东门二手房" target="_blank">东门二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan-fuyong" title="福永二手房" target="_blank">福永二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan-xixiang" title="西乡二手房" target="_blank">西乡二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan-xinan" title="新安二手房" target="_blank">新安二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longgang-pinghu" title="平湖二手房" target="_blank">平湖二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longhuaxinqu-minzhi" title="民治二手房" target="_blank">民治二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longhuaxinqu-guanlan" title="观澜二手房" target="_blank">观澜二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/guangmingxinqu-gongming" title="公明二手房" target="_blank">公明二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longgang-henggang" title="横岗二手房" target="_blank">横岗二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/dapengxinqu-kuiyong" title="葵涌二手房" target="_blank">葵涌二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longhuaxinqu-dalang" title="大浪二手房" target="_blank">大浪二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-huanggang" title="皇岗二手房" target="_blank">皇岗二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-futianzhongxinqu" title="福田中心区二手房" target="_blank">福田中心区二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-shisha" title="石厦二手房" target="_blank">石厦二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-yuanling" title="园岭二手房" target="_blank">园岭二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-lianhua" title="莲花二手房" target="_blank">莲花二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/guangmingxinqu-guangming" title="光明二手房" target="_blank">光明二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/58720" title="四季花城二手房" target="_blank">四季花城二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/longgang-longgangzhongxincheng" title="龙岗中心城二手房" target="_blank">龙岗中心城二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/futian-huaqiang" title="华强北二手房" target="_blank">华强北二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/futian-xiangmihu" title="香蜜湖二手房" target="_blank">香蜜湖二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/56299" title="保利花园二手房" target="_blank">保利花园二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/56165" title="明珠花园二手房" target="_blank">明珠花园二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/1100935" title="和谐家园二手房" target="_blank">和谐家园二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/57897" title="中央花园二手房" target="_blank">中央花园二手房</a></p>
+            		</div>
+          	    	<div class="links-friendly-item clearfix dn ">
+            			<p><a href="http://m.qfang.com/shenzhen/garden" title="手机深圳小区房价" target="_blank">手机深圳小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1005" title="最新楼盘信息" target="_blank">最新楼盘信息</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1009" title="房价走势" target="_blank">房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/57849" title="城市天地广场房价" target="_blank">城市天地广场房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1100231" title="金地名津小区房价走势" target="_blank">金地名津小区房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56824" title="吉信大厦房价走势" target="_blank">吉信大厦房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1103631" title="THE TOWN乐城房价走势" target="_blank">THE TOWN乐城房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1101447" title="金地上塘道房价走势" target="_blank">金地上塘道房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/57346" title="NEO企业大道房价走势" target="_blank">NEO企业大道房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/57488" title="观湖园房价走势" target="_blank">观湖园房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56482" title="龙园山庄房价走势" target="_blank">龙园山庄房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56528" title="卓越世纪中心房价走势" target="_blank">卓越世纪中心房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56858" title="诺德国际房价走势" target="_blank">诺德国际房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/58704" title="东方明珠城房价走势" target="_blank">东方明珠城房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1100335" title="远洋新干线小区房价" target="_blank">远洋新干线小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56903" title="国展苑小区房价" target="_blank">国展苑小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56941" title="中海康城国际小区房价" target="_blank">中海康城国际小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/55538" title="龙珠花园小区房价" target="_blank">龙珠花园小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56153" title="金地梅陇镇小区房价" target="_blank">金地梅陇镇小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/58714" title="中海大山地花园小区房价" target="_blank">中海大山地花园小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/57383" title="阳光花园小区房价" target="_blank">阳光花园小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56233" title="金众蓝钻小区房价" target="_blank">金众蓝钻小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1102687" title="信义御城小区房价" target="_blank">信义御城小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1102821" title="卓越大厦小区房价" target="_blank">卓越大厦小区房价</a></p>
+            		</div>
+          	    	<div class="links-friendly-item clearfix dn ">
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳Q房网二手房房产信息网提供深圳数百万真实有效的二手房信息，" target="_blank">深圳Q房网二手房房产信息网提供深圳数百万真实有效的二手房信息，</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳Q房网二手房网汇聚各区域，各小区二手房房源，并提供地图找房功能。" target="_blank">深圳Q房网二手房网汇聚各区域，各小区二手房房源，并提供地图找房功能。</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="查看深圳二手房信息尽在Q房网，实时更新深圳二手房价格信息." target="_blank">查看深圳二手房信息尽在Q房网，实时更新深圳二手房价格信息.</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房网在线房源量过万条," target="_blank">深圳二手房网在线房源量过万条,</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳Q房网站为你提供最优质的二手房房源，助您找到满意的房子。" target="_blank">深圳Q房网站为你提供最优质的二手房房源，助您找到满意的房子。</a></p>
+            		</div>
+          	    	<div class="links-friendly-item clearfix dn ">
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1017" title="二手房交易流程" target="_blank">二手房交易流程</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1029" title="二手房交易税费" target="_blank">二手房交易税费</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1041" title="二手房贷款流程" target="_blank">二手房贷款流程</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房" target="_blank">深圳二手房</a></p>
+            			<p><a href="http://nanjing.qfang.com/sale" title="南京二手房房价" target="_blank">南京二手房房价</a></p>
+            			<p><a href="http://qingdao.qfang.com/sale" title="青岛二手房房价" target="_blank">青岛二手房房价</a></p>
+            			<p><a href="http://shanghai.qfang.com/sale" title="上海二手房房价" target="_blank">上海二手房房价</a></p>
+            			<p><a href="http://suzhou.qfang.com/sale" title="苏州二手房房价" target="_blank">苏州二手房房价</a></p>
+            			<p><a href="http://zh.qfang.com/sale" title="珠海二手房房价" target="_blank">珠海二手房房价</a></p>
+            			<p><a href="http://zhongshan.qfang.com/sale" title="中山二手房房价" target="_blank">中山二手房房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房价格走势" target="_blank">深圳二手房价格走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房出售" target="_blank">深圳二手房出售</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan/o4" title="南山二手房出售" target="_blank">南山二手房出售</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian/o4" title="福田二手房出售" target="_blank">福田二手房出售</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/luohu/o4" title="罗湖二手房出售" target="_blank">罗湖二手房出售</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/o92" title="深圳二手房房价" target="_blank">深圳二手房房价</a></p>
+            			<p><a href="http://beijing.qfang.com/sale" title="北京二手房房价" target="_blank">北京二手房房价</a></p>
+            			<p><a href="http://foshan.qfang.com/sale" title="佛山二手房房价" target="_blank">佛山二手房房价</a></p>
+            			<p><a href="http://guangzhou.qfang.com/sale" title="广州二手房房价" target="_blank">广州二手房房价</a></p>
+            			<p><a href="http://hangzhou.qfang.com/sale" title="杭州二手房房价" target="_blank">杭州二手房房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan" title="南山二手房价格" target="_blank">南山二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian" title="福田二手房价格" target="_blank">福田二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/luohu" title="罗湖二手房价格" target="_blank">罗湖二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan" title="宝安二手房价格" target="_blank">宝安二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longgang" title="龙岗二手房价格" target="_blank">龙岗二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longhuaxinqu" title="龙华二手房价格" target="_blank">龙华二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/guangmingxinqu" title="光明二手房价格" target="_blank">光明二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/yantiana" title="盐田二手房价格" target="_blank">盐田二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/pingshanxinqu" title="坪山二手房价格" target="_blank">坪山二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/dapengxinqu" title="大鹏二手房价格" target="_blank">大鹏二手房价格</a></p>
+            		</div>
+          	    	<div class="links-friendly-item clearfix dn ">
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1037" title="收房注意事项" target="_blank">收房注意事项</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1035" title="买房注意事项" target="_blank">买房注意事项</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1031" title="购房资格查询 " target="_blank">购房资格查询 </a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1109" title="房子装修流程" target="_blank">房子装修流程</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1009" title="房价走势" target="_blank">房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1065" title="房产政策" target="_blank">房产政策</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1019" title="房屋买卖政策" target="_blank">房屋买卖政策</a></p>
+            			<p><a href="http://zh.qfang.com/newhouse" title="珠海新房信息网" target="_blank">珠海新房信息网</a></p>
+            			<p><a href="http://zhongshan.qfang.com/newhouse" title="中山新房信息网" target="_blank">中山新房信息网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/shenzhenzhoubian" title="深圳周边新房网" target="_blank">深圳周边新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse" title="深圳新房信息网" target="_blank">深圳新房信息网</a></p>
+            			<p><a href="http://beijing.qfang.com/newhouse" title="北京新房信息网" target="_blank">北京新房信息网</a></p>
+            			<p><a href="http://foshan.qfang.com/newhouse" title="佛山新房信息网" target="_blank">佛山新房信息网</a></p>
+            			<p><a href="http://guangzhou.qfang.com/newhouse" title="广州新房信息网" target="_blank">广州新房信息网</a></p>
+            			<p><a href="http://hangzhou.qfang.com/newhouse" title="杭州新房信息网" target="_blank">杭州新房信息网</a></p>
+            			<p><a href="http://nanjing.qfang.com/newhouse" title="南京新房信息网" target="_blank">南京新房信息网</a></p>
+            			<p><a href="http://qingdao.qfang.com/newhouse" title="青岛新房信息网" target="_blank">青岛新房信息网</a></p>
+            			<p><a href="http://shanghai.qfang.com/newhouse" title="上海新房信息网" target="_blank">上海新房信息网</a></p>
+            			<p><a href="http://suzhou.qfang.com/newhouse" title="苏州新房信息网" target="_blank">苏州新房信息网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/longgang" title="龙岗新房网" target="_blank">龙岗新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/longhuaxinqu" title="龙华新房网" target="_blank">龙华新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/guangmingxinqu" title="光明新房网" target="_blank">光明新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/yantiana" title="盐田新房网" target="_blank">盐田新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/pingshanxinqu" title="坪山新房网" target="_blank">坪山新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/dapengxinqu" title="大鹏新房网" target="_blank">大鹏新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/nanshan" title="南山新房网" target="_blank">南山新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/futian" title="福田新房网" target="_blank">福田新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/luohu" title="罗湖新房网" target="_blank">罗湖新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/baoan" title="宝安新房网" target="_blank">宝安新房网</a></p>
+            		</div>
+          	    	<div class="links-friendly-item clearfix dn ">
+            			<p><a href="http://m.qfang.com/shenzhen/office/rent" title="手机深圳写字楼出租" target="_blank">手机深圳写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office" title="深圳写字楼出租网" target="_blank">深圳写字楼出租网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rentSubway" title="深圳写字楼出租信息网" target="_blank">深圳写字楼出租信息网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office" title="深圳写字楼" target="_blank">深圳写字楼</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/nanshan" title="南山写字楼出租" target="_blank">南山写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/futian" title="福田写字楼出租" target="_blank">福田写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/luohu" title="罗湖写字楼出租" target="_blank">罗湖写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/baoan" title="宝安写字楼出租" target="_blank">宝安写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/longgang" title="龙岗写字楼出租" target="_blank">龙岗写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/longhuaxinqu" title="龙华写字楼出租" target="_blank">龙华写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/guangmingxinqu" title="光明写字楼出租" target="_blank">光明写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/yantiana" title="盐田写字楼出租" target="_blank">盐田写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/shenzhenzhoubian" title="深圳周边写字楼出租" target="_blank">深圳周边写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent" title="深圳写字楼出租" target="_blank">深圳写字楼出租</a></p>
+            		</div>
+          </div>
+          
+           
+        </div>
+      </div>
+      <!-- end friendlylinks -->
+      
+      <!-- copyright11 -->
+      <div class="footer-bottom">
+        <p class="footer-bottom-letter">
+          <span>按字母检索：</span>
+	        <a target="_blank" href="/letter/A"><span>A</span></a>
+	        <a target="_blank" href="/letter/B"><span>B</span></a>
+	        <a target="_blank" href="/letter/C"><span>C</span></a>
+	        <a target="_blank" href="/letter/D"><span>D</span></a>
+	        <a target="_blank" href="/letter/E"><span>E</span></a>
+	        <a target="_blank" href="/letter/F"><span>F</span></a>
+	        <a target="_blank" href="/letter/G"><span>G</span></a>
+	        <a target="_blank" href="/letter/H"><span>H</span></a>
+	        <a target="_blank" href="/letter/I"><span>I</span></a>
+	        <a target="_blank" href="/letter/J"><span>J</span></a>
+	        <a target="_blank" href="/letter/K"><span>K</span></a>
+	        <a target="_blank" href="/letter/L"><span>L</span></a>
+	        <a target="_blank" href="/letter/M"><span>M</span></a>
+	        <a target="_blank" href="/letter/N"><span>N</span></a>
+	        <a target="_blank" href="/letter/O"><span>O</span></a>
+	        <a target="_blank" href="/letter/P"><span>P</span></a>
+	        <a target="_blank" href="/letter/Q"><span>Q</span></a>
+	        <a target="_blank" href="/letter/R"><span>R</span></a>
+	        <a target="_blank" href="/letter/S"><span>S</span></a>
+	        <a target="_blank" href="/letter/T"><span>T</span></a>
+	        <a target="_blank" href="/letter/U"><span>U</span></a>
+	        <a target="_blank" href="/letter/V"><span>V</span></a>
+	        <a target="_blank" href="/letter/W"><span>W</span></a>
+	        <a target="_blank" href="/letter/X"><span>X</span></a>
+	        <a target="_blank" href="/letter/Y"><span>Y</span></a>
+	        <a target="_blank" href="/letter/Z"><span>Z</span></a>
+        </p>
+        <p class="footer-bottom-copyright">Copyright © 2017 www.qfang.com. All Rights Reserved ICP备案号：<a target="_blank" style="color:#999" href = "http://www.miitbeian.gov.cn" rel="nofollow">粤ICP备05067219号-3</a></p>
+        <p class="footer-bottom-cpyname" style="float:left;">公司名称：深圳市云房网络科技有限公司</p>
+        <style>.ebsgovicon_class{float: left; margin: -1px 10px;} .ebsgovicon_class img{width:20px;height:27.5px}</style><p class="ebsgovicon_class" style="float:left;"><script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=a62a7cbc-957d-4104-a773-090987c97144&width=75&height=105&type=1" type="text/javascript" charset="utf-8"></script></p>
+      </div>
+      <!-- /copyright -->
+    </div>
+  </div>
+  <!-- /footer 2016 -->
+    
+  <div class="dialog-show-wrapper dialog-login" id="dialogLogin">
+<!-- 登录弹框 -->
+    <div class="dialog-show-inner">
+      <div class="icons-dialogshow dialog-show-title">
+        <div class="dialog-show-title-text">
+          <h3></h3>
+        </div>
+        <p class="btn-dialogclose"><a href="javascript:;" id="dialogLoginClose"><i class="icons-dialogshow"></i></a></p>
+      </div>
+      <!-- form -->
+      <div class="login-box">
+      <div class="login-box-inner" id="loginBox">
+        <p class="login-tbs" id="loginTbs">
+          <a rel="nofollow" class="cur" href="javascript:;">登录</a>
+          <a rel="nofollow" href="javascript:;">账号注册</a>
+        </p>
+        <div class="login-form">
+          <p class="broker-remind-text dn" id="isBroker">你是经纪人哦，不过你可以<a href="javascript:;" onclick="Login.applyToBeAUser();">申请成为用户</a>或者<a href="javascript:;">回到经纪人中心</a></p>
+          <!-- 登录 -->
+          <div class="login-form-item" id="loginTab">
+            
+          </div>
+          <!-- /登录 -->
+          <!-- 注册 -->
+          <div class="login-form-item" id="registerTab">
+            
+          </div>
+         </div>
+         <!-- /注册 -->
+        </div>
+      </div>
+      <!-- /form -->
+    </div>
+  <!-- /登录弹框 -->
+  <script type="text/javascript">
+			var base = '/themes/default';
+  </script>			
+  </div>
+  
+<!-- Google Tag Manager -->
+<noscript>
+	<iframe src="//www.googletagmanager.com/ns.html?id=GTM-5NGTRL"
+		height="0" width="0" style="display: none; visibility: hidden"></iframe>
+</noscript>
+<script>
+	(function(w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start' : new Date().getTime(),
+			event : 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-5NGTRL');
+</script>
+<!-- End Google Tag Manager -->
+<div style="display:none;">
+
+<script src="http://www.anquan.org/static/outer/js/anquan_authen_83x30.js?qv=1491966344546"></script>
+
+<div class="Detail"  id="PageType"></div>
+<div class="Shenzhen"  id="PageCity"></div>
+<div class="Sale"  id="BusiType"></div>
+<script>
+	var PageType="Detail";
+	var PageCity="Shenzhen";
+	var BusiType="Sale";
+</script>
+</div>
+
+<!--除二手房，租房，写字楼，新房，其他的与首页的一致,但需隐藏”友情链接-->
+
+
+
+	<script type="text/javascript" src="/themes/default/scripts/frontend/qfang-common.js?qv=1491966344625"></script>
+	<script type="text/javascript" src="/themes/default/scripts/plugin/jquery.cookie.js?qv=1491966344625"></script>
+	
+	<!--新房用-->
+	
+	<!--头部公共文件 end-->
+<script type="text/javascript">
+  	var ctx="";
+	var city = "SHENZHEN";
+	var shenzhenPath = "http://shenzhen.qfang.com";
+	var cityName = "深圳";
+	var frontUserName = $.cookie("userName") ;
+	var sid = $.cookie("fuid") ;
+	var userCenterUrl = "http://user.qfang.com/userManager/collectQuery" ;
+	var userExit = "http://user.qfang.com/userLogin/exit" ;
+	var userId = $.cookie("userId") ;
+</script>
+
+<!-- 转发 -->
+
+  <!--验证码弹出--> 
+ <div class="confirm-tips confirm-tips-mbvcode dn" id="imgCode-box">
+  <i class="icons confirm-arrow"></i>
+  <!--注意：此处有加一个id id="imgCodeClose" 和里面嵌套1个i标签 <i class="icons-dialogshow"></i>-->
+  <a class="icons confirm-close" href="javascript:;" id="imgCodeClose">
+    <i class="icons-dialogshow"></i>
+  </a>
+  <div class="confirm-con clearfix">
+    <p class="gvcode-area clearfix">
+      <span class="gvcode-area-img fl"><img id="gvcode-area-img-ele" src="" width="139" height="28" /></span>
+      <span class="gvcode-area-refresh fl"><i class="icons"></i><em>换一张</em></span>
+    </p>
+    <div class="gvcode-input fl">
+      <input class="lf-keyword" type="text" id="imgCodeText">
+      <p class="lf-label" id="imgCodeTip">请输入右侧图片内容</p>
+      <!--注意：没有错误消息的话--<p class="lf-error dn clearfix">-->
+      <p class="lf-error clearfix" style="display:none"><i class="icons"></i><span>验证码有误，请重新输入</span></p>
+    </div>
+    <p class="confirm-btn fl"><a class="btn-orange" href="javascript:;">提交</a></p>
+  </div>
+</div>
+<!--验证码弹出-->
+<script>
+$(function(){
+	var $box = $('#imgCode-box');
+	
+	$box.on('click', '#imgCodeClose', function(){
+		$.qfangDialog.DialogClose('imgCode-box');
+	});
+	
+	// 刷新验证码
+	//gvcode-area
+	$box.on('click', '.gvcode-area', function(){
+		$box.find('#gvcode-area-img-ele').attr('src', ctx+'/checkCode/getValidateCode?r='+Math.random());
+	});
+	
+	$box.on('click', '#imgCodeText', function(){
+		$box.find('.lf-error').hide();
+	});
+	
+	// 点击提交
+	$box.on('click', '.btn-orange', function(){
+		var code = $.trim($box.find('#imgCodeText').val());
+		var $tips = $box.find('.lf-error');
+		if (!code) {
+			$tips.find('span').text('验证码不能为空');
+			$tips.show();
+			return false;
+		}
+		
+		var data = {'code':code};
+		$.ajax({
+			url : ctx + '/checkCode/validate',
+			data : data,
+			dataType : 'JSON',
+			method : 'POST',
+			success : function(resp){
+				if (resp && resp.value == 0) {
+					$tips.hide();
+					$box.data('validate', true);
+					$.qfangDialog.DialogClose('imgCode-box');
+					var el = $($box.data('successEleClick'));
+					if (el.length > 0) {
+						el.trigger('click');
+					}
+					
+				} else {
+					$box.data('validate', false);
+					$tips.show().find('span').text('验证码有误，请重新输入');
+				}
+			},
+			error : function(){
+				$box.data('validate', false);
+			}
+			
+		});
+	});
+	
+
+	$('#imgCodeText').bind('keyup', function(){
+		if ($(this).val()!='') {
+			$(this).next().hide();
+		}
+	}).bind('blur', function(){
+		if ($(this).val()=='') {
+			$(this).next().show();
+		}
+	});
+	
+});
+
+</script>
+  
+<!-- end 转发 -->
+
+<!--登录使用-->
+<script type="text/javascript" src="/themes/default/scripts/frontend/common/jquery.md5.js?qv=1491966344625"></script>
+<script type="text/javascript" src="/themes/default/scripts/frontend/user/login.js?qv=1491966344625"></script>
+<script type="text/javascript" src="/themes/default/scripts/frontend/user/imgCode.js?qv=1491966344625"></script>
+<!-- end footer -->	
+	
+ <!-- 预约看房 -->
+ 
+  
+  
+  
+  
+  
+<!-- 预约带看 -->
+  <div class="dialog-show-wrapper dialog-take-look" id="takeLookDialog">
+    <div class="dialog-show-inner">
+      <div class="icons-dialogshow dialog-show-title">
+        <p class="btn-dialogclose"><a href="javascript:;" id="takeLookClose"><i class="icons-dialogshow"></i></a></p>
+      </div>
+      <div class="take-look-container">
+        <div class="take-look-form">
+          <input type="hidden" id="sex" name="sex" value="1"  autocomplete="off">
+			<input type="hidden"  name="roomBizType"   value="roomSale">
+			<input type="hidden" id="roomId" name="roomId" value="16068569"  autocomplete="off">
+			<input type="hidden"  name="roomInternalID" value="dz2Mk6NR3EiOTVRSzP3bXGxVRiw="  autocomplete="off">
+			<input type="hidden"  name="brokerAccountId" value="c7a2689b-e7d5-40af-be77-23508b8690c3"  autocomplete="off">
+			<input type="hidden"  name="brokerName" value="李敏"  autocomplete="off">
+			<input type="hidden"  name="brokerMobile" value="13048945643">
+			<input type="hidden"  name="roomNumber" value="169870491196"  autocomplete="off">
+			<input type="hidden"  name="gardenName" value="宏浩花园"  autocomplete="off">
+			
+			<input type="hidden"  name="appointMentpicUrl" value="http://yun.qfangimg.com/group4/485x364/M00/11/3B/CvtcMVjo2DyAePEZAAGIXxfZdpo480.jpg"  autocomplete="off">
+			<input type="hidden"  name="appointMentbedRoom" value="4"  autocomplete="off">
+			<input type="hidden"  name="appointMentlivingRoom" value="1"  autocomplete="off">
+			<input type="hidden"  name="appointMenttotalPrice" value="13500000"  autocomplete="off">
+			<input type="hidden"  name="appointMentarea" value="186"  autocomplete="off">
+			
+			<!-- 判断是体系内还是体系外 -->
+		  	<input type="hidden" name="system" value="1"  autocomplete="off">
+          <ul>
+            <li class="take-look-group clearfix">
+              <span class="field fl"><em>*</em><i class="icons"></i></span>
+              <div class="take-look-input fl">
+                <input class="lf-keyword" id="name" type="text" value="" maxlength="10" autocomplete="off" />
+                <p class="lf-label"></p>
+                <p class="field-text">您的称呼，如李先生</p>
+              </div>
+            </li>
+            <li class="take-look-group mb-vcode clearfix">
+              <span class="field fl"><em>*</em><i class="icons"></i></span>
+              <div class="take-look-input fl">
+                <input class="lf-keyword js-only-num" type="text" value="" id="telNum" maxlength="11" autocomplete="off" />
+                <p class="lf-label"></p>
+                <p class="field-text">手机号</p>
+              </div>
+              <p class="mb-msg-code mb-msg-code-disable fl" id="getVCode">获取短信验证码</p>
+              <!-- tips -->
+	            <div class="confirm-tips confirm-tips-mbvcode dn" id="pictureVerifDiv">
+	              <i class="icons confirm-arrow"></i>
+	              <a class="icons confirm-close" href="javascript:;" id="pictureVerifClz"></a>
+	              <div class="confirm-con clearfix">
+	                <p class="gvcode-area clearfix">
+	                  <span class="gvcode-area-img fl"><img id="codeImg" src="/themes/default/images/vcode-144x32.jpg" width="139" height="28" /></span>
+	                  <span class="gvcode-area-refresh fl" onClick="showCheckCode()"><i class="icons"></i><em>换一张</em></span>
+	                </p>
+	                <div class="gvcode-input fl">
+	                  <input class="lf-keyword" type="text" id="imgcode" name="imgcode"   autocomplete="off"/>
+	                  <p class="lf-label">图形验证码</p>
+	                  <p class="lf-error dn clearfix"><i class="icons"></i><span>错误提示</span></p>
+	                </div>
+	                <p class="confirm-btn fl"><a class="btn-orange" href="javascript:;" id="pictureVerifOk">确定</a></p>
+	              </div>
+	            </div>
+	            <!-- /tips -->
+            </li>
+            <li class="take-look-group clearfix">
+              <span class="field fl"><em>*</em><i class="icons"></i></span>
+              <div class="take-look-input fl">
+                <input class="lf-keyword js-only-num" type="text" value="" id="vcode" maxlength="6" autocomplete="off" />
+                <p class="lf-label"></p>
+                <p class="field-text">短信验证码</p>
+              </div>
+            </li>
+            <li class="take-look-group checking-date clearfix">
+              <span class="field fl">看房日期</span>
+              <div class="checking-date-item js-date clearfix" id="lookDateId">
+                <p class="at-any-time cur fl"><span>随时</span><i class="icons"></i></p>
+                <!--<p class="fl"><span>周一</span><b>12</b><i class="icons"></i></p>
+                <p class="fl"><span>周二</span><b>13</b><i class="icons"></i></p>
+                <p class="fl"><span>周三</span><b>14</b><i class="icons"></i></p>
+                <p class="fl"><span>周四</span><b>15</b><i class="icons"></i></p>
+                <p class="fl"><span>周五</span><b>16</b><i class="icons"></i></p>
+                <p class="fl"><span>周六</span><b>17</b><i class="icons"></i></p>
+                <p class="fl"><span>周日</span><b>18</b><i class="icons"></i></p>-->
+              </div>
+            </li>
+            <li class="take-look-group checking-date dn js-time clearfix">
+              <span class="field fl">看房时间</span>
+              <div class="checking-date-item time clearfix" id="lookTimeId">
+                <p class="at-any-time cur fl"><span>全天</span><i class="icons"></i></p>
+                <!--<p class="fl"><span>上午</span><b>8:00-12:00</b><i class="icons"></i></p>
+                <p class="fl"><span>中午</span><b>12:00-14:00</b><i class="icons"></i></p>
+                <p class="fl"><span>下午</span><b>14:00-18:00</b><i class="icons"></i></p>
+                <p class="fl"><span>晚上</span><b>18:00-21:00</b><i class="icons"></i></p>-->
+              </div>
+            </li>
+            <li class="take-look-group clearfix">
+              <span class="field fl"><em>&nbsp;</em></span>
+              <div class="take-look-input fl">
+                <input id="extraInfo" class="lf-keyword lf-keyword-other" type="text" value="" maxlength="30" autocomplete="off" />
+                <p class="lf-label">其他说明</p>
+              </div>
+            </li>
+            <li class="take-look-group clearfix">
+              <p class="btn-mapp"><a class="btn-orange" href="javascript:;" id="to_submitOrder">提交预约</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="take-look-side">
+          <p class="title">
+            <span class="big">一键预约，您的专属服务</span>
+            <span class="small">已有<b>5861</b>人选择预约看房</span>
+          </p>
+          <p class="figure clearfix">
+            <span class="real">
+              <i class="icons"></i>
+              <em>真实</em>
+            </span>
+            <span class="in-time">
+              <i class="icons"></i>
+              <em>及时</em>
+            </span>
+            <span class="secrecy">
+              <i class="icons"></i>
+              <em>保密</em>
+            </span>
+          </p>
+        </div>
+        <div class="take-look-succeed">
+          <p class="icons icon-succeed"></p>
+          <p class="succeed-text"><span>预约已提交</span>工作人员将会尽快与您联系，请保持手机畅通<br/>可通过本手机号登录查看预约进度</p>
+          <p class="evaluation-succeed-close">
+          	<!--      			<a href="http://user.qfang.com/appointmentRecord/index/sSUCCESS/p1">查看预约进度</a>
+      		-->
+      		<a id="ID_lookMyAppoint" href="http://user.qfang.com/appointmentRecord/index/sSUCCESS/p1">查看预约进度</a>
+          	<a id="continueFind" data-type="continue" href="javascript:;">继续找房</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- /预约带看 -->
+  <!-- /预约看房 -->	
+ 
+<!-- 转发 -->
+	<!-- 发送到手机 -->
+	<form id="sendPhoneForm" >
+		
+	
+	<input type="hidden" key="sendPersonPhone" name="sendContent" value="Q房网房源,以下是您点播的信息:http://m.qfang.com/shenzhen/sale/16068569 , 本信息由 李敏 发布,{phone}【Q房网】" />
+	<input type="hidden" name="fkRoomcommentId" value="16068569" />
+	<div id="sentToMphone" class="dialog-show-wrapper sent-to-mphone">
+		<div class="dialog-show-inner">
+			<div class="icons-dialogshow dialog-show-title">
+				<div class="dialog-show-title-text">
+					<h3>发送到手机</h3>
+				</div>
+				<p class="btn-dialogclose"><a id="sentToMphoneClose" href="javascript:;"><i class="icons-dialogshow"></i></a></p>
+			</div>
+			<div class="">
+				<div class="sent-to-mphone-header clearfix">
+					<i class="icon-sentmp fl"></i>
+					<div class="mphone-header-right fl">
+						<p class="sentmsg-text">发送本楼盘"宏浩花园"的信息到我的手机</p>
+						<p class="following-infor">您将会收到如下信息：</p>
+						<p>Q房房源,以下是您点播的信息:http://m.qfang.com/shenzhen/sale/16068569 , 本信息由 李敏 发布,</p>
+
+					 	<p key="sendPersonPhone">联系电话{phone}</p>
+					</div>
+				</div>
+				<div class="sent-to-mphone-form">
+					<ul>
+						<li>
+							<div class="mphone-form-list clearfix">
+								<span class="mphone-form-field fl">手机号码：</span>
+								<div class="mphone-form-input fl"><input type="text" name="ftransmitPhone" id="ftransmitPhone"/></div>
+								<!-- 错误提示 通过addClass("dn")/removeClass("dn")隐藏和显示 -->
+								<span class="error-msg dib position_r fl dn" id="phoneError"><i class="icons-dialogshow fl"></i><span class="msg-txt" id="phoneErrorText">错误描述文字信息</span><span class="icons-dialogshow msg-arrow"></span></span>
+								<!-- end 错误提示 -->
+							</div>
+						</li>
+						<li>
+							<div class="mphone-form-list clearfix">
+								<span class="mphone-form-field fl">验证码：</span>
+								<div class="mphone-form-input fl"><input type="text" class="v-code" id="valiCode" name="valiCode"/></div>
+								<p class="v-code-box fl"><img height="30" width="56" src='/checkCode/getValidateCode' id="sentToMphoneCodeImg"/></p>
+								<p class="refresh-v-code fl">
+								
+								<a href="javascript:;" onclick="changeVoliCode()" id="changeSentToMphoneCodeImg">换一张</a>
+								</p>
+								<!-- 错误提示 通过addClass("dn")/removeClass("dn")隐藏和显示 -->
+								<span class="error-msg dib position_r fl dn" id="codeError"><i class="icons-dialogshow fl"></i><span class="msg-txt" id="codeErrorText">错误描述文字信息</span><span class="icons-dialogshow msg-arrow"></span></span>
+								<!-- end 错误提示 -->
+								<!-- 正确提示 通过addClass("dn")/removeClass("dn")隐藏和显示 -->
+								<span class="error-msg ok-msg dib fl dn" id="codeIsSuc"><i class="icons-dialogshow fl "></i></span>
+								<!-- end 正确提示 -->
+								
+							</div>
+						</li>
+						<li>
+							<div class="btn-submit"><a href="javascript:;" id="sendPhoneFormSubmit" class="btn_mid btn-orange">确认</a></div>
+						</li>
+						<li>
+							<p class="mphone-form-text">
+							1、网络繁忙时会有延迟,请不要在短时间内重复发送,<br/>2、每一手机号码当日可接收10条房源信息</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</form>
+	<!-- end 发送到手机 -->  
+	<!-- 转发至微信 -->
+	<div id="sentToWeixin" class="dialog-show-wrapper sent-to-wx">
+		<div class="dialog-show-inner">
+			<div class="icons-dialogshow dialog-show-title">
+				<div class="dialog-show-title-text">
+					<h3>转发至微信</h3>
+				</div>
+				<p class="btn-dialogclose"><a id="sentToWeixinClose" href="javascript:;"><i class="icons-dialogshow"></i></a></p>
+			</div>
+			<div class="qrcode-weixin">
+				<div id="code"><img width="200" height="200" src="/room/qrcode/create?id=16068569&bizType=SALE&roomType="></div> 
+				<p class="qrcode-weixin-text">
+				微信扫描二维码，转发给微信好友(朋友圈)
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- end 转发至微信 -->
+
+<script type="text/javascript">
+	//转发至手机
+	$("#sentToMp").bind('click', function() {
+		$.qfangDialog.DialogShow("sentToMphone");
+	});
+	$("#sentToWx").bind('click', function() {
+		$.qfangDialog.DialogShow("sentToWeixin");
+	});
+    $("#sentToMphoneClose").on('click', function() {
+      $.qfangDialog.DialogClose("sentToMphone");
+    });
+    
+	$("#sentToWeixinClose").bind('click', function() {
+		$.qfangDialog.DialogClose("sentToWeixin");
+	});
+	//刷新转发到手机验证码 
+	function changeVoliCode () {
+	 $("#sentToMphoneCodeImg").attr("src",ctx+'/checkCode/getValidateCode?r='+Math.random());
+	}
+
+	//短信转发
+	$("#sendPhoneFormSubmit").click(function() {
+		var phone=$("#ftransmitPhone").val();
+		var valiCode=$("#valiCode").val();
+		reg = /^[1][3578]\d{9}$/;
+		if($.trim(phone)=="") {
+			$("#phoneError").removeClass("dn");
+			$("#phoneErrorText").html("请输入手机号码");
+			 return;
+		}
+		if (phone.length !== 11 || !reg.test(phone)) {
+			$("#phoneError").removeClass("dn");
+			 $('#phoneErrorText').html('手机号码输入错误！');
+	        return;
+	    }
+		if($.trim(valiCode)=="") {
+			$("#codeError").removeClass("dn");
+			$("#codeErrorText").html("请输入验证码");
+			return ;
+		}
+		var url = ctx+'/detail/sendPhoneTransmit';
+		if (typeof(roomType) != "undefined" && roomType == 'BUILDING') {
+			url = ctx+'/office/detail/sendPhoneTransmit';
+		}
+		$.ajax( {    
+            url:url,// 跳转到 action    
+            type:'post',
+            data:$('#sendPhoneForm').serialize(), 
+            dataType:'json',    
+            success:function(data) {
+            	var object=jQuery.parseJSON(data);
+            	if(data.flag=="1") {
+            		$("#codeError").removeClass("dn");
+            		$("#codeErrorText").html("验证码输入有误");
+            	}
+            	if(data.flag=="2") {
+            		$("#phoneError").removeClass("dn");
+            		$("#phoneErrorText").html("同一手机号码每日不能超过十次");
+            	}
+            	if(data.flag=="3") {
+            		$("#phoneError").addClass("dn");
+            		$("#phoneErrorText").html("");
+            		$("#codeError").addClass("dn");
+            		$("#codeErrorText").html("");
+            		$.qfangAlertTips.Okay("转发成功", '3000');
+            		window.location.reload();
+            	}
+            	if(data.flag=="4") {
+            		$("#phoneError").removeClass("dn");
+            		$("#phoneErrorText").html("系统繁忙");
+            	}
+             }  
+        });
+	});
+</script>
+<!-- end 转发 -->
+	
+<script src="/themes/default/scripts/frontend/common/v2.4/qfang-libs.js?qv=1491966349796"></script>
+
+<script src="/themes/default/scripts/frontend/details/qfang-details.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/details/qfang-appointment-romm.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/common/common.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/room/qfang-calculator.js?qv=1491966349796"></script>
+<script>
+var pageType="detail";
+var rommcommentId;
+var roomId = "16068569";
+var roomType = "SALE";
+var bizType="SALE"; 
+</script>	
+<!--[if lt IE 10]>
+ <script> window["WEB_XHR_POLLING"] = true </script>
+<![endif]--> 
+
+
+
+<script src="/themes/default/scripts/frontend/details/pcmdata-2.0.0.min.js?qv=1491966341921"></script> 
+<script src="/themes/default/scripts/frontend/details/protobuf-min-2.7.js?qv=1491966341921"></script>  	
+<script src="/themes/default/scripts/frontend/details/RongIMVoice-2.0.2.min.js?qv=1491966341921"></script> 
+
+
+
+<script src="https://cdn.ronghub.com/RongIMLib-2.2.4.min.js?qv=1491966341921"></script>
+
+
+<script src="/themes/default/scripts/frontend/details/jquery.form.min.js?qv=1491966341921"></script>
+
+<script src="/themes/default/scripts/frontend/details/qfang-im2.js?qv=1491966341921"></script>
+
+
+<!-- IM -->
+  <div class="im-wrap clearfix" id="imWrap">
+    <!-- close -->
+    <p class="im-close fr clearfix js-closebtn" id="imClose">
+      <a href="javascript:;">
+        <span>收起</span>
+        <i class="icon-im"></i>
+      </a>
+    </p>
+    <!-- end close -->
+    <!-- keymenu -->
+    <p class="key-choose-menu dn" id="keyChoose" >
+      <a class="cur" href="javascript:;">
+        <i class="icon-im"></i>
+        <span data-txt="Enter">按Enter发送消息</span>
+      </a>
+      <a href="javascript:;" >
+        <i class="icon-im"></i>
+        <span data-txt="Shift+Enter">按Shift+Enter发送消息</span>
+      </a>
+    </p>
+    <!-- end keymenu -->
+    <!-- 左侧 -->
+    <div class="im-side fl">
+      <p class="im-side-logo">
+        <i class="icon-im"></i>
+      </p>
+      <div class="contacter-tb" id="contacterTb">
+        <ul id="cterTb"></ul>
+      </div>
+    </div>
+    <!-- end 左侧 -->
+    <!-- 右侧 -->
+    <div class="im-main fl">
+      <div class="im-main-header js-dragbar" id="imMainHeader"></div>
+      <div class="im-main-con clearfix">
+        <!-- 聊天窗口 -->
+        <div class="chat-window fl">
+          <!-- 接收 -->
+          <div class="receive-msg">
+            <div id="msgWrap"></div>
+          </div>
+          <!-- end 接收 -->
+          <!-- 发送 -->
+          <div class="post-msg">
+            <div class="post-msg-tools">
+              <div class="face-package fl ">
+                <p class="face-trigger" id="faceTriggerBtn">
+                  <i class="icon-im"></i>
+                </p>
+              </div>
+              <div class="pic-package fl " id="pic-package">
+                <p class="pic-trigger" >
+                 <i class="icon-im" id="icon-im" ></i>
+                 <form id="pictureUploadFrom" action="/qchat/pictureUpload" enctype="multipart/form-data" methond="post" >
+                  <input class="upload-file" id="uploadFile" type="file" name="file"  />
+                  </form>
+                </p>
+              </div>
+            </div>
+            <div class="post-msg-area">
+              <div class="edit-iframe" id="editIframe"></div>
+              <div class="post-msg-bottom clearfix">
+                <span class="key-tip">小提示：按Enter可以快捷发送</span>
+                <div class="trigger-click fr clearfix fr">
+                  <a class="post-msg-btn fl" id="postMsgBtn" href="javascript:;">发送</a>
+                  <a class="key-choose-btn fl" id="keyChooseBtn" href="javascript:;"><i class="icon-im"></i></a>
+                  <span class="post-msg-err" id="err"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end 发送 -->
+        </div>
+        <!-- end 聊天窗口 -->
+        <!-- 聊天窗口右侧 -->
+        <div class="relevant-info fl">
+          <div class="relevant-info-con">
+            <div id="tabBoxWrap"></div>
+          </div>
+          <p class="app-qr-code clearfix">
+            <i class="icon-im"></i>
+           	<span><b>下载Q房APP</b><br/>可以更加便捷的<br/>查看房源</span>
+          </p>
+        </div>
+        <!-- end 聊天窗口右侧 -->
+      </div>
+    </div>
+    <!-- end 右侧 -->
+  </div>
+  <!-- end IM -->
+  
+  <!-- 关闭确认 -->
+  <div class="dialog-show-wrapper dialog-confirm" id="dialogConfirm">
+    <div class="dialog-show-inner">
+      <div class="icons-dialogshow dialog-show-title">
+        <div class="dialog-show-title-text">
+          <h3></h3>
+        </div>
+        <p class="btn-dialogclose"><a href="javascript:;" id="dialogConfirmClose"><i class="icons-dialogshow"></i></a></p>
+      </div>
+      <!-- con -->
+      <div class="exit-con">
+        <p class="exit-con-tips">确定要关闭吗，你将查看不到聊天记录哦～</p>
+        <p class="binding-btns exit-con-btns">
+          <a class="btn-orange btn-dis fl" id="cancelDel" href="javascript:;">取消</a>
+          <a class="btn-orange fr" id="sureDel" href="javascript:;">确定</a>
+        </p>
+      </div>
+      <!-- /con -->
+    </div>
+  </div>
+  <!-- /关闭确认 -->
+<script src="/themes/default/scripts/frontend/details/qfang-renthousedetails.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/AccessRecordLocation.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/common/accessrecordCount.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/common/guide/guide.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/room/nearFacilityMap.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/plugin/jquery.cookie.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/plugin/zclip/jquery.zclip.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/common/echarts/echarts-2.2.7/echarts.js?qv=1491966349796"></script>
+
+<script src="/themes/default/scripts/frontend/room/realRoomDetail.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/details/qfang-photodetails.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/push.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/common/jquery.md5.js?qv=1491966349796"></script>
+<script type="text/javascript" src="/themes/default/scripts/frontend/user/collectRoom.js?qv=1491966349796"></script>
+<script type="text/javascript" src="/themes/default/scripts/frontend/user/browsingHistory.js?qv=1491966349796"></script>
+<script>
+var monthList=[],priceList=[],dealList=[];
+monthList=["11月","12月","1月","2月","3月","4月"];
+priceList=[79849,81066,76663,76209,71471,67644];
+dealList=[2,0,0,0,1,0];
+</script>
+
+<script src="/themes/default/scripts/frontend/room/PriceTrendCharts.js?qv=1491966349796"></script>
+
+<script type="text/javascript">
+	$(function(){
+		//更多学校
+		$('body').on('click', '#moreSchool', function() {
+			$("div[key='moreSchool']").show();
+			$(this).hide();
+		});
+	})
+	
+	var rommcommentId = rcId;
+	$(document).ready(function(){
+		rommcommentClick(rommcommentId,refererURL);
+		
+		 // 房源对比最近浏览
+		var oldLooks = $.cookie('looks');
+		//var newLooks = 'SALE,'+"55598"+','+"55598";
+		var newLooks = 'SALE,'+rommcommentId+','+"55598";
+		if (oldLooks) {
+			var looksArr = oldLooks.split('|');
+			var newLooksArr = [];
+			
+			
+			for (var i = 0; i < looksArr.length; i++) {
+				if (newLooks != looksArr[i]) {
+					newLooksArr.push(looksArr[i]);
+				}
+			}
+			newLooksArr.push(newLooks);
+			if (newLooksArr.length > 3) {
+				newLooksArr = newLooksArr.slice(-3);
+			} 
+			newLooks = newLooksArr.join('|');
+		}
+		$.cookie('looks', newLooks, {expires : 365*10, path : '/'});
+		
+	});	
+	
+</script>
+</body>
+</html>

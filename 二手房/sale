@@ -1,0 +1,3782 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Cache-Control" content="no-transform" /> 
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+			
+		
+		
+		
+		
+		
+	
+	
+
+
+	
+
+	
+	
+
+
+
+
+
+	
+		<title>深圳二手房,房价,房屋买卖,个人出售,房价走势,房产网-深圳Q房网</title>
+		<meta name="description" content="深圳Q房网提供全新深圳二手房买卖,每日发布上万条真实有效的二手房出售信息,为准备买深圳二手房的用户提供快捷找房工具,方便您快速了解深圳二手房市场价格及走势."/>
+		<meta name="keywords" content="深圳房屋买卖,深圳房价走势,深圳二手房"/>
+	
+
+
+  <link type="text/css" rel="stylesheet" href="/themes/default/styles/frontend/common/v2.4/qfang-basic.css?qv=1491966349796" />
+  <link type="text/css" rel="stylesheet" href="/themes/default/styles/frontend/listings/qfang-list.css?qv=1491966349796" />
+  <link type="text/css" rel="stylesheet" href="/themes/default/styles/frontend/details/qfang-im.css?qv=1491966349796" />
+  <link rel="shortcut icon" href="/themes/default/images/favicon.ico" />
+
+<link rel="alternate" media="only screen and(max-width: 640px)" href="http://m.qfang.com/shenzhen/sale" >
+<meta name="mobile-agent" content="format=xhtml; url=http://m.qfang.com/shenzhen/sale">
+
+</head>
+
+<body>
+	<input type="hidden" id="pm1" value="" />
+	<input type="hidden" id="pm2" value="" />
+<div class="navigation">
+    <div class="navigation-inner clearfix">
+      <!-- logo -->
+      <div class="navigation-logo fl clearfix">
+        <p class="logo-layer clearfix fl"><a href="/"><i class="icons"></i></a></p>
+        <p class="crt-selected-city clearfix fl" id="citySelected"><span>深圳</span><em>[切换]</em></p>
+        <!-- cities -->
+        <div class="cities-layer" id="citySelectedLayer">
+          <i class="icons cities-layer-arrow"></i>
+          <a class="icons cities-layer-close"><i class="icons"></i></a>
+<!--头部公共文件 begin-->
+
+<!--首页-->
+
+<!--二手房-->
+
+<!--新房-->
+
+<!--学区房-->
+
+<!--租房-->
+
+<!--查房价-->
+<!--地铁查房价-->
+
+<!--写字楼-->
+
+<!--房产问答-->
+
+<!--新资讯-->
+
+<!--特许加盟-->
+
+<!--经纪人-->
+
+<!--特惠团购-->
+
+
+<!--掌上Q房-->
+
+<!--趋势图显示地-->
+
+<!--业主委托-->
+
+
+<!--地铁找房-->
+
+<script type="text/javascript">
+
+(function(){
+	var nowTime = '1492443525123';
+	var time = '1492443525079';
+	var response_time = nowTime-time;
+    var xhr = null;
+    if(window.XMLHttpRequest){
+        xhr = new XMLHttpRequest();
+    } else {
+        xhr = new ActiveXObject('Microsoft.XMLHTTP')
+    }
+    
+    var data = 'referer='+document.referrer.replace(/&/g,'%26')+'&width='+screen.width+'&height='+screen.height+'&response_time='+response_time;
+
+    xhr.open('POST', "/stat", true);
+    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xhr.send(data);
+})();
+
+(function(){
+	function isPC() {
+	    var userAgentInfo = navigator.userAgent;
+	    var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+	    var flag = true;
+	    for (var v = 0; v < Agents.length; v++) {
+	        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+	            flag = false;
+	            break;
+	        }
+	    }
+	    return flag;
+	}
+	
+	function redirectToWap() {
+	    var path = window.location.pathname;
+	    if (!path) {
+	        return;
+	    }
+	    var search = window.location.search;
+	    if (search.indexOf('redirect=false') != -1) {
+	    	return ;
+	    }
+	
+	    path = path.replace('qfang-web/', '');
+	    var wapPath = 'http://m.qfang.com/shenzhen';
+	    if (path == '/') {
+	        wapPath = ''; //首页
+	    } else if (/^\/(sale|rent|garden|office|newhouse)(.*)/gi.test(path)) {
+	        // wap站没有写字楼楼盘
+	        if (path.indexOf('office/garden') != -1) {
+	            return;
+	        }
+	        
+	
+	        // 楼盘详情页
+	        if (/^\/garden\/desc\/\d+/gi.test(path)) {
+	            path = path.replace('desc/', '')
+	        }
+	        // 新房列表页
+	        if (path.indexOf('newhouse/list') != -1) {
+	        	path = path.replace('/list', '')
+	        }
+	        // 写字楼列表页
+	         if (/^\/office\/(rentSubway|saleSubway)/gi.test(path)) {
+	         	path = path.replace('Subway', '');
+	         }
+	        
+	        
+	        if (/^\/garden\/(sale|rent)/gi.test(path)) {
+	            // 楼盘租房二手房页面
+	            var arr = path.split('/');
+	            if (arr.length == 4) {
+	                wapPath = wapPath + '/' + arr[2] + '?gardenId=' + arr[3];
+	            } else if (arr.length == 5) {
+	                wapPath = wapPath + '/' + arr[2] + '/' + arr[4] + '?gardenId=' + arr[3];
+	            }
+	        } else {
+	            var arr = path.split('/');
+	            for (var i = 1; i < arr.length; i++) {
+	                wapPath = wapPath + '/' + arr[i];
+	            }
+	        }
+	    }
+	    location.href = wapPath;
+	};
+	
+	if (!isPC()) {
+	    redirectToWap();
+	}
+
+})();
+    
+
+</script>
+<div class="cities-con">
+  <p class="tit">选择城市</p>
+  <ul class="cities-opts clearfix">
+    <li class="clearfix">
+      <em class="icons">B</em>
+      <p>
+        <a class="highlight" href="http://beijing.qfang.com">北京</a>
+        <a href="http://baoshan.qfang.com">保山</a>
+        
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">N</em>
+      <p>
+        <a class="highlight" href="http://nanjing.qfang.com/sale">南京</a>
+        <a href="http://nanning.qfang.com">南宁</a>
+        <a href="http://nantong.qfang.com">南通</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">C</em>
+      <p>
+        <a href="http://chengdu.qfang.com">成都</a>
+        <a href="http://chongqing.qfang.com">重庆</a>
+        <a href="http://changsha.qfang.com">长沙</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">P</em>
+      <p>
+        <a href="http://pingdingshan.qfang.com">平顶山</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">D</em>
+      <p>
+        <a href="http://dongguan.qfang.com/sale">东莞</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">Q</em>
+      <p>
+        <a class="highlight" href="http://qingdao.qfang.com/sale">青岛 </a>
+      </p>
+    </li>
+    <li class="learfix">
+      <em class="icons">F</em>
+      <p>
+        <a class="highlight" href="http://foshan.qfang.com/sale">佛山</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">S</em>
+      <p>
+        <a class="highlight" href="http://shenzhen.qfang.com/sale">深圳</a>
+        <a class="highlight" href="http://shanghai.qfang.com/sale">上海</a>
+        <a class="highlight" href="http://suzhou.qfang.com/sale">苏州</a>
+        <a href="http://sanya.qfang.com">三亚</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">G</em>
+      <p>
+        <a class="highlight" href="http://guangzhou.qfang.com/sale">广州</a>
+      	<a href="http://ganzhou.qfang.com/">赣州</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">T</em>
+      <p>
+        <a href="http://taiyuan.qfang.com">太原 </a>
+        <a href="http://taicang.qfang.com">太仓 </a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">H</em>
+      <p>
+        <a class="highlight" href="http://hangzhou.qfang.com/sale">杭州</a>
+        <a href="http://huizhou.qfang.com">惠州</a>
+        <a href="http://honghe.qfang.com">红河</a>
+        <a href="http://hefei.qfang.com">合肥</a>
+        <a href="http://huzhou.qfang.com">湖州</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">W</em>
+      <p>
+        <a href="http://wuhan.qfang.com">武汉</a>
+        <a href="http://wuxi.qfang.com">无锡</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">J</em>
+      <p>
+        <a href="http://jiaxing.qfang.com">嘉兴</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">X</em>
+      <p>
+        <a class="highlight" href="http://hk.qfang.com">香港</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">K</em>
+      <p>
+        <a href="http://kunming.qfang.com">昆明</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">Z</em>
+      <p>
+        <a class="highlight" href="http://zhuhai.qfang.com/sale">珠海</a>
+        <a class="highlight" href="http://zhongshan.qfang.com/sale">中山</a>
+      </p>
+    </li>
+    <li class="clearfix">
+      <em class="icons">L</em>
+      <p>
+        <a href="http://langfang.qfang.com">廊坊</a>
+      </p>
+    </li>
+  </ul>
+</div>
+        </div>
+        <!-- end cities -->
+      </div>
+      <!-- end logo -->
+      <!-- login -->
+      <div class="navigation-user fr">
+        <i class="icons icon-login fl"></i>
+        <!-- before login -->
+        <div class="navigation-menu navigation-login fl" id="navigationLogin">
+          <div class="top-nav">
+            <ul>
+              <li class="nav-item">
+                <p class="nav-link"><a rel="nofollow" href="http://user.qfang.com?fromCity=SHENZHEN">登录</a></p>
+                <div class="nav-linksub">
+                  <i class="icons arrow"></i>
+                  <p>
+                    <a id="myQfang" href="javascript:;">我的Q房</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span class="navigation-slash fl" id="o2oRegisterSprit">/</span>
+        <p class="navigation-reg fl" id="o2oRegister">
+        	<a rel="nofollow" href="http://user.qfang.com?fromCity=SHENZHEN&isRegister=isRegister">注册</a>
+        </p>
+        <!-- end before login -->
+        <!-- after login -->
+        <p class="navigation-logout fl clearfix dn" id="o2oHasLogin">
+        </p>
+        <!-- end after login -->
+      </div>
+      <!-- end login -->
+      <!-- menu  -->
+      <div class="navigation-menu fr" id="navigationMenu">
+        <div class="top-nav clearfix">
+          <ul>
+            <li class="nav-item">
+              <p class="nav-link"><a href="/">首页</a></p>
+            </li>
+            
+            <li class="nav-item cur">
+              <p class="nav-link"><a href="/sale">二手房</a></p>
+              <div class="nav-linksub">
+                <i class="icons arrow"></i>
+                <p>
+                  <a href="/sale">房源</a>
+                  <a href="/garden">小区</a>
+                  <a href="/sale/n0">学区房</a>
+                  <a href="/tycoon">经纪人</a>
+                  <a href="/map/sale" target="_blank">地图找房</a>
+                </p>
+              </div>
+            </li>
+            
+            <li class="nav-item ">
+              <p class="nav-link"><a href="/newhouse">新房</a></p>
+              <div class="nav-linksub">
+                <i class="icons arrow"></i>
+                <p>
+                  <a href="/newhouse">新房首页</a>
+				  <a href="/groupbuy">优惠活动</a>
+                  <a href="/newhouse/list">深圳新房</a>
+                  <a href="/newhouse/info">楼盘导购</a>
+                  <a rel="nofollow" target="_blank"  target="_blank" href="http://www.qfang.com/special/QKYT/">Q客云投</a>
+                </p>
+              </div>
+            </li>
+            
+            <li class="nav-item ">
+              <p class="nav-link"><a href="/rent">租房</a></p>
+              <div class="nav-linksub">
+                <i class="icons arrow"></i>
+                <p>
+                  <a href="/rent">房源</a>
+                  <a href="/garden">小区</a>
+                  <a href="/tycoonRent">经纪人</a>
+                  <a href="/map/rent" target="_blank">地图找房</a>
+                </p>
+              </div>
+            </li>
+            
+            <li class="nav-item ">
+              <p class="nav-link">
+                <a rel="nofollow"  href="/fangjia/area">查房价</a>
+              </p>
+            </li>
+            
+            <li class="nav-item ">
+              <p class="nav-link"><a href="/office">写字楼</a></p>
+              <div class="nav-linksub">
+                <i class="icons arrow"></i>
+                <p>
+                  <a href="/office">写字楼首页</a>
+                  <a href="/office/rent">写字楼出租</a>
+                  <a href="/office/sale">写字楼出售</a>
+                  <a href="/office/garden/rent">写字楼楼盘</a>
+                  <a href="/office/tycoon/index?from_office=1">写字楼经纪人</a>
+                </p>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <p class="nav-link">
+                <a href="http://hw.qfang.com/">海外</a>
+              </p>
+            </li>
+            <li class="nav-item ">
+              <p class="nav-link">
+                <a rel="nofollow" href="/trust?type=sale">业主委托</a>
+              </p>
+            </li>
+            <li class="nav-item">
+              <p class="nav-link">
+                <a href="javascript:volid(0);">掌上Q房</a>
+              </p>
+              <div class="nav-linksub">
+                <i class="icons arrow"></i>
+                <p class="top-app">
+                  <em class="icons"></em>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end menu  -->
+    </div>
+  </div>
+  	<div class="search-wrapper">
+	    <div class="search-wrapper-inner clearfix">
+			<div class="search-enter fl clearfix">
+		        <div class="ipt-box fl">
+		          	<input class="keywords" id="keyword1" type="text" value="" autocomplete="off" maxlength="50">
+			          	<label class="placeholder" text="请输入房源特征、房型、地址或小区名...">请输入房源特征、房型、地址或小区名...</label>
+		        </div>
+		        <a class="search-btn fl" href="javascript:;" id="s-btn1">搜索</a>
+			</div>
+	      	
+	      	<p class="auxiliary-link map fr" style="float:left;margin-left:50px;">
+		        <a id="roomMap" href="/map/sale?lng=114.149&lat=22.627&zoom=16"  class="map_search fr">
+		        <i class="icons"></i><span>地图找房</span>
+		        </a> 
+	      	</p>
+	    </div>
+  	</div>
+  	
+  	<div class="main-wrapper">
+	    <div class="search-con-wrapper">
+	       
+            
+	
+		<div class="search-con-address">
+	        <ul class="search-area clearfix">
+	          		<li class="current"><a href="javascript:;">区域</a></li>
+	
+
+				
+						<li><a href="/sale/l0">地铁</a></li>
+	
+	                   
+						<li><a href="/sale/n0">学区</a></li>
+	            
+	          		<li class="qfang-desc">真实房源 线上浏览 线下体验</li>
+	        </ul>
+        
+			<!-- 区域条件  -->
+        	<div class="search-area-wrapper">
+	          	<ul class="search-area-detail clearfix">
+						<li class="current"><a href="javascript:;">不限</a></li>
+		            
+								<li><a href="/sale/nanshan">南山</a></li>
+								<li><a href="/sale/futian">福田</a></li>
+								<li><a href="/sale/luohu">罗湖</a></li>
+								<li><a href="/sale/baoan">宝安</a></li>
+								<li><a href="/sale/longgang">龙岗</a></li>
+								<li><a href="/sale/longhuaxinqu">龙华新区</a></li>
+								<li><a href="/sale/guangmingxinqu">光明新区</a></li>
+								<li><a href="/sale/yantiana">盐田</a></li>
+								<li><a href="/sale/pingshanxinqu">坪山新区</a></li>
+								<li><a href="/sale/dapengxinqu">大鹏新区</a></li>
+	          	</ul>
+	          	
+        	</div>
+			<!-- End 区域条件  -->
+			
+			
+			
+			
+			<!-- 地铁条件  -->
+			<!-- End 地铁条件  -->
+
+			
+      	</div>
+      	
+      	
+      	
+      	
+      	
+		<!-- 价格条件  -->
+			    <div class="clearfix">
+			        <span class="search-title">价格 :</span>
+			        <ul class="search-price clearfix">
+							<li class="current"><a  href="javascript:;">不限</a></li>
+			          
+								<li><a  href="/sale/p10/">200万以下</a></li>	                        			
+								<li><a  href="/sale/p11/">200-300万</a></li>	                        			
+								<li><a  href="/sale/p13/">300-400万</a></li>	                        			
+								<li><a  href="/sale/p15/">400-500万</a></li>	                        			
+								<li><a  href="/sale/p17/">500-600万</a></li>	                        			
+								<li><a  href="/sale/p18/">600-800万</a></li>	                        			
+								<li><a  href="/sale/p19/">800-1000万</a></li>	                        			
+								<li><a  href="/sale/p20/">1000万以上</a></li>	                        			
+
+			          
+							<li>
+								<input maxlength="6" class="price-range" type="text" value="" id="definePriceStart">
+								<span>-</span>
+								<input maxlength="6" class="price-range" type="text" value="" id="definePriceEnd" name="">
+								<span>万</span>
+								<a id="definePriceButton" href="javascript:;" class="price-btn" style="display:none;">确定</a>
+							</li>
+			        </ul>
+			    </div>
+		<!-- End 价格条件  -->
+		
+		
+		
+		
+		
+		
+		
+		<!-- 面积条件  -->
+      	<div class="clearfix">
+	        <span class="search-title">面积 :</span>
+	        <ul class="search-sequare clearfix">
+					<li class="current"><a  href="javascript:;">不限</a></li>
+	          
+	         
+						<li><a  href="/sale/a10/">50平米以下</a></li>
+						<li><a  href="/sale/a12/">50-70平米</a></li>
+						<li><a  href="/sale/a13/">70-90平米</a></li>
+						<li><a  href="/sale/a14/">90-110平米</a></li>
+						<li><a  href="/sale/a15/">110-130平米</a></li>
+						<li><a  href="/sale/a16/">130-150平米</a></li>
+						<li><a  href="/sale/a17/">150-200平米</a></li>
+						<li><a  href="/sale/a18/">200平米以上</a></li>
+	
+	               <li class="sequare-submit">
+	                    <input maxlength="6" class="sequare-range" type="text" value="" id="defineAreaStart"/>
+	                    <span>-</span>
+	                    <input maxlength="6" class="sequare-range" type="text" value="" id="defineAreaEnd"/><span>平米</span>
+	                    <a href="javascript:;" id="defineAreaButton" class="sequare-btn" style="display:none;">确定</a>
+	                </li>
+	        </ul>
+      	</div>
+      	<!-- End 面积条件  -->
+		
+		
+		<!-- 房型条件  -->
+		      	<div class="clearfix">
+			        <span class="search-title">房型 :</span>
+			        <ul class="search-layout clearfix">
+							<li class="current"><a  href="javascript:;">不限</a></li>
+
+								<li><a  href="/sale/b1/">一室</a></li>
+								<li><a  href="/sale/b2/">二室</a></li>
+								<li><a  href="/sale/b3/">三室</a></li>
+								<li><a  href="/sale/b4/">四室</a></li>
+								<li><a  href="/sale/b5/">五室及以上</a></li>
+								<li><a  href="/sale/b6/">别墅</a></li>
+			        </ul>
+		      	</div>
+		<!-- End 房型条件  -->
+		
+        <!-- 标签 -->
+        <div id="labels" class="clearfix">
+          	<span class="search-title">特色 :</span>
+          	<ul class="search-other clearfix">
+            		<li>
+						<label>
+				            	<input type="checkbox" class="search-other-item" onclick="selectedLabel();" value="t27"  />
+						        满两年
+				        </label>
+					</li>
+            		<li>
+						<label>
+				            	<input type="checkbox" class="search-other-item" onclick="selectedLabel();" value="t26"  />
+						        满五唯一
+				        </label>
+					</li>
+            		<li>
+						<label>
+				            	<input type="checkbox" class="search-other-item" onclick="selectedLabel();" value="t31"  />
+						        红本在手
+				        </label>
+					</li>
+            		<li>
+						<label>
+						        	<input type="checkbox" class="search-other-item" onclick="selectedLabel();" value="t41"  />
+						            近地铁
+				        </label>
+					</li>
+            		<li>
+						<label>
+				            	<input type="checkbox" class="search-other-item" onclick="selectedLabel();" value="t28"  />
+						        不限购
+				        </label>
+					</li>
+            		<li>
+						<label>
+				            	<input type="checkbox" class="search-other-item" onclick="selectedLabel();" value="t30"  />
+						        随时看房
+				        </label>
+					</li>
+            		<li>
+						<label>
+				            	<input type="checkbox" class="search-other-item" onclick="selectedLabel();" value="t10"  />
+						        急售
+				        </label>
+					</li>
+            		<li>
+						<label>
+				            	<input type="checkbox" class="search-other-item" onclick="selectedLabel();" value="t19"  />
+						        南北通透
+				        </label>
+					</li>
+            		<li>
+						<label>
+				            	<input type="checkbox" class="search-other-item" onclick="selectedLabel();" value="t29"  />
+						        复式
+				        </label>
+					</li>
+            		<li>
+						<label>
+				            	<input type="checkbox" class="search-other-item" onclick="selectedLabel();" value="t42"  />
+						        不看商住两用
+				        </label>
+					</li>
+          	</ul>
+        </div>
+
+      		
+	    <!-- 配置 -->
+		<!-- end 配置 -->
+		
+		
+		
+		
+      	<div class="slide-box dn">
+ 	    	<!-- 租赁 -->
+	  		 
+	  		     	
+       		
+       		
+      		
+		        <!-- 楼层-->
+		        <div class="clearfix">
+		          <span class="search-title">楼层 :</span>
+		          <ul class="search-floor clearfix">
+						<li class="current"><a rel="nofollow" class="options-now" href="javascript:;" class="options-now" >不限</a></li>
+		            
+		           
+							<li><a rel="nofollow" href="/sale/c1/">6层以下</a></li>
+							<li><a rel="nofollow" href="/sale/c2/">6-12层</a></li>
+							<li><a rel="nofollow" href="/sale/c3/">12层以上</a></li>
+		          </ul>
+		        </div>
+		        <!-- End 楼层  -->
+		        
+		        
+			    <!-- 朝向 -->
+		        <div class="clearfix">
+		          	<span class="search-title">朝向 :</span>
+		          	<ul class="search-direction clearfix">
+							<li class="current"><a rel="nofollow" class="options-now" href="javascript:;" class="options-now" >不限</a></li>
+			            
+								<li><a rel="nofollow" href="/sale/i10/">朝东</a></li>
+								<li><a rel="nofollow" href="/sale/i11/">朝南</a></li>
+								<li><a rel="nofollow" href="/sale/i12/">朝西</a></li>
+								<li><a rel="nofollow" href="/sale/i13/">朝北</a></li>
+								<li><a rel="nofollow" href="/sale/i14/">朝东北</a></li>
+								<li><a rel="nofollow" href="/sale/i15/">朝东南</a></li>
+								<li><a rel="nofollow" href="/sale/i16/">朝东西</a></li>
+								<li><a rel="nofollow" href="/sale/i17/">朝南北</a></li>
+								<li><a rel="nofollow" href="/sale/i18/">朝西北</a></li>
+								<li><a rel="nofollow" href="/sale/i19/">朝西南</a></li>
+		          	</ul>
+		        </div>
+		        <!-- End 朝向  -->
+		        
+		        <!-- 装修 -->
+		        <div class="clearfix">
+		          	<span class="search-title">装修 :</span>
+			        <ul class="search-fixment clearfix">
+							<li class="current"><a rel="nofollow" class="options-now" href="javascript:;">不限</a></li>
+			            
+								<li><a rel="nofollow" href="/sale/r1/">毛坯</a></li>
+								<li><a rel="nofollow" href="/sale/r2/">普通装修</a></li>
+								<li><a rel="nofollow" href="/sale/r3/">精装修</a></li>
+								<li><a rel="nofollow" href="/sale/r4/">豪华装修</a></li>
+		          	</ul>
+		        </div>
+	       		<!-- End 装修  -->
+	       		
+	       		<!-- 房龄 -->
+		        <div class="clearfix">
+		          	<span class="search-title">房龄 :</span>
+		          	<ul class="search-fixment clearfix">
+							<li class="current"><a rel="nofollow" class="options-now" href="javascript:;" >不限</a></li>
+									<li><a rel="nofollow" href="/sale/g1/">5年内</a></li>
+									<li><a rel="nofollow" href="/sale/g2/">5-10年</a></li>
+									<li><a rel="nofollow" href="/sale/g3/">10-20年</a></li>
+									<li><a rel="nofollow" href="/sale/g4/">20年以上</a></li>
+					</ul>
+		        </div>						
+      			<!-- end 房龄 -->
+       		
+
+	        
+	        
+      		<!-- End 标签 -->
+      		
+      		
+      	</div>
+      	
+      	
+      	<div class="switch-wrapper">
+      	<a class="history-switch" href="javascript:;">展开筛选<i class="icons-custom arrow-down"></i></a>
+      	</div>
+		
+			<!-- filter -->
+<!-- 上次找房条件 -->
+<input type="hidden" id="bizType" value="SALE">
+<div class="history-filter clearfix" id="historyCondition">
+			<span class="history-filter-title">上次找房条件：</span>
+		<div class="history-filter-con">
+	 		 <p class="history-filter-item">
+	 		 	<a rel="nofollow" class="filter-again"  href="javascript:;" id="upCondition"></a>
+	 		 </p>
+		</div>
+</div>
+<!-- End 上次找房条件 -->
+
+<!-- ad -->
+<!-- end ad -->
+	    </div>
+	    
+    	<div class="content-wrapper clearfix">
+      		<div class="house-list">
+		        	<div class="advertice-banner">
+		          		<a target="_blank" href="http://h5.qfang.com/realhouse/"><img width="900" height="56" src="/themes/default/images/frontend/listings/ad-zh-really-house.jpg"></a>
+		        	</div>
+        
+	        		        		
+				
+				
+<!-- 功能条 -->
+    <div class="house-sort">
+      	<ul class="clearfix">
+				<li class="current"><a href="javascript:;"><span>默认排序</span></a></li>
+			
+			
+        <li  >
+            <a href="/sale/o1">
+            	<span>面积</span><i class="icons-listings sort-arrow "></i>
+            </a>
+        </li>
+ 
+            
+            
+        <li  >
+            <a href="/sale/o4">
+            	<span>总价</span><i class="icons-listings sort-arrow "></i>
+            </a>
+        </li>
+        
+        
+			
+            <li >
+	            <a href="/sale/o92">
+	            	<span>单价</span><i class="icons-listings sort-arrow "></i>
+	            </a>
+            </li>
+        
+      </ul>
+    </div>
+   
+<div class="house-count">
+  	共找到<span class="house-sum">16049</span>套深圳二手房源
+</div>
+<!-- end 功能条 -->
+
+
+    
+<!-- 无结果 -->
+<!-- end 无结果 -->
+	        
+	        
+<!-- 结果列表 -->
+	<!--
+	-->
+	
+	<!-- 正常搜索结果展示 Start -->
+	
+	<div class="house-detail" id="cycleListings">
+        <ul>
+
+
+
+	<!-- 二手房房源列表 -->
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16075733?insource=sale_list">
+	    	<img alt="丹竹头地铁口 怡乐花园满两年 红本 精装修 住家安静_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/1A/04/CvtcNFjcy5mAUupOAARZwHAEVEQ162.jpg?signature=p54yUbCTUKLKJvAiLJdCDsn1RK9N5q5C4vMhKOBuKInNlzdydKCuITZOi-cZ4-M0uXzk1CtXGX7ql81Avtv78g
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="丹竹头地铁口 怡乐花园满两年 红本 精装修 住家安静" class="showKeyword" target="_blank" href="/sale/16075733?insource=sale_list">丹竹头地铁口 怡乐花园满两年 红本 精装修 住家安静</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>2室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>56.4平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				低层
+			/12层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2001年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/56068">怡乐花园</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/longgang" >龙岗</a>
+				<a key="showKeyword" href="/sale/longgang-buji" >布吉</a>
+				]
+				</span>
+	    		<span key="showKeyword">深圳市布吉深惠路与李朗大道交汇处</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="姬明强的店铺" target="_blank" href="/shop/view/17568">
+						姬明强
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市龙岗区南湾学校（小学部）</span>
+				<!--站点标签-->
+				  	<span>距离3号线(龙岗线)丹竹头站约644米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>南北通透</span>
+			
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">230</span><span class="sale-unit">万</span>
+				<p>40751元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="怡乐花园" houseId="16075733" gardenId="56068" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16091479?insource=sale_list">
+	    	<img alt="580万，131平，海山道1号精装3房，价格低洼，地段中心_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/0E/E0/CvtcNFgIbDmAeHduAAEMGI64wx4841.jpg?signature=p54yUbCTUKLKJvAiLJdCDkTHjVYFxgCpXFhBnoOmLjxHXw2_UXFC1WIUbqQbJ8CoPn64k34pYzes_rF4nDsI3w
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="580万，131平，海山道1号精装3房，价格低洼，地段中心" class="showKeyword" target="_blank" href="/sale/16091479?insource=sale_list">580万，131平，海山道1号精装3房，价格低洼，地段中心</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>3室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>131平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				中层
+			/33层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2010年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/56541">海山道1号</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/yantiana" >盐田</a>
+				<a key="showKeyword" href="/sale/yantiana-shatoujiao" >沙头角</a>
+				]
+				</span>
+	    		<span key="showKeyword">深圳市盐田深盐路与海山路交汇处(盐田区政府斜对面)</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="黎丽波的店铺" target="_blank" href="/shop/view/108863115">
+						黎丽波
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市盐田区田东小学</span>
+				<!--站点标签-->
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>南北通透</span>
+			
+				<span>随时看房</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">580</span><span class="sale-unit">万</span>
+				<p>44275元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="海山道1号" houseId="16091479" gardenId="56541" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16082129?insource=sale_list">
+	    	<img alt="花样年一起.西南向一房红本满5年在售_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/0D/58/CvtcM1gdypiAZ7ApAAJEqs4qmYs709.jpg?signature=p54yUbCTUKLKJvAiLJdCDla9PanZR5rLkKcdnsbrPaoLCHpfey67g8MvclO1Wa19azgd64QFGpX4GfqmNFyg_A
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="花样年一起.西南向一房红本满5年在售" class="showKeyword" target="_blank" href="/sale/16082129?insource=sale_list">花样年一起.西南向一房红本满5年在售</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>1室1厅</span>
+		      <span class="flag-line"></span>
+		      <span>36.2平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">豪华装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/20层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2010年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/57567">花样年花郡一期</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/baoan" >宝安</a>
+				<a key="showKeyword" href="/sale/baoan-baoanzhongxinqu" >宝安中心区</a>
+				]
+				</span>
+	    		<span key="showKeyword">宝安大道与玉律路交汇处(宝安体育馆旁)</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="蒲松的店铺" target="_blank" href="/shop/view/1016632">
+						蒲松
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市宝安区海韵学校（小学部）</span>
+				<!--站点标签-->
+				  	<span>距离1号线(罗宝线)宝体站约446米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>满两年</span>
+			
+				<span>红本在手</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">265</span><span class="sale-unit">万</span>
+				<p>73204元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="花样年花郡一期" houseId="16082129" gardenId="57567" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16097727?insource=sale_list">
+	    	<img alt="横岗锦冠华城 5房 精装修 配套成熟 地铁口 天虹商场_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group4/215x165/M00/11/DB/CvtcMVjvL56AWnr8AAHue9sEiHc543.jpg?signature=8QnKJ78jFbW4_HARIa0yqk3cTPFX-JGDoeCC3v7Kx-WPEU11IUIjdhPY-mqH3L2ta_aJ-eEPEr3zyXcTLkO6RA
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="横岗锦冠华城 5房 精装修 配套成熟 地铁口 天虹商场" class="showKeyword" target="_blank" href="/sale/16097727?insource=sale_list">横岗锦冠华城 5房 精装修 配套成熟 地铁口 天虹商场</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>5室3厅</span>
+		      <span class="flag-line"></span>
+		      <span>205.7平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/11层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2002年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/58608">锦冠华城 雅景苑二期</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/longgang" >龙岗</a>
+				<a key="showKeyword" href="/sale/longgang-henggang" >横岗</a>
+				]
+				</span>
+	    		<span key="showKeyword">红棉一路与连心路交汇处</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="黄志跃的店铺" target="_blank" href="/shop/view/1083759">
+						黄志跃
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市龙岗区六约学校（小学部）</span>
+				<!--站点标签-->
+				  	<span>距离3号线(龙岗线)塘坑站约841米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>南北通透</span>
+			
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">645</span><span class="sale-unit">万</span>
+				<p>31358元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="锦冠华城 雅景苑二期" houseId="16097727" gardenId="58608" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16088857?insource=sale_list">
+	    	<img alt="绿景蓝湾半岛 豪华装修 3室2厅_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/13/6D/CvtcM1hL6D-AcFKlAAD4xMt4MgU762.jpg?signature=p54yUbCTUKLKJvAiLJdCDgQx2hnAUV_CjEhd2Vam1XKmExhj6a1E1YQg3vVSgLDA3X9QxOGrN4jMB0hcgs4hPw
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="绿景蓝湾半岛 豪华装修 3室2厅" class="showKeyword" target="_blank" href="/sale/16088857?insource=sale_list">绿景蓝湾半岛 豪华装修 3室2厅</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>3室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>122.5平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">豪华装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/33层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2002年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/58708">绿景蓝湾半岛</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/futian" >福田</a>
+				<a key="showKeyword" href="/sale/futian-xinzhou" >新洲</a>
+				]
+				</span>
+	    		<span key="showKeyword">福田新洲路与福荣路交汇处向西200米</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="袁作琼的店铺" target="_blank" href="/shop/view/108859236">
+						袁作琼
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市福田区绿洲小学</span>
+				<!--站点标签-->
+				  	<span>距离7号线沙尾站约600米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>红本在手</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">880</span><span class="sale-unit">万</span>
+				<p>71831元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="绿景蓝湾半岛" houseId="16088857" gardenId="58708" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16096625?insource=sale_list">
+	    	<img alt="观湖园精装修别墅 红本在手满2年 拎包入住 看房方便_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/10/A7/CvtcM1g__6-AS-P3AAGhMqIpav8773.jpg?signature=p54yUbCTUKLKJvAiLJdCDvbz7DN8rKyuqgGwoU4JQo5NXtiXT6sH0PtdIgxBpT3WbTwDDYbODWOOA1fXo5F_sg
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="观湖园精装修别墅 红本在手满2年 拎包入住 看房方便" class="showKeyword" target="_blank" href="/sale/16096625?insource=sale_list">观湖园精装修别墅 红本在手满2年 拎包入住 看房方便</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>4室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>183.4平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">普通装修</span>
+		      <span class="flag-line"></span>
+		      <span>			共3层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2002年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/57488">观湖园</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/longhuaxinqu" >龙华新区</a>
+				<a key="showKeyword" href="/sale/longhuaxinqu-guanlan" >观澜</a>
+				]
+				</span>
+	    		<span key="showKeyword">深圳市观澜镇，邻近梅观高速公路</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="吴春玲的店铺" target="_blank" href="/shop/view/108855580">
+						吴春玲
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市龙华新区库坑小学</span>
+				<!--站点标签-->
+		      	
+				<!-- 房源标签 -->
+				<span>红本在手</span>
+			
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">750</span><span class="sale-unit">万</span>
+				<p>40892元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="观湖园" houseId="16096625" gardenId="57488" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16092099?insource=sale_list">
+	    	<img alt="豪华三房  业主自住 房子保养好 看房方便_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/02/99/CvtcMFgXPrqAIoPQAADubC8ApbI848.jpg?signature=p54yUbCTUKLKJvAiLJdCDlNBgeBtNDAHRPrhafNBk3FcLgCjt5Aq1mfHeP-fYyKMM1YK1g1nMsInO5Jaeqk88w
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="豪华三房  业主自住 房子保养好 看房方便" class="showKeyword" target="_blank" href="/sale/16092099?insource=sale_list">豪华三房  业主自住 房子保养好 看房方便</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>3室1厅</span>
+		      <span class="flag-line"></span>
+		      <span>95.2平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/26层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2006年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/56430">合正美寓</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/futian" >福田</a>
+				<a key="showKeyword" href="/sale/futian-bagualing" >八卦岭</a>
+				]
+				</span>
+	    		<span key="showKeyword">深圳市八卦四路红岭路口</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="牛爽苗的店铺" target="_blank" href="/shop/view/1087839">
+						牛爽苗
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市福田区园岭实验小学</span>
+				<!--站点标签-->
+				  	<span>距离7号线红岭北站约351米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>南北通透</span>
+			
+				<span>满五年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">680</span><span class="sale-unit">万</span>
+				<p>71414元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="合正美寓" houseId="16092099" gardenId="56430" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16097321?insource=sale_list">
+	    	<img alt="宝安中心区.第五大道三期豪装复式，3房两厅两卫朝南_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group4/215x165/M00/11/5E/CvtcMVjq4OmAddQoAAwTHNSGYUI384.jpg?signature=8QnKJ78jFbW4_HARIa0yqnh01O216069BiAANrRydUoukZGt0Wik1hx9eKj0xEFMIoNhmxrA9yx3Xjj2KZK_IQ
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="宝安中心区.第五大道三期豪装复式，3房两厅两卫朝南" class="showKeyword" target="_blank" href="/sale/16097321?insource=sale_list">宝安中心区.第五大道三期豪装复式，3房两厅两卫朝南</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>3室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>86.7平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">豪华装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/24层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2006年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/1107340">第五大道三期</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/baoan" >宝安</a>
+				<a key="showKeyword" href="/sale/baoan-baoanzhongxinqu" >宝安中心区</a>
+				]
+				</span>
+	    		<span key="showKeyword">宝安中心区创业一路与裕安西路交汇处(宝安体育馆对面)</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="曾祥龙的店铺" target="_blank" href="/shop/view/108997609">
+						曾祥龙
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市宝安区海韵学校（小学部）</span>
+				<!--站点标签-->
+				  	<span>距离11号线宝安站约234米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>复式</span>
+			
+				<span>南北通透</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">800</span><span class="sale-unit">万</span>
+				<p>92240元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="第五大道三期" houseId="16097321" gardenId="1107340" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16085807?insource=sale_list">
+	    	<img alt="中粮鸿云 朝南两梯两户 1号地铁口 央企物业 满两年_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/BD/77/CvtcM1dVCnyAQebnAACtWOmXeJo188.jpg?signature=p54yUbCTUKLKJvAiLJdCDkfKm7V6k-avEGideMniF5gCPYdOIJfMVHa0DQv2Df6wVAK4Ec1S2x_nOn98zZRQhg
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="中粮鸿云 朝南两梯两户 1号地铁口 央企物业 满两年" class="showKeyword" target="_blank" href="/sale/16085807?insource=sale_list">中粮鸿云 朝南两梯两户 1号地铁口 央企物业 满两年</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>4室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>155.6平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/29层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2011年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/1100842">中粮鸿云</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/baoan" >宝安</a>
+				<a key="showKeyword" href="/sale/baoan-xixiang" >西乡</a>
+				]
+				</span>
+	    		<span key="showKeyword">深圳市宝安区西乡街道西乡大道与宝安大道交汇处</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="李昌利的店铺" target="_blank" href="/shop/view/1010598">
+						李昌利
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市宝安区西乡街道共乐小学</span>
+				<!--站点标签-->
+				  	<span>距离1号线(罗宝线)西乡站约708米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">800</span><span class="sale-unit">万</span>
+				<p>51401元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="中粮鸿云" houseId="16085807" gardenId="1100842" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16093033?insource=sale_list">
+	    	<img alt="宝中学位房，140万元 TATA公寓 普通装修， 31m²_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/23/AA/CvtcM1jnP7iAUo-GAAMWViUWE3Y312.jpg?signature=p54yUbCTUKLKJvAiLJdCDoUp40RnZc8wyT58p974XD5ejJgFgrHn9AtwrwaByk3bE9Sg4w5DPg0nQIzRL7Q9Yw
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="宝中学位房，140万元 TATA公寓 普通装修， 31m²" class="showKeyword" target="_blank" href="/sale/16093033?insource=sale_list">宝中学位房，140万元 TATA公寓 普通装修， 31m²</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>1室0厅</span>
+		      <span class="flag-line"></span>
+		      <span>31平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">普通装修</span>
+		      <span class="flag-line"></span>
+		      <span>				低层
+			/9层
+</span>
+		      <span class="flag-line"></span>
+		      <span>1993年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/55839">TATA公寓</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/baoan" >宝安</a>
+				<a key="showKeyword" href="/sale/baoan-xinan" >新安</a>
+				]
+				</span>
+	    		<span key="showKeyword">深圳市宝安23区新安三路(海关大厦旁)</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="符叶的店铺" target="_blank" href="/shop/view/108998679">
+						符叶
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市宝安区灵芝小学</span>
+				<!--站点标签-->
+				  	<span>距离5号线(环中线)洪浪北站约279米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>满两年</span>
+			
+				<span>红本在手</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">140</span><span class="sale-unit">万</span>
+				<p>45161元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="TATA公寓" houseId="16093033" gardenId="55839" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16094573?insource=sale_list">
+	    	<img alt="西湖林语 精装大三房 安静栋位 红本无税 地铁口 急售！_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group4/215x165/M00/10/EE/CvtcMljmKoGALXL8AAG3N2DB9YM829.jpg?signature=8QnKJ78jFbW4_HARIa0yqrJtoIkRyiKPKcydL8WGvsjeji3C3NeSlRA4-eTRwlnGJ9vHVBK_fI-TbMKH2XYCeA
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="西湖林语 精装大三房 安静栋位 红本无税 地铁口 急售！" class="showKeyword" target="_blank" href="/sale/16094573?insource=sale_list">西湖林语 精装大三房 安静栋位 红本无税 地铁口 急售！</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>3室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>101.9平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				低层
+			/17层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2006年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/56612">西湖林语</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/nanshan" >南山</a>
+				<a key="showKeyword" href="/sale/nanshan-xili" >西丽</a>
+				]
+				</span>
+	    		<span key="showKeyword">南山丽山路与丽水路交界处，深圳大学城西</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="李宏达的店铺" target="_blank" href="/shop/view/1033879">
+						李宏达
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市南山区平山小学</span>
+				<!--站点标签-->
+				  	<span>距离7号线西丽湖站约107米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>满五年</span>
+			
+				<span>红本在手</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">692</span><span class="sale-unit">万</span>
+				<p>67910元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="西湖林语" houseId="16094573" gardenId="56612" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16085563?insource=sale_list">
+	    	<img alt="前海金岸 精装一房 1号大新站 红本在手高楼层 看房方便_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/18/F7/CvtcM1hjd4OAa_soAALsHJipTE8101.jpg?signature=p54yUbCTUKLKJvAiLJdCDoI5a2C9SJSkhLq2i81iYTnsqnuoUm8QBItRoruWRRDFcO0H4lqs6z5RaiX9W01YqQ
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="前海金岸 精装一房 1号大新站 红本在手高楼层 看房方便" class="showKeyword" target="_blank" href="/sale/16085563?insource=sale_list">前海金岸 精装一房 1号大新站 红本在手高楼层 看房方便</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>1室1厅</span>
+		      <span class="flag-line"></span>
+		      <span>28平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/28层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2006年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/56399">前海金岸大厦</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/nanshan" >南山</a>
+				<a key="showKeyword" href="/sale/nanshan-qianhai" >前海</a>
+				]
+				</span>
+	    		<span key="showKeyword">南山区桃园路与南新路交汇处</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="陈南洪的店铺" target="_blank" href="/shop/view/108992626">
+						陈南洪
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市南山区大新小学</span>
+				<!--站点标签-->
+				  	<span>距离1号线(罗宝线)大新站约301米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">190</span><span class="sale-unit">万</span>
+				<p>67857元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="前海金岸大厦" houseId="16085563" gardenId="56399" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16090561?insource=sale_list">
+	    	<img alt="湾畔花园  南向两房 小区周边配套成熟_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/D5/56/CvtcNFeA23yAeZsAAAC8TR1qI6Y446.jpg?signature=p54yUbCTUKLKJvAiLJdCDvNUthhG4xNcZDlBctDYUev_XN8ODpCK1gSNnLfQ7PMe9NAFduW1TLSpIofSJkrQTg
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="湾畔花园  南向两房 小区周边配套成熟" class="showKeyword" target="_blank" href="/sale/16090561?insource=sale_list">湾畔花园  南向两房 小区周边配套成熟</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>2室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>78.4平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/32层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2003年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/57336">深圳湾畔花园</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/nanshan" >南山</a>
+				<a key="showKeyword" href="/sale/nanshan-huaqiaocheng" >华侨城</a>
+				]
+				</span>
+	    		<span key="showKeyword">南山区深南大道与沙河街交汇处</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="黄俊丹的店铺" target="_blank" href="/shop/view/1038523">
+						黄俊丹
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市南山区沙河小学</span>
+				<!--站点标签-->
+				  	<span>距离1号线(罗宝线)白石洲站约97米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>红本在手</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">600</span><span class="sale-unit">万</span>
+				<p>76492元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="深圳湾畔花园" houseId="16090561" gardenId="57336" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16093271?insource=sale_list">
+	    	<img alt="正中时代大厦对面，精装两房，厅出阳台，满两年，住家方便好出租_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group2/215x165/M00/0E/01/CvtcKljQrRGAbUV7AAHxL4wYpSE820.jpg?signature=_ofCnUF-NMEN-chBg0KIYLGs7gsixzXyn8OHGIhNXA2y3tgsjmcpzXeWNAN5JQK1mGXvOB9VRv_043hEl-I9_w
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="正中时代大厦对面，精装两房，厅出阳台，满两年，住家方便好出租" class="showKeyword" target="_blank" href="/sale/16093271?insource=sale_list">正中时代大厦对面，精装两房，厅出阳台，满两年，住家方便好出租</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>2室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>78平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">豪华装修</span>
+		      <span class="flag-line"></span>
+		      <span>				中层
+			/11层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2005年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/57364">育龙庭</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/longgang" >龙岗</a>
+				<a key="showKeyword" href="/sale/longgang-longgangzhongxincheng" >龙岗中心城</a>
+				]
+				</span>
+	    		<span key="showKeyword">龙城中路以东，西南面毗邻龙城广场</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="王雷的店铺" target="_blank" href="/shop/view/1034003">
+						王雷
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市龙岗区龙城街道盛平小学</span>
+				<!--站点标签-->
+		      	
+				<!-- 房源标签 -->
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">235</span><span class="sale-unit">万</span>
+				<p>30128元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="育龙庭" houseId="16093271" gardenId="57364" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16085655?insource=sale_list">
+	    	<img alt="育才学 位。百分之120使用面积，满5年，安静社区，赠送花园_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group4/215x165/M00/10/83/CvtcMljgpaKAAX4EAAGwynwACMg056.jpg?signature=8QnKJ78jFbW4_HARIa0yqsT-FiaPxslP-5gMYHgzeSM1EnUoOYyEjhZZQxz6scUI-I-KW_8mNQrEv6yxjNgzdA
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="育才学 位。百分之120使用面积，满5年，安静社区，赠送花园" class="showKeyword" target="_blank" href="/sale/16085655?insource=sale_list">育才学 位。百分之120使用面积，满5年，安静社区，赠送花园</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>3室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>88.2平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">普通装修</span>
+		      <span class="flag-line"></span>
+		      <span>				低层
+			/6层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2009年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/55986">雷公岭小区</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/nanshan" >南山</a>
+				<a key="showKeyword" href="/sale/nanshan-shekou" >蛇口</a>
+				]
+				</span>
+	    		<span key="showKeyword">深圳市南山区蛇口花果山旁</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="杨亚的店铺" target="_blank" href="/shop/view/1053555">
+						杨亚
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市蛇口育才教育集团第一小学</span>
+				<!--站点标签-->
+				  	<span>距离2号线(蛇口线)东角头站约847米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>南北通透</span>
+			
+				<span>随时看房</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">440</span><span class="sale-unit">万</span>
+				<p>49909元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="雷公岭小区" houseId="16085655" gardenId="55986" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16084683?insource=sale_list">
+	    	<img alt="凯旋城通透四房，户型方正朝南，宝安实验学校_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/12/D0/CvtcMFjglj2AVhkVAAHymu_9z9g019.jpg?signature=p54yUbCTUKLKJvAiLJdCDpCJOLxy95-bEcDgCY7-X7W7QpclAmEtdgrE7gMu3_KzU87-e76SRJbMbMPVhpE1Dg
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="凯旋城通透四房，户型方正朝南，宝安实验学校" class="showKeyword" target="_blank" href="/sale/16084683?insource=sale_list">凯旋城通透四房，户型方正朝南，宝安实验学校</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>4室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>133.4平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				中层
+			/32层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2006年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/56499">金泓凯旋城一期</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/baoan" >宝安</a>
+				<a key="showKeyword" href="/sale/baoan-baoanzhongxinqu" >宝安中心区</a>
+				]
+				</span>
+	    		<span key="showKeyword">宝安大道与新安一路交汇处</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="刘勇的店铺" target="_blank" href="/shop/view/1047909">
+						刘勇
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市宝安区实验学校(小学部)</span>
+				<!--站点标签-->
+				  	<span>距离1号线(罗宝线)新安站约396米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>满五唯一</span>
+			
+				<span>红本在手</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">870</span><span class="sale-unit">万</span>
+				<p>65208元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="金泓凯旋城一期" houseId="16084683" gardenId="56499" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16095879?insource=sale_list">
+	    	<img alt="福田上梅林地铁口  大型居家社区 颐林雅苑 4房送50平花园_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group3/215x165/M00/13/37/CvtcN1jwt-WAD6JaAAuG4ysagsU482.jpg?signature=L4Ip5sBtX7lDk25payIzwPrFcR9ycwG6f9SwtcLbUCpxp6kgMyOehuGhcKn6d0XWS1H979TTu-CX75rrRUVMOA
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="福田上梅林地铁口  大型居家社区 颐林雅苑 4房送50平花园" class="showKeyword" target="_blank" href="/sale/16095879?insource=sale_list">福田上梅林地铁口  大型居家社区 颐林雅苑 4房送50平花园</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>4室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>76平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">普通装修</span>
+		      <span class="flag-line"></span>
+		      <span>				低层
+			/8层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2006年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/56416">颐林雅院</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/futian" >福田</a>
+				<a key="showKeyword" href="/sale/futian-meilin" >梅林</a>
+				]
+				</span>
+	    		<span key="showKeyword">福田区上梅林中康路与梅林路交汇</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="顾金龙的店铺" target="_blank" href="/shop/view/1017170">
+						顾金龙
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市福田区梅华小学</span>
+				<!--站点标签-->
+				  	<span>距离4号线(龙华线)上梅林站约193米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>南北通透</span>
+			
+				<span>满五唯一</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">500</span><span class="sale-unit">万</span>
+				<p>65789元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="颐林雅院" houseId="16095879" gardenId="56416" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16081165?insource=sale_list">
+	    	<img alt="可改2房275万， 户型方正  带花园地铁口 荔园外国语_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/06/03/CvtcMFgf_ByAGAh3AADrZJ8IuKU623.jpg?signature=p54yUbCTUKLKJvAiLJdCDsZd5GZRPNal2asFZ6a0LLJvopImn2kkkgvO40-rU1QC8nxhcCB_HRRf-D5pzIitNQ
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="可改2房275万， 户型方正  带花园地铁口 荔园外国语" class="showKeyword" target="_blank" href="/sale/16081165?insource=sale_list">可改2房275万， 户型方正  带花园地铁口 荔园外国语</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>1室1厅</span>
+		      <span class="flag-line"></span>
+		      <span>42平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">普通装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/16层
+</span>
+		      <span class="flag-line"></span>
+		      <span>1999年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/58121">缔梦园</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/futian" >福田</a>
+				<a key="showKeyword" href="/sale/futian-jingtian" >景田</a>
+				]
+				</span>
+	    		<span key="showKeyword">福田景田莲花路与景田路交汇处</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="刘成的店铺" target="_blank" href="/shop/view/19484">
+						刘成
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市福田区狮岭小学</span>
+				<!--站点标签-->
+				  	<span>距离9号线香梅站约894米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>满五唯一</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">275</span><span class="sale-unit">万</span>
+				<p>65476元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="缔梦园" houseId="16081165" gardenId="58121" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16082761?insource=sale_list">
+	    	<img alt="地铁口物业     旁边是公园    翠园学校_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group2/215x165/M00/11/F6/CvtcKVjotiSAElx7AANVIUUSdFo829.jpg?signature=_ofCnUF-NMEN-chBg0KIYORoE-fEn75rT3j96TxrfsY5Qgbw977dMEIVOxXVOw5-kiw0n3TveGA-t2zAA_QA4w
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="地铁口物业     旁边是公园    翠园学校" class="showKeyword" target="_blank" href="/sale/16082761?insource=sale_list">地铁口物业     旁边是公园    翠园学校</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>2室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>72平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">普通装修</span>
+		      <span class="flag-line"></span>
+		      <span>				低层
+			/12层
+</span>
+		      <span class="flag-line"></span>
+		      <span>1999年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/56331">阳光明居</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/luohu" >罗湖</a>
+				<a key="showKeyword" href="/sale/luohu-buxin" >布心</a>
+				]
+				</span>
+	    		<span key="showKeyword">深圳市布心东昌路与东湖路交汇处</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="雷路梅的店铺" target="_blank" href="/shop/view/109009511">
+						雷路梅
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市罗湖区东晓小学</span>
+				<!--站点标签-->
+				  	<span>距离5号线(环中线)布心站约442米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>南北通透</span>
+			
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">420</span><span class="sale-unit">万</span>
+				<p>58333元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="阳光明居" houseId="16082761" gardenId="56331" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16083063?insource=sale_list">
+	    	<img alt="德邻雅筑苑_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group4/215x165/M00/0B/B6/CvtcMli1PiqAVH4-AASI_swxRd0159.jpg?signature=8QnKJ78jFbW4_HARIa0yqoT78irEe23NhZ-lmY5qiX1_e-U-T1wf9MdClP3uYWAwao7iG2HlkNQ_YePEIMLv8A
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="德邻雅筑苑" class="showKeyword" target="_blank" href="/sale/16083063?insource=sale_list">德邻雅筑苑</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>2室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>78.3平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				中层
+			/12层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2002年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/56871">德邻雅筑苑,德邻雅筑</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/baoan" >宝安</a>
+				<a key="showKeyword" href="/sale/baoan-xinan" >新安</a>
+				]
+				</span>
+	    		<span key="showKeyword">翻身大道与新安一路交汇处</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="王海玲的店铺" target="_blank" href="/shop/view/108999391">
+						王海玲
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市宝安区实验学校(小学部)</span>
+				<!--站点标签-->
+				  	<span>距离1号线(罗宝线)新安站约989米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>南北通透</span>
+			
+				<span>满五唯一</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">420</span><span class="sale-unit">万</span>
+				<p>53612元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="德邻雅筑苑,德邻雅筑" houseId="16083063" gardenId="56871" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16091565?insource=sale_list">
+	    	<img alt="经理推荐，位置优越，国贸地铁E出口，单价低，租售比例高_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/21/07/CvtcM1jBOlWAceL9AAV_EpPKOV8928.jpg?signature=p54yUbCTUKLKJvAiLJdCDkjP6rl9Uo99SeG2TDP5ICse1Yiy9WdlzGsuFdAvwERxoi_tszBiJYFiaB7XOwWd_A
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="经理推荐，位置优越，国贸地铁E出口，单价低，租售比例高" class="showKeyword" target="_blank" href="/sale/16091565?insource=sale_list">经理推荐，位置优越，国贸地铁E出口，单价低，租售比例高</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>1室0厅</span>
+		      <span class="flag-line"></span>
+		      <span>90平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">豪华装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/28层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2003年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/56616">南方证券大厦</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/luohu" >罗湖</a>
+				<a key="showKeyword" href="/sale/luohu-renminnan" >人民南</a>
+				]
+				</span>
+	    		<span key="showKeyword">深圳市罗湖建设路29号</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="覃成明的店铺" target="_blank" href="/shop/view/108946543">
+						覃成明
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市罗湖小学</span>
+				<!--站点标签-->
+				  	<span>距离1号线(罗宝线)老街站约403米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>红本在手</span>
+			
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">308</span><span class="sale-unit">万</span>
+				<p>34222元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="南方证券大厦" houseId="16091565" gardenId="56616" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16097035?insource=sale_list">
+	    	<img alt="振业峦山谷精装复式  客厅卧室看花园全景  满2税少_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group2/215x165/M00/0D/A2/CvtcKljM3VKADE4EAAG6ctULuGQ809.jpg?signature=_ofCnUF-NMEN-chBg0KIYPDBB45UkbKFsbRk_2VU3w3KzfLiBmYMb0VTvEr9Y1RSBExV80Tquoq07X6eWGhoXw
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="振业峦山谷精装复式  客厅卧室看花园全景  满2税少" class="showKeyword" target="_blank" href="/sale/16097035?insource=sale_list">振业峦山谷精装复式  客厅卧室看花园全景  满2税少</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>3室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>86平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/29层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2008年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/1101898">振业宝荷城</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/longgang" >龙岗</a>
+				<a key="showKeyword" href="/sale/longgang-qita" >其他</a>
+				]
+				</span>
+	    		<span key="showKeyword">龙岗横岗镇宝荷路与沙荷路交汇处(正中高尔夫对面)</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="杨兰霞的店铺" target="_blank" href="/shop/view/1111855">
+						杨兰霞
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市宝龙学校（小学部）</span>
+				<!--站点标签-->
+		      	
+				<!-- 房源标签 -->
+				<span>随时看房</span>
+			
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">330</span><span class="sale-unit">万</span>
+				<p>38372元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="振业宝荷城" houseId="16097035" gardenId="1101898" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16075719?insource=sale_list">
+	    	<img alt="银泉花园 2房2厅83平 豪华装修 无税急卖_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group2/215x165/M00/04/D1/CvtcKlhOYZuAfasGAAC23GqV8AU807.jpg?signature=_ofCnUF-NMEN-chBg0KIYAkBL4Pv2_P4tCzUH4RzaLMBY55tvOMhYYKQ1r003J0CA9CrzN1JJpmZG7U5qEKCLw
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="银泉花园 2房2厅83平 豪华装修 无税急卖" class="showKeyword" target="_blank" href="/sale/16075719?insource=sale_list">银泉花园 2房2厅83平 豪华装修 无税急卖</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>2室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>83平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">豪华装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/11层
+</span>
+		      <span class="flag-line"></span>
+		      <span>1999年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/57645">银泉花园</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/longhuaxinqu" >龙华新区</a>
+				<a key="showKeyword" href="/sale/longhuaxinqu-minzhi" >民治</a>
+				]
+				</span>
+	    		<span key="showKeyword">深圳市宝安龙华镇人民北路与龙胜东路交汇处西北</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="李兰兰的店铺" target="_blank" href="/shop/view/108852039">
+						李兰兰
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市龙华新区上芬小学</span>
+				<!--站点标签-->
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>南北通透</span>
+			
+				<span>满五唯一</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">350</span><span class="sale-unit">万</span>
+				<p>42169元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="银泉花园" houseId="16075719" gardenId="57645" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16083427?insource=sale_list">
+	    	<img alt="双地铁物业 繁华中心区  槟城西岸 豪华装修 3室2厅裞费少_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group3/215x165/M00/0D/9D/CvtcOFjPqJ2Ac63XAAHOnMfaRhY163.jpg?signature=L4Ip5sBtX7lDk25payIzwF480Ewkki-O1NitiMDd7d4KLz_L4KZQ5f3v2HnOc1v0MUFoztfz8S_exs-Qy1VFDg
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="双地铁物业 繁华中心区  槟城西岸 豪华装修 3室2厅裞费少" class="showKeyword" target="_blank" href="/sale/16083427?insource=sale_list">双地铁物业 繁华中心区  槟城西岸 豪华装修 3室2厅裞费少</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>3室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>74.6平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/30层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2008年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/57036">槟城西岸</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/baoan" >宝安</a>
+				<a key="showKeyword" href="/sale/baoan-xixiang" >西乡</a>
+				]
+				</span>
+	    		<span key="showKeyword">宝安区西乡街道西乡大道</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="杨守涛的店铺" target="_blank" href="/shop/view/108884519">
+						杨守涛
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市宝安区西乡碧海小学</span>
+				<!--站点标签-->
+				  	<span>距离11号线碧海湾站约534米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>满五唯一</span>
+			
+				<span>红本在手</span>
+			
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">523</span><span class="sale-unit">万</span>
+				<p>70117元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="槟城西岸" houseId="16083427" gardenId="57036" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16096983?insource=sale_list">
+	    	<img alt="可园七期双拼五房700万就卖地铁三分钟_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/12/82/CvtcNFgRyNKAKjKCAACdzZDIcDQ120.jpg?signature=p54yUbCTUKLKJvAiLJdCDgO8-TctpHpHb74y70M5N5us5N7R7UpZwF-3LiTotiwtf_Lml4r2HT2nx4HAP8CcyA
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="可园七期双拼五房700万就卖地铁三分钟" class="showKeyword" target="_blank" href="/sale/16096983?insource=sale_list">可园七期双拼五房700万就卖地铁三分钟</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>5室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>156平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">豪华装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/26层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2011年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/58640">可园七期</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/longgang" >龙岗</a>
+				<a key="showKeyword" href="/sale/longgang-buji" >布吉</a>
+				]
+				</span>
+	    		<span key="showKeyword">深圳市布吉镇木绵湾</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="刘陈杰的店铺" target="_blank" href="/shop/view/109012009">
+						刘陈杰
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市龙岗区布吉街道可园学校（小学部）</span>
+				<!--站点标签-->
+				  	<span>距离5号线(环中线)百鸽笼站约678米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>南北通透</span>
+			
+				<span>满五年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">700</span><span class="sale-unit">万</span>
+				<p>44872元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="可园七期" houseId="16096983" gardenId="58640" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16092991?insource=sale_list">
+	    	<img alt="荔园阁二期 实图精装修 一房一厅诚心出售 价格笋 看房方便_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/01/AC/CvtcMFgUP3WAP1p9AAEF8abHsQk735.jpg?signature=p54yUbCTUKLKJvAiLJdCDut4_4n1axpU9CiKd-x4lGOKx-o5huuHQiRaNCIDud0AZRfQysWRqcWzQaI5uviZUg
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="荔园阁二期 实图精装修 一房一厅诚心出售 价格笋 看房方便" class="showKeyword" target="_blank" href="/sale/16092991?insource=sale_list">荔园阁二期 实图精装修 一房一厅诚心出售 价格笋 看房方便</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>1室1厅</span>
+		      <span class="flag-line"></span>
+		      <span>41.6平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">普通装修</span>
+		      <span class="flag-line"></span>
+		      <span>				中层
+			/8层
+</span>
+		      <span class="flag-line"></span>
+		      <span>1999年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/55966">荔园阁</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/futian" >福田</a>
+				<a key="showKeyword" href="/sale/futian-meilin" >梅林</a>
+				]
+				</span>
+	    		<span key="showKeyword">福田梅林路(特警支队)</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="刘闯的店铺" target="_blank" href="/shop/view/108848645">
+						刘闯
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市福田区梅丽小学</span>
+				<!--站点标签-->
+				  	<span>距离9号线梅村站约187米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>红本在手</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">260</span><span class="sale-unit">万</span>
+				<p>62560元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="荔园阁" houseId="16092991" gardenId="55966" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16098457?insource=sale_list">
+	    	<img alt="龙华中心 深圳北站 4号线地铁口 精装两房 户型方正 采光好_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/D2/DE/CvtcM1eUIWGAE1VuAAGyLPiSZxE552.jpg?signature=p54yUbCTUKLKJvAiLJdCDn-OygRJDPPAh21H9_rshnBvrlAzDm5Mp5l9tnpexqz5FJ1JpYMDY0c-J12vUGecPQ
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="龙华中心 深圳北站 4号线地铁口 精装两房 户型方正 采光好" class="showKeyword" target="_blank" href="/sale/16098457?insource=sale_list">龙华中心 深圳北站 4号线地铁口 精装两房 户型方正 采光好</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>2室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>78平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/16层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2007年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/56717">世纪春城三期</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/longhuaxinqu" >龙华新区</a>
+				<a key="showKeyword" href="/sale/longhuaxinqu-minzhi" >民治</a>
+				]
+				</span>
+	    		<span key="showKeyword">龙华街道梅龙南路东侧</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="刘小伍的店铺" target="_blank" href="/shop/view/108997911">
+						刘小伍
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市龙华新区民治小学</span>
+				<!--站点标签-->
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>红本在手</span>
+			
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">360</span><span class="sale-unit">万</span>
+				<p>46154元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="世纪春城三期" houseId="16098457" gardenId="56717" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16079467?insource=sale_list">
+	    	<img alt="金地名峰 经典复式小区 精装四房急卖 适合一家人居住_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group2/215x165/M00/0E/43/CvtcKljSfgaAXqCfAAPCMx4EK9g937.jpg?signature=_ofCnUF-NMEN-chBg0KIYMHIDUMzNggBcubYw_GSB3VVkMRDG0Oqz-C36thBhygZDZEHsDHhxI1L8S-UxOGVfw
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="金地名峰 经典复式小区 精装四房急卖 适合一家人居住" class="showKeyword" target="_blank" href="/sale/16079467?insource=sale_list">金地名峰 经典复式小区 精装四房急卖 适合一家人居住</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>4室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>87.8平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				高层
+			/30层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2013年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/1100851">金地名峰</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/longgang" >龙岗</a>
+				<a key="showKeyword" href="/sale/longgang-longgangzhongxincheng" >龙岗中心城</a>
+				]
+				</span>
+	    		<span key="showKeyword">龙岗区宝荷路与沙荷路交汇处西南角</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="张会琴的店铺" target="_blank" href="/shop/view/1120113">
+						张会琴
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市宝龙学校（小学部）</span>
+				<!--站点标签-->
+		      	
+				<!-- 房源标签 -->
+				<span>复式</span>
+			
+				<span>急售</span>
+			
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">346</span><span class="sale-unit">万</span>
+				<p>39412元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="金地名峰" houseId="16079467" gardenId="1100851" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16084485?insource=sale_list">
+	    	<img alt="安泰花园标准二房地铁口物业_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group1/215x165/M00/0F/B6/CvtcM1gi_GyAfUYfAAEIuuauf6E812.jpg?signature=p54yUbCTUKLKJvAiLJdCDmA3HNlrVe_u8vLWwyZeLTlA61CtTKi0tqnUFt6tCby5bAg_dyoLtjaBuoN4wWIEAQ
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="安泰花园标准二房地铁口物业" class="showKeyword" target="_blank" href="/sale/16084485?insource=sale_list">安泰花园标准二房地铁口物业</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>3室2厅</span>
+		      <span class="flag-line"></span>
+		      <span>82平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">精装修</span>
+		      <span class="flag-line"></span>
+		      <span>				中层
+			/7层
+</span>
+		      <span class="flag-line"></span>
+		      <span>1995年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/58258">半岛名苑二期,安泰花园</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/baoan" >宝安</a>
+				<a key="showKeyword" href="/sale/baoan-xixiang" >西乡</a>
+				]
+				</span>
+	    		<span key="showKeyword">宝安58区宝源路</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="邱新林的店铺" target="_blank" href="/shop/view/1002322">
+						邱新林
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市宝安区坪洲小学</span>
+				<!--站点标签-->
+				  	<span>距离1号线(罗宝线)坪洲站约252米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">340</span><span class="sale-unit">万</span>
+				<p>41463元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="半岛名苑二期,安泰花园" houseId="16084485" gardenId="58258" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<li class="clearfix">
+	  	<a target="_blank" class="show-image" href="/sale/16072385?insource=sale_list">
+	    	<img alt="精装修 红本不在手税少 看房方便 钥匙在手 鸿园居_Q房网" onError="this.src='http://yun200.qfangimg.com/group1/180x135/M00/D8/98/CvtcKVcZ5YiAGVryAABla5Fvuh0069.jpg';" width="215" height="165" src="
+						http://yun.qfangimg.com/group4/215x165/M00/10/87/CvtcMVjgZViAaWYzAAHAl2z3XRE773.jpg?signature=8QnKJ78jFbW4_HARIa0yqhxmK6giQ88ZfUb4r3jD1BfBzPql75Txpr1IQQH7GgUMYDq4w6ZkRPFA94NAYzSS9g
+				" />
+	  	</a>
+	  	
+	  	<div class="show-detail">
+		    <p class="house-title">
+		    	<a key="showKeyword" title="精装修 红本不在手税少 看房方便 钥匙在手 鸿园居" class="showKeyword" target="_blank" href="/sale/16072385?insource=sale_list">精装修 红本不在手税少 看房方便 钥匙在手 鸿园居</a>
+		    </p>
+		    
+	    	<p class="house-about clearfix">
+		      <span>1室1厅</span>
+		      <span class="flag-line"></span>
+		      <span>45平米</span>
+		      <span class="flag-line"></span>
+		      <span key="showKeyword">豪华装修</span>
+		      <span class="flag-line"></span>
+		      <span>				低层
+			/18层
+</span>
+		      <span class="flag-line"></span>
+		      <span>2000年建</span>
+		      
+	    	</p>
+	    	
+	    	<p class="house-address clearfix">
+	    		<span class="address">
+	    		<a target="_blank" key="showKeyword" href="/garden/desc/55517">鸿园居</a>
+	    		</span>
+	    		<span>
+	    		[
+	    		<a key="showKeyword" href="/sale/luohu" >罗湖</a>
+				<a key="showKeyword" href="/sale/luohu-buxin" >布心</a>
+				]
+				</span>
+	    		<span key="showKeyword">布心路与东晓路交汇处</span>
+	    	</p>
+	    
+				
+	    	<p class="who-am-i clearfix">
+					<a title="黄前征的店铺" target="_blank" href="/shop/view/108966954">
+						黄前征
+					</a> 
+				
+				
+		      
+	    	</p>
+	    	
+		    <p class="house-traffic clearfix">
+	       		<!--学校标签-->
+	                  <span>深圳市水库小学</span>
+				<!--站点标签-->
+				  	<span>距离5号线(环中线)太安站约292米</span>
+		      	
+				<!-- 房源标签 -->
+				<span>急售</span>
+			
+				<span>随时看房</span>
+			
+				<span>满两年</span>
+			
+		    </p>
+	  	</div>
+	  
+	  	<div class="show-price">
+		  	<span class="sale-price">195</span><span class="sale-unit">万</span>
+				<p>43333元/平米</p>
+	  	</div>
+	  		<p class="btn-compare-sr btn-compare" >
+           <a href="javascript:;" data-type="compare" gardenName="鸿园居" houseId="16072385" gardenId="55517" type="SALE"><i><em class="icons"></em></i><span>加入对比</span></a>
+         </p>
+	</li>
+	<!-- End 二手房房源列表 -->
+		</ul>
+	</div>
+	<!-- 正常搜索结果展示 End -->
+<!-- end 结果列表 -->
+	        
+	
+<!-- loading -->
+<p class="loading-hs" id="loading" ><img src="/themes/default/images/frontend/details/loading-map.gif" width="32" height="32" style="display:none;"/></p>
+<!-- end loading -->
+
+
+
+
+<div class="pages-box clearfix" id="pagesBox">
+	<div class="crumbs fl clearfix">
+	  <a class="items" href="/" target="_blank">深圳Q房网</a>
+	  <span class="gt">&gt;</span>
+	  <a class="items" href="/sale" target="_blank">深圳二手房</a>
+	</div>
+	
+<!-- 翻页 -->
+</div>
+
+
+<!-- end 翻页 -->
+	        
+          
+        	</div>
+	      	<div class="house-info">
+
+
+    <div class="show-house-count">
+    	
+      	  <p class="slogan">快速卖房<em class="gap-hfword"></em>就在Q房</p>
+		  <p><a target="_blank" href="/trust?type=sale" rel="nofollow" class="btn-orange">我要卖房</a></p>
+    </div>
+
+
+
+<!-- end entrance -->
+				<div id="roomIndexHistory"></div>
+				<div id="roomIndexRecommand_like" class="listings-side-box mb_10"></div>
+				<div id="personDeal"></div>
+				<div id="roomIndexRecommand" class="listings-side-box mb_10"></div>
+				
+
+				<div id="roomIndexTrend"></div>
+	      	</div>
+   		</div>
+  	</div>
+  	
+
+    
+ 
+
+<!-- footer 2016 -->
+  <div class="footer-2016 mt-40">
+    <div class="footer-2016-inner">
+      <!-- nav links -->
+      <div class="footer-top clearfix">
+        <p class="footer-top-nav fl clearfix">
+          <a target="_blank" href="/aboutQfang">关于Q房</a> 
+          <a target="_blank" href="/contactus">联系我们</a> 
+          <a target="_blank" href="/recruit">人才招聘</a>
+          <a target="_blank" href="/agreement">用户协议</a> 
+          <a target="_blank" href="/friendLink">友情链接</a> 
+          <a target="_blank"  href="http://baike.qfang.com/">房产百科</a>
+          <a target="_blank"  href="/ask">房产问答</a> 
+          
+        </p>
+        
+        <p class="footer-top-hotline fr">服务热线：4009-000-999</p>
+        <i class="icons zh-footer fr"></i>
+      </div>
+      <!-- nav links -->
+  
+ 
+      <!-- friendlylinks -->
+      <div class="links-friendly" id="linksFriendly">
+        <div class="links-friendly-inner">
+          <div class="links-friendly-tabs clearfix">
+            <ul id="linksfriendlyTabs">
+            		<li class="cur"><a href="javascript:;">深圳二手房推荐</a> </li>
+            		<li ><a href="javascript:;">深圳二手房小区房价</a> </li>
+            		<li ><a href="javascript:;">深圳二手房频道介绍</a> </li>
+            		<li ><a href="javascript:;">热门城市二手房</a> </li>
+            		<li ><a href="javascript:;">热门城市新房</a> </li>
+            		<li ><a href="javascript:;">深圳写字楼出租</a> </li>
+            </ul>
+          </div>
+          <div class="links-friendly-tabcon">
+          	    	<div class="links-friendly-item clearfix  ">
+            			<p><a href="" title="资讯热点" target="_blank">资讯热点</a></p>
+            			<p><a href="http://m.qfang.com/shenzhen/sale" title="手机深圳二手房网" target="_blank">手机深圳二手房网</a></p>
+            			<p><a href="http://m.qfang.com/shenzhen/sale/" title="深圳二手房" target="_blank">深圳二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房" target="_blank">深圳二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian" title="福田二手房" target="_blank">福田二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/luohu" title="罗湖二手房" target="_blank">罗湖二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan" title="南山二手房" target="_blank">南山二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longgang" title="龙岗二手房" target="_blank">龙岗二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/yantiana" title="盐田二手房" target="_blank">盐田二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longhuaxinqu" title="龙华二手房" target="_blank">龙华二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan" title="宝安二手房" target="_blank">宝安二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/pingshanxinqu" title="坪山二手房" target="_blank">坪山二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longgang-buji" title="布吉二手房" target="_blank">布吉二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan-shajing" title="沙井二手房" target="_blank">沙井二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan-qianhai" title="前海二手房" target="_blank">前海二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan-shekou" title="蛇口二手房" target="_blank">蛇口二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan-xili" title="西丽二手房" target="_blank">西丽二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-meilin" title="梅林二手房" target="_blank">梅林二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/luohu-dongmen" title="东门二手房" target="_blank">东门二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan-fuyong" title="福永二手房" target="_blank">福永二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan-xixiang" title="西乡二手房" target="_blank">西乡二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan-xinan" title="新安二手房" target="_blank">新安二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longgang-pinghu" title="平湖二手房" target="_blank">平湖二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longhuaxinqu-minzhi" title="民治二手房" target="_blank">民治二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longhuaxinqu-guanlan" title="观澜二手房" target="_blank">观澜二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/guangmingxinqu-gongming" title="公明二手房" target="_blank">公明二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longgang-henggang" title="横岗二手房" target="_blank">横岗二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/dapengxinqu-kuiyong" title="葵涌二手房" target="_blank">葵涌二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longhuaxinqu-dalang" title="大浪二手房" target="_blank">大浪二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-huanggang" title="皇岗二手房" target="_blank">皇岗二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-futianzhongxinqu" title="福田中心区二手房" target="_blank">福田中心区二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-shisha" title="石厦二手房" target="_blank">石厦二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-yuanling" title="园岭二手房" target="_blank">园岭二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian-lianhua" title="莲花二手房" target="_blank">莲花二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/guangmingxinqu-guangming" title="光明二手房" target="_blank">光明二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/58720" title="四季花城二手房" target="_blank">四季花城二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/longgang-longgangzhongxincheng" title="龙岗中心城二手房" target="_blank">龙岗中心城二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/futian-huaqiang" title="华强北二手房" target="_blank">华强北二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/futian-xiangmihu" title="香蜜湖二手房" target="_blank">香蜜湖二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/56299" title="保利花园二手房" target="_blank">保利花园二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/56165" title="明珠花园二手房" target="_blank">明珠花园二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/1100935" title="和谐家园二手房" target="_blank">和谐家园二手房</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/57897" title="中央花园二手房" target="_blank">中央花园二手房</a></p>
+            		</div>
+          	    	<div class="links-friendly-item clearfix dn ">
+            			<p><a href="http://m.qfang.com/shenzhen/garden" title="手机深圳小区房价" target="_blank">手机深圳小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1005" title="最新楼盘信息" target="_blank">最新楼盘信息</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1009" title="房价走势" target="_blank">房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/sale/57849" title="城市天地广场房价" target="_blank">城市天地广场房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1100231" title="金地名津小区房价走势" target="_blank">金地名津小区房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56824" title="吉信大厦房价走势" target="_blank">吉信大厦房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1103631" title="THE TOWN乐城房价走势" target="_blank">THE TOWN乐城房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1101447" title="金地上塘道房价走势" target="_blank">金地上塘道房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/57346" title="NEO企业大道房价走势" target="_blank">NEO企业大道房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/57488" title="观湖园房价走势" target="_blank">观湖园房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56482" title="龙园山庄房价走势" target="_blank">龙园山庄房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56528" title="卓越世纪中心房价走势" target="_blank">卓越世纪中心房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56858" title="诺德国际房价走势" target="_blank">诺德国际房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/58704" title="东方明珠城房价走势" target="_blank">东方明珠城房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1100335" title="远洋新干线小区房价" target="_blank">远洋新干线小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56903" title="国展苑小区房价" target="_blank">国展苑小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56941" title="中海康城国际小区房价" target="_blank">中海康城国际小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/55538" title="龙珠花园小区房价" target="_blank">龙珠花园小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56153" title="金地梅陇镇小区房价" target="_blank">金地梅陇镇小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/58714" title="中海大山地花园小区房价" target="_blank">中海大山地花园小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/57383" title="阳光花园小区房价" target="_blank">阳光花园小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/56233" title="金众蓝钻小区房价" target="_blank">金众蓝钻小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1102687" title="信义御城小区房价" target="_blank">信义御城小区房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/garden/desc/1102821" title="卓越大厦小区房价" target="_blank">卓越大厦小区房价</a></p>
+            		</div>
+          	    	<div class="links-friendly-item clearfix dn ">
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳Q房网二手房房产信息网提供深圳数百万真实有效的二手房信息，" target="_blank">深圳Q房网二手房房产信息网提供深圳数百万真实有效的二手房信息，</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳Q房网二手房网汇聚各区域，各小区二手房房源，并提供地图找房功能。" target="_blank">深圳Q房网二手房网汇聚各区域，各小区二手房房源，并提供地图找房功能。</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="查看深圳二手房信息尽在Q房网，实时更新深圳二手房价格信息." target="_blank">查看深圳二手房信息尽在Q房网，实时更新深圳二手房价格信息.</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房网在线房源量过万条," target="_blank">深圳二手房网在线房源量过万条,</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳Q房网站为你提供最优质的二手房房源，助您找到满意的房子。" target="_blank">深圳Q房网站为你提供最优质的二手房房源，助您找到满意的房子。</a></p>
+            		</div>
+          	    	<div class="links-friendly-item clearfix dn ">
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1017" title="二手房交易流程" target="_blank">二手房交易流程</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1029" title="二手房交易税费" target="_blank">二手房交易税费</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1041" title="二手房贷款流程" target="_blank">二手房贷款流程</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房" target="_blank">深圳二手房</a></p>
+            			<p><a href="http://nanjing.qfang.com/sale" title="南京二手房房价" target="_blank">南京二手房房价</a></p>
+            			<p><a href="http://qingdao.qfang.com/sale" title="青岛二手房房价" target="_blank">青岛二手房房价</a></p>
+            			<p><a href="http://shanghai.qfang.com/sale" title="上海二手房房价" target="_blank">上海二手房房价</a></p>
+            			<p><a href="http://suzhou.qfang.com/sale" title="苏州二手房房价" target="_blank">苏州二手房房价</a></p>
+            			<p><a href="http://zh.qfang.com/sale" title="珠海二手房房价" target="_blank">珠海二手房房价</a></p>
+            			<p><a href="http://zhongshan.qfang.com/sale" title="中山二手房房价" target="_blank">中山二手房房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房价格走势" target="_blank">深圳二手房价格走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房出售" target="_blank">深圳二手房出售</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan/o4" title="南山二手房出售" target="_blank">南山二手房出售</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian/o4" title="福田二手房出售" target="_blank">福田二手房出售</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/luohu/o4" title="罗湖二手房出售" target="_blank">罗湖二手房出售</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/o92" title="深圳二手房房价" target="_blank">深圳二手房房价</a></p>
+            			<p><a href="http://beijing.qfang.com/sale" title="北京二手房房价" target="_blank">北京二手房房价</a></p>
+            			<p><a href="http://foshan.qfang.com/sale" title="佛山二手房房价" target="_blank">佛山二手房房价</a></p>
+            			<p><a href="http://guangzhou.qfang.com/sale" title="广州二手房房价" target="_blank">广州二手房房价</a></p>
+            			<p><a href="http://hangzhou.qfang.com/sale" title="杭州二手房房价" target="_blank">杭州二手房房价</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/nanshan" title="南山二手房价格" target="_blank">南山二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/futian" title="福田二手房价格" target="_blank">福田二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/luohu" title="罗湖二手房价格" target="_blank">罗湖二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/baoan" title="宝安二手房价格" target="_blank">宝安二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longgang" title="龙岗二手房价格" target="_blank">龙岗二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/longhuaxinqu" title="龙华二手房价格" target="_blank">龙华二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/guangmingxinqu" title="光明二手房价格" target="_blank">光明二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/yantiana" title="盐田二手房价格" target="_blank">盐田二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/pingshanxinqu" title="坪山二手房价格" target="_blank">坪山二手房价格</a></p>
+            			<p><a href="http://shenzhen.qfang.com/sale/dapengxinqu" title="大鹏二手房价格" target="_blank">大鹏二手房价格</a></p>
+            		</div>
+          	    	<div class="links-friendly-item clearfix dn ">
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1037" title="收房注意事项" target="_blank">收房注意事项</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1035" title="买房注意事项" target="_blank">买房注意事项</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1031" title="购房资格查询 " target="_blank">购房资格查询 </a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1109" title="房子装修流程" target="_blank">房子装修流程</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1009" title="房价走势" target="_blank">房价走势</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1065" title="房产政策" target="_blank">房产政策</a></p>
+            			<p><a href="http://shenzhen.qfang.com/ask/b1-1019" title="房屋买卖政策" target="_blank">房屋买卖政策</a></p>
+            			<p><a href="http://zh.qfang.com/newhouse" title="珠海新房信息网" target="_blank">珠海新房信息网</a></p>
+            			<p><a href="http://zhongshan.qfang.com/newhouse" title="中山新房信息网" target="_blank">中山新房信息网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/shenzhenzhoubian" title="深圳周边新房网" target="_blank">深圳周边新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse" title="深圳新房信息网" target="_blank">深圳新房信息网</a></p>
+            			<p><a href="http://beijing.qfang.com/newhouse" title="北京新房信息网" target="_blank">北京新房信息网</a></p>
+            			<p><a href="http://foshan.qfang.com/newhouse" title="佛山新房信息网" target="_blank">佛山新房信息网</a></p>
+            			<p><a href="http://guangzhou.qfang.com/newhouse" title="广州新房信息网" target="_blank">广州新房信息网</a></p>
+            			<p><a href="http://hangzhou.qfang.com/newhouse" title="杭州新房信息网" target="_blank">杭州新房信息网</a></p>
+            			<p><a href="http://nanjing.qfang.com/newhouse" title="南京新房信息网" target="_blank">南京新房信息网</a></p>
+            			<p><a href="http://qingdao.qfang.com/newhouse" title="青岛新房信息网" target="_blank">青岛新房信息网</a></p>
+            			<p><a href="http://shanghai.qfang.com/newhouse" title="上海新房信息网" target="_blank">上海新房信息网</a></p>
+            			<p><a href="http://suzhou.qfang.com/newhouse" title="苏州新房信息网" target="_blank">苏州新房信息网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/longgang" title="龙岗新房网" target="_blank">龙岗新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/longhuaxinqu" title="龙华新房网" target="_blank">龙华新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/guangmingxinqu" title="光明新房网" target="_blank">光明新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/yantiana" title="盐田新房网" target="_blank">盐田新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/pingshanxinqu" title="坪山新房网" target="_blank">坪山新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/dapengxinqu" title="大鹏新房网" target="_blank">大鹏新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/nanshan" title="南山新房网" target="_blank">南山新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/futian" title="福田新房网" target="_blank">福田新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/luohu" title="罗湖新房网" target="_blank">罗湖新房网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/newhouse/list/baoan" title="宝安新房网" target="_blank">宝安新房网</a></p>
+            		</div>
+          	    	<div class="links-friendly-item clearfix dn ">
+            			<p><a href="http://m.qfang.com/shenzhen/office/rent" title="手机深圳写字楼出租" target="_blank">手机深圳写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office" title="深圳写字楼出租网" target="_blank">深圳写字楼出租网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rentSubway" title="深圳写字楼出租信息网" target="_blank">深圳写字楼出租信息网</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office" title="深圳写字楼" target="_blank">深圳写字楼</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/nanshan" title="南山写字楼出租" target="_blank">南山写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/futian" title="福田写字楼出租" target="_blank">福田写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/luohu" title="罗湖写字楼出租" target="_blank">罗湖写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/baoan" title="宝安写字楼出租" target="_blank">宝安写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/longgang" title="龙岗写字楼出租" target="_blank">龙岗写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/longhuaxinqu" title="龙华写字楼出租" target="_blank">龙华写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/guangmingxinqu" title="光明写字楼出租" target="_blank">光明写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/yantiana" title="盐田写字楼出租" target="_blank">盐田写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent/shenzhenzhoubian" title="深圳周边写字楼出租" target="_blank">深圳周边写字楼出租</a></p>
+            			<p><a href="http://shenzhen.qfang.com/office/rent" title="深圳写字楼出租" target="_blank">深圳写字楼出租</a></p>
+            		</div>
+          </div>
+          
+           
+        </div>
+      </div>
+      <!-- end friendlylinks -->
+      
+      <!-- copyright11 -->
+      <div class="footer-bottom">
+        <p class="footer-bottom-letter">
+          <span>按字母检索：</span>
+	        <a target="_blank" href="/letter/A"><span>A</span></a>
+	        <a target="_blank" href="/letter/B"><span>B</span></a>
+	        <a target="_blank" href="/letter/C"><span>C</span></a>
+	        <a target="_blank" href="/letter/D"><span>D</span></a>
+	        <a target="_blank" href="/letter/E"><span>E</span></a>
+	        <a target="_blank" href="/letter/F"><span>F</span></a>
+	        <a target="_blank" href="/letter/G"><span>G</span></a>
+	        <a target="_blank" href="/letter/H"><span>H</span></a>
+	        <a target="_blank" href="/letter/I"><span>I</span></a>
+	        <a target="_blank" href="/letter/J"><span>J</span></a>
+	        <a target="_blank" href="/letter/K"><span>K</span></a>
+	        <a target="_blank" href="/letter/L"><span>L</span></a>
+	        <a target="_blank" href="/letter/M"><span>M</span></a>
+	        <a target="_blank" href="/letter/N"><span>N</span></a>
+	        <a target="_blank" href="/letter/O"><span>O</span></a>
+	        <a target="_blank" href="/letter/P"><span>P</span></a>
+	        <a target="_blank" href="/letter/Q"><span>Q</span></a>
+	        <a target="_blank" href="/letter/R"><span>R</span></a>
+	        <a target="_blank" href="/letter/S"><span>S</span></a>
+	        <a target="_blank" href="/letter/T"><span>T</span></a>
+	        <a target="_blank" href="/letter/U"><span>U</span></a>
+	        <a target="_blank" href="/letter/V"><span>V</span></a>
+	        <a target="_blank" href="/letter/W"><span>W</span></a>
+	        <a target="_blank" href="/letter/X"><span>X</span></a>
+	        <a target="_blank" href="/letter/Y"><span>Y</span></a>
+	        <a target="_blank" href="/letter/Z"><span>Z</span></a>
+        </p>
+        <p class="footer-bottom-copyright">Copyright © 2017 www.qfang.com. All Rights Reserved ICP备案号：<a target="_blank" style="color:#999" href = "http://www.miitbeian.gov.cn" rel="nofollow">粤ICP备05067219号-3</a></p>
+        <p class="footer-bottom-cpyname" style="float:left;">公司名称：深圳市云房网络科技有限公司</p>
+        <style>.ebsgovicon_class{float: left; margin: -1px 10px;} .ebsgovicon_class img{width:20px;height:27.5px}</style><p class="ebsgovicon_class" style="float:left;"><script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=a62a7cbc-957d-4104-a773-090987c97144&width=75&height=105&type=1" type="text/javascript" charset="utf-8"></script></p>
+      </div>
+      <!-- /copyright -->
+    </div>
+  </div>
+  <!-- /footer 2016 -->
+    
+  <div class="dialog-show-wrapper dialog-login" id="dialogLogin">
+<!-- 登录弹框 -->
+    <div class="dialog-show-inner">
+      <div class="icons-dialogshow dialog-show-title">
+        <div class="dialog-show-title-text">
+          <h3></h3>
+        </div>
+        <p class="btn-dialogclose"><a href="javascript:;" id="dialogLoginClose"><i class="icons-dialogshow"></i></a></p>
+      </div>
+      <!-- form -->
+      <div class="login-box">
+      <div class="login-box-inner" id="loginBox">
+        <p class="login-tbs" id="loginTbs">
+          <a rel="nofollow" class="cur" href="javascript:;">登录</a>
+          <a rel="nofollow" href="javascript:;">账号注册</a>
+        </p>
+        <div class="login-form">
+          <p class="broker-remind-text dn" id="isBroker">你是经纪人哦，不过你可以<a href="javascript:;" onclick="Login.applyToBeAUser();">申请成为用户</a>或者<a href="javascript:;">回到经纪人中心</a></p>
+          <!-- 登录 -->
+          <div class="login-form-item" id="loginTab">
+            
+          </div>
+          <!-- /登录 -->
+          <!-- 注册 -->
+          <div class="login-form-item" id="registerTab">
+            
+          </div>
+         </div>
+         <!-- /注册 -->
+        </div>
+      </div>
+      <!-- /form -->
+    </div>
+  <!-- /登录弹框 -->
+  <script type="text/javascript">
+			var base = '/themes/default';
+  </script>			
+  </div>
+  
+<!-- Google Tag Manager -->
+<noscript>
+	<iframe src="//www.googletagmanager.com/ns.html?id=GTM-5NGTRL"
+		height="0" width="0" style="display: none; visibility: hidden"></iframe>
+</noscript>
+<script>
+	(function(w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start' : new Date().getTime(),
+			event : 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-5NGTRL');
+</script>
+<!-- End Google Tag Manager -->
+<div style="display:none;">
+
+<script src="http://www.anquan.org/static/outer/js/anquan_authen_83x30.js?qv=1491966344546"></script>
+
+<div class="List"  id="PageType"></div>
+<div class="Shenzhen"  id="PageCity"></div>
+<div class="Sale"  id="BusiType"></div>
+<script>
+	var PageType="List";
+	var PageCity="Shenzhen";
+	var BusiType="Sale";
+</script>
+</div>
+
+<!--除二手房，租房，写字楼，新房，其他的与首页的一致,但需隐藏”友情链接-->
+
+
+
+	<script type="text/javascript" src="/themes/default/scripts/frontend/qfang-common.js?qv=1491966344625"></script>
+	<script type="text/javascript" src="/themes/default/scripts/plugin/jquery.cookie.js?qv=1491966344625"></script>
+	
+	<!--新房用-->
+	
+	<!--头部公共文件 end-->
+<script type="text/javascript">
+  	var ctx="";
+	var city = "SHENZHEN";
+	var shenzhenPath = "http://shenzhen.qfang.com";
+	var cityName = "深圳";
+	var frontUserName = $.cookie("userName") ;
+	var sid = $.cookie("fuid") ;
+	var userCenterUrl = "http://user.qfang.com/userManager/collectQuery" ;
+	var userExit = "http://user.qfang.com/userLogin/exit" ;
+	var userId = $.cookie("userId") ;
+</script>
+
+<!-- 转发 -->
+
+  <!--验证码弹出--> 
+ <div class="confirm-tips confirm-tips-mbvcode dn" id="imgCode-box">
+  <i class="icons confirm-arrow"></i>
+  <!--注意：此处有加一个id id="imgCodeClose" 和里面嵌套1个i标签 <i class="icons-dialogshow"></i>-->
+  <a class="icons confirm-close" href="javascript:;" id="imgCodeClose">
+    <i class="icons-dialogshow"></i>
+  </a>
+  <div class="confirm-con clearfix">
+    <p class="gvcode-area clearfix">
+      <span class="gvcode-area-img fl"><img id="gvcode-area-img-ele" src="" width="139" height="28" /></span>
+      <span class="gvcode-area-refresh fl"><i class="icons"></i><em>换一张</em></span>
+    </p>
+    <div class="gvcode-input fl">
+      <input class="lf-keyword" type="text" id="imgCodeText">
+      <p class="lf-label" id="imgCodeTip">请输入右侧图片内容</p>
+      <!--注意：没有错误消息的话--<p class="lf-error dn clearfix">-->
+      <p class="lf-error clearfix" style="display:none"><i class="icons"></i><span>验证码有误，请重新输入</span></p>
+    </div>
+    <p class="confirm-btn fl"><a class="btn-orange" href="javascript:;">提交</a></p>
+  </div>
+</div>
+<!--验证码弹出-->
+<script>
+$(function(){
+	var $box = $('#imgCode-box');
+	
+	$box.on('click', '#imgCodeClose', function(){
+		$.qfangDialog.DialogClose('imgCode-box');
+	});
+	
+	// 刷新验证码
+	//gvcode-area
+	$box.on('click', '.gvcode-area', function(){
+		$box.find('#gvcode-area-img-ele').attr('src', ctx+'/checkCode/getValidateCode?r='+Math.random());
+	});
+	
+	$box.on('click', '#imgCodeText', function(){
+		$box.find('.lf-error').hide();
+	});
+	
+	// 点击提交
+	$box.on('click', '.btn-orange', function(){
+		var code = $.trim($box.find('#imgCodeText').val());
+		var $tips = $box.find('.lf-error');
+		if (!code) {
+			$tips.find('span').text('验证码不能为空');
+			$tips.show();
+			return false;
+		}
+		
+		var data = {'code':code};
+		$.ajax({
+			url : ctx + '/checkCode/validate',
+			data : data,
+			dataType : 'JSON',
+			method : 'POST',
+			success : function(resp){
+				if (resp && resp.value == 0) {
+					$tips.hide();
+					$box.data('validate', true);
+					$.qfangDialog.DialogClose('imgCode-box');
+					var el = $($box.data('successEleClick'));
+					if (el.length > 0) {
+						el.trigger('click');
+					}
+					
+				} else {
+					$box.data('validate', false);
+					$tips.show().find('span').text('验证码有误，请重新输入');
+				}
+			},
+			error : function(){
+				$box.data('validate', false);
+			}
+			
+		});
+	});
+	
+
+	$('#imgCodeText').bind('keyup', function(){
+		if ($(this).val()!='') {
+			$(this).next().hide();
+		}
+	}).bind('blur', function(){
+		if ($(this).val()=='') {
+			$(this).next().show();
+		}
+	});
+	
+});
+
+</script>
+  
+<!-- end 转发 -->
+
+<!--登录使用-->
+<script type="text/javascript" src="/themes/default/scripts/frontend/common/jquery.md5.js?qv=1491966344625"></script>
+<script type="text/javascript" src="/themes/default/scripts/frontend/user/login.js?qv=1491966344625"></script>
+<script type="text/javascript" src="/themes/default/scripts/frontend/user/imgCode.js?qv=1491966344625"></script>
+<div class="toolbars" id="toolbars" style="display: block;">
+    <ul>
+        	<li class="tool-hscompare">
+        <span class="tool-icon"><a href="javascript:;"><i class="icons-sidetools"></i></a></span>
+        <p class="tool-desp"><i class="icons-sidetools"></i><span>对比房源</span></p>
+      </li>
+       <li class="tool-im" id="im-lanuch" style="display:none">
+        <span class="tool-icon"><a href="javascript:;"><i class="icons-sidetools"></i></a></span><p class="tool-desp" ><i class="icons-sidetools"></i><span>在线沟通</span></p>
+        <i class="icon-im msg-remind " id="tools-msg-remind" style="display:none;"></i>
+       </li>
+      <li class="tool-app">
+        <span class="tool-icon"><a href="javascript:;"><i class="icons-sidetools"></i></a></span>
+        <p class="tool-desp" style="display: none; right: 60px; opacity: 0;"><em class="icons-sidetools"></em><i class="icons-sidetools"></i><span>下载Q房app</span></p>
+      </li>
+      <li class="tool-backtop" style="">
+        <span class="tool-icon"><a href="javascript:;"><i class="icons-sidetools"></i></a></span>
+        <p class="tool-desp"><i class="icons-sidetools"></i><span>返回顶部</span></p>
+      </li>
+    </ul>
+</div>
+	
+  
+<script src="/themes/default/scripts/frontend/common/v2.4/qfang-libs.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/listings/qfang-list.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/common/common.js?qv=1491966349796"></script>
+<script>
+var pageType="index";
+var bizType="SALE";
+var queryType="";
+</script>
+
+<script src="/themes/default/scripts/frontend/room/realRoomIndex.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/common/guide/guide.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/room/qfang-search.js?qv=1491966349796"></script>
+<!--[if lt IE 10]>
+ <script> window["WEB_XHR_POLLING"] = true </script>
+<![endif]--> 
+
+
+
+<script src="/themes/default/scripts/frontend/details/pcmdata-2.0.0.min.js?qv=1491966341921"></script> 
+<script src="/themes/default/scripts/frontend/details/protobuf-min-2.7.js?qv=1491966341921"></script>  	
+<script src="/themes/default/scripts/frontend/details/RongIMVoice-2.0.2.min.js?qv=1491966341921"></script> 
+
+
+
+<script src="https://cdn.ronghub.com/RongIMLib-2.2.4.min.js?qv=1491966341921"></script>
+
+
+<script src="/themes/default/scripts/frontend/details/jquery.form.min.js?qv=1491966341921"></script>
+
+<script src="/themes/default/scripts/frontend/details/qfang-im2.js?qv=1491966341921"></script>
+
+
+<!-- IM -->
+  <div class="im-wrap clearfix" id="imWrap">
+    <!-- close -->
+    <p class="im-close fr clearfix js-closebtn" id="imClose">
+      <a href="javascript:;">
+        <span>收起</span>
+        <i class="icon-im"></i>
+      </a>
+    </p>
+    <!-- end close -->
+    <!-- keymenu -->
+    <p class="key-choose-menu dn" id="keyChoose" >
+      <a class="cur" href="javascript:;">
+        <i class="icon-im"></i>
+        <span data-txt="Enter">按Enter发送消息</span>
+      </a>
+      <a href="javascript:;" >
+        <i class="icon-im"></i>
+        <span data-txt="Shift+Enter">按Shift+Enter发送消息</span>
+      </a>
+    </p>
+    <!-- end keymenu -->
+    <!-- 左侧 -->
+    <div class="im-side fl">
+      <p class="im-side-logo">
+        <i class="icon-im"></i>
+      </p>
+      <div class="contacter-tb" id="contacterTb">
+        <ul id="cterTb"></ul>
+      </div>
+    </div>
+    <!-- end 左侧 -->
+    <!-- 右侧 -->
+    <div class="im-main fl">
+      <div class="im-main-header js-dragbar" id="imMainHeader"></div>
+      <div class="im-main-con clearfix">
+        <!-- 聊天窗口 -->
+        <div class="chat-window fl">
+          <!-- 接收 -->
+          <div class="receive-msg">
+            <div id="msgWrap"></div>
+          </div>
+          <!-- end 接收 -->
+          <!-- 发送 -->
+          <div class="post-msg">
+            <div class="post-msg-tools">
+              <div class="face-package fl ">
+                <p class="face-trigger" id="faceTriggerBtn">
+                  <i class="icon-im"></i>
+                </p>
+              </div>
+              <div class="pic-package fl " id="pic-package">
+                <p class="pic-trigger" >
+                 <i class="icon-im" id="icon-im" ></i>
+                 <form id="pictureUploadFrom" action="/qchat/pictureUpload" enctype="multipart/form-data" methond="post" >
+                  <input class="upload-file" id="uploadFile" type="file" name="file"  />
+                  </form>
+                </p>
+              </div>
+            </div>
+            <div class="post-msg-area">
+              <div class="edit-iframe" id="editIframe"></div>
+              <div class="post-msg-bottom clearfix">
+                <span class="key-tip">小提示：按Enter可以快捷发送</span>
+                <div class="trigger-click fr clearfix fr">
+                  <a class="post-msg-btn fl" id="postMsgBtn" href="javascript:;">发送</a>
+                  <a class="key-choose-btn fl" id="keyChooseBtn" href="javascript:;"><i class="icon-im"></i></a>
+                  <span class="post-msg-err" id="err"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end 发送 -->
+        </div>
+        <!-- end 聊天窗口 -->
+        <!-- 聊天窗口右侧 -->
+        <div class="relevant-info fl">
+          <div class="relevant-info-con">
+            <div id="tabBoxWrap"></div>
+          </div>
+          <p class="app-qr-code clearfix">
+            <i class="icon-im"></i>
+           	<span><b>下载Q房APP</b><br/>可以更加便捷的<br/>查看房源</span>
+          </p>
+        </div>
+        <!-- end 聊天窗口右侧 -->
+      </div>
+    </div>
+    <!-- end 右侧 -->
+  </div>
+  <!-- end IM -->
+  
+  <!-- 关闭确认 -->
+  <div class="dialog-show-wrapper dialog-confirm" id="dialogConfirm">
+    <div class="dialog-show-inner">
+      <div class="icons-dialogshow dialog-show-title">
+        <div class="dialog-show-title-text">
+          <h3></h3>
+        </div>
+        <p class="btn-dialogclose"><a href="javascript:;" id="dialogConfirmClose"><i class="icons-dialogshow"></i></a></p>
+      </div>
+      <!-- con -->
+      <div class="exit-con">
+        <p class="exit-con-tips">确定要关闭吗，你将查看不到聊天记录哦～</p>
+        <p class="binding-btns exit-con-btns">
+          <a class="btn-orange btn-dis fl" id="cancelDel" href="javascript:;">取消</a>
+          <a class="btn-orange fr" id="sureDel" href="javascript:;">确定</a>
+        </p>
+      </div>
+      <!-- /con -->
+    </div>
+  </div>
+  <!-- /关闭确认 -->
+<script src="/themes/default/scripts/frontend/common/echarts/echarts-2.2.7/echarts.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/FrontendEcharts.js?qv=1491966349796"></script>
+<script src="/themes/default/scripts/frontend/common/jquery.md5.js?qv=1491966349796"></script>
+<script>
+	
+	
+	$(function(){
+		
+		var keyword = '';
+		(
+			function(){
+				if(keyword){
+					keyword = keyword.replace(/\(/g,'');
+					keyword = keyword.replace(/\)/g,'');
+					var showKeywords = $("[key='showKeyword']");
+					if(keyword.indexOf(" ") != -1){
+						var keywords = $.trim(keyword).split(" ");
+						for(var j=0;j<keywords.length;j++){
+							keyword = keywords[j];
+							if(keyword ==  "" || keyword ==  " ")
+								continue;
+							for(var i=0;i<showKeywords.length;i++){
+								$(showKeywords[i]).html($(showKeywords[i]).html().replace(new RegExp(keyword, 'g'),'<em class="high-light">'+keyword+'</em>'));
+							}
+						}
+					}else{
+						for(var i=0;i<showKeywords.length;i++){
+							$(showKeywords[i]).html($(showKeywords[i]).html().replace(new RegExp(keyword, 'g'),'<em class="high-light">'+keyword+'</em>'));
+						}
+					}
+				}
+			}
+		)();
+		
+	  	//$.qfangAdChange("#zhuhai,#adFullWidth");
+	    var $functionsBar = $('#functionsBar');
+	    var $cycleListings = $('#cycleListings');
+	    var $loading = $('#loading');
+	    var $loadingInset = $('#loadingInset');
+	    var $loadingOFT = $loading.offset().top;
+	    var flagAjax = true; //控制加载完就不再执行加载操作了
+	    
+	    
+	    //滚动加载房源列表
+	    
+	    $(window).on('scroll', function() {
+	      var winST = $(window).scrollTop() + $(window).height();
+	      var currentPage=1;
+	      if (winST >= $loadingOFT && flagAjax  && currentPage<=1) {
+	        $loading.find('img').show();
+
+	        flagAjax = false;
+			var pageUrl='/sale/ajax/f2';
+	        //alert(pageUrl)
+	        
+	        
+	        //加载房源
+			$.ajax({
+				url:pageUrl,
+				type:"post",
+				success:function(data) {
+					$('#pagesBox').remove();
+			        //房源列表输出
+			        $cycleListings.find('ul').append(data);
+			        //房源加载完后执行
+			        $loading.find('img').hide();
+			        $loading.siblings('.btns_turnpage').removeClass('dn');
+				}
+			});
+			
+
+	      }
+
+	    });
+	    
+	});
+</script>
+<div class="hs-compare-layer" id="hsCompareLayer" >
+	<div class="hs-compare-inner">
+		<div class="hs-compare-tbs clearfix" id="hsCompareTbs">
+			<ul class="fl">
+				<li class="cur"><span>对比栏</span> <i class="icons num">3</i></li>
+				<li class=""><span>最近浏览</span></li>
+			</ul>
+			<div class="hs-compare-tips fl clearfix" id="compareTips">
+				<span class="tips">目前仅支持小区之间的对比，当添加二手房源时，对比的是该房源所属小区信息</span>
+				<p class="error dn">
+					<i class="icons"></i> <span>每次同时只能对比三个小区或者楼盘，如仍需要对比，则请删除其中的一个小区或者新盘</span>
+				</p>
+			</div>
+			<p class="hs-compare-close fr">
+				<a id="closeCompareLayer" href="javascript:;"><i class="icons"></i>
+				</a>
+			</p>
+		</div>
+		<div class="hs-compare-list">
+			<!-- 对比房源 -->
+			<div class="hs-compare-item clearfix" style="display: block;">
+				<ul class="fl" id="curCompareList"></ul>
+				<p class="hs-compare-btn fr">
+					<span class="comparing" id="toComparePage"><a class="btn-orange btn-dis"
+						href="javascript:;">对比</a>
+					</span> <span class="clear"><a href="javascript:;" id="clearCompare">清空对比栏</a>
+					</span>
+				</p>
+			</div>
+			<!-- end 对比房源 -->
+			<!-- 最近浏览 -->
+			<div class="hs-compare-item hs-history-item clearfix dn"
+				style="display: none;">
+				<ul class="fl" id="curHistoryList">
+					
+				</ul>
+			</div>
+			<!-- end 最近浏览 -->
+		</div>
+	</div>
+	<p class="btn-compare btn-compare-newhs">
+		<a href="javascript:;" data-type="compare" class="cur"><i><em
+				class="icons"></em>
+		</i><span>加入对比</span>
+		</a>
+	</p>
+</div>
+<script type="text/javascript" src="/themes/default/scripts/frontend/houseCompare.js?qv=1491966341921"></script>
+</body>
+</html>
